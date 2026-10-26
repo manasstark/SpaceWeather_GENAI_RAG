@@ -1,0 +1,7 @@
+-r requirements.txt
+jupyterlab
+ipykernel
+pytest
+ruff
+black
+pre-commit

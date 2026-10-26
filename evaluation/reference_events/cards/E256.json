@@ -1,0 +1,66 @@
+{
+  "event_id": "E256",
+  "type": "storm",
+  "class": "intense",
+  "evaluation_role": "intense",
+  "window": {
+    "start": "2025-04-16T01:00Z",
+    "end": "2025-04-17T13:00Z",
+    "hours": 37
+  },
+  "dst": {
+    "min_nT": -138,
+    "min_time": "2025-04-16T17:00Z",
+    "first_below_minus50_time": "2025-04-16T13:00Z",
+    "hours_from_minimum_to_back_above_minus30": 20,
+    "minimum_is_final": false
+  },
+  "drivers": {
+    "bz_min_hourly_nT": -16.8,
+    "bz_min_time": "2025-04-16T14:00Z",
+    "hours_bz_at_or_below_minus5": 9,
+    "vbs_max_mV_per_m": 8.4,
+    "vbs_mean_12h_before_dst_min_mV_per_m": 3.9,
+    "speed_max_km_per_s": 606,
+    "density_max_per_cm3": 27.8,
+    "dynamic_pressure_max_nPa_protons_only": 14.2,
+    "total_field_max_nT": 23.3
+  },
+  "geomagnetic": {
+    "kp_max": 7.67,
+    "noaa_g_level_approx": "G3",
+    "ap_max": 179
+  },
+  "solar": {
+    "f107_mean_sfu": 150,
+    "level": "high"
+  },
+  "hints": [
+    "Intense geomagnetic storm: Dst minimum -138 nT.",
+    "Dst first fell below -50 nT 4 hours before reaching its minimum.",
+    "Dst was back above -30 nT 20 hours after the minimum.",
+    "Kp reached 7.7 (approximately NOAA G3 level).",
+    "Sustained southward Bz: 9 hours at or below -5 nT; minimum hourly Bz -16.8 nT.",
+    "Fast solar wind: maximum hourly speed 606 km/s.",
+    "High solar wind dynamic pressure: up to 14.2 nPa (protons only).",
+    "Strong solar wind electric field: vBs up to 8.4 mV/m.",
+    "Solar activity high (mean F10.7 150 sfu)."
+  ],
+  "data_quality": {
+    "field_from_dscovr_pct": 100,
+    "plasma_from_dscovr_pct": 97,
+    "plasma_missing_pct": 0,
+    "caveats": [
+      "All values are hourly means in UTC; minute-level extremes are larger.",
+      "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+      "Bz is in GSM coordinates; negative Bz means southward.",
+      "Dst is provisional and may be revised by Kyoto."
+    ]
+  },
+  "claims_requiring_a_retrieved_source": [
+    "physical cause of the event (for example a coronal mass ejection or a high-speed stream)",
+    "impacts on satellites, GNSS, radio communication, power grids or aurora",
+    "comparison with, or ranking against, other historical storms",
+    "any forecast or prediction"
+  ]
+}

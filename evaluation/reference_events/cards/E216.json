@@ -1,0 +1,69 @@
+{
+  "event_id": "E216",
+  "type": "storm",
+  "class": "super",
+  "evaluation_role": "headline (super)",
+  "window": {
+    "start": "2024-05-10T07:00Z",
+    "end": "2024-05-16T05:00Z",
+    "hours": 143
+  },
+  "dst": {
+    "min_nT": -406,
+    "min_time": "2024-05-11T02:00Z",
+    "first_below_minus50_time": "2024-05-10T19:00Z",
+    "hours_from_minimum_to_back_above_minus30": 123,
+    "minimum_is_final": false
+  },
+  "drivers": {
+    "bz_min_hourly_nT": -39.3,
+    "bz_min_time": "2024-05-10T21:00Z",
+    "hours_bz_at_or_below_minus5": 23,
+    "vbs_max_mV_per_m": 27.0,
+    "vbs_mean_12h_before_dst_min_mV_per_m": 12.0,
+    "speed_max_km_per_s": 1006,
+    "density_max_per_cm3": 52.9,
+    "dynamic_pressure_max_nPa_protons_only": 42.0,
+    "total_field_max_nT": 71.6
+  },
+  "geomagnetic": {
+    "kp_max": 9.0,
+    "noaa_g_level_approx": "G5",
+    "ap_max": 400
+  },
+  "solar": {
+    "f107_mean_sfu": 222,
+    "level": "high"
+  },
+  "hints": [
+    "Super geomagnetic storm: Dst minimum -406 nT.",
+    "Dst first fell below -50 nT 7 hours before reaching its minimum.",
+    "Dst was back above -30 nT 123 hours after the minimum.",
+    "Kp reached 9.0 (approximately NOAA G5 level).",
+    "Sustained southward Bz: 23 hours at or below -5 nT; minimum hourly Bz -39.3 nT.",
+    "Strongly southward Bz (hourly mean at or below -20 nT).",
+    "Very fast solar wind: maximum hourly speed 1006 km/s.",
+    "High solar wind dynamic pressure: up to 42.0 nPa (protons only).",
+    "Strong solar wind electric field: vBs up to 27.0 mV/m.",
+    "Solar activity high (mean F10.7 222 sfu)."
+  ],
+  "data_quality": {
+    "field_from_dscovr_pct": 100,
+    "plasma_from_dscovr_pct": 29,
+    "plasma_missing_pct": 0,
+    "caveats": [
+      "All values are hourly means in UTC; minute-level extremes are larger.",
+      "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+      "Bz is in GSM coordinates; negative Bz means southward.",
+      "Only 29% of the solar wind plasma hours come from DSCOVR; the rest are OMNI hourly values because DSCOVR plasma was flagged as unreliable or missing.",
+      "Dst is provisional and may be revised by Kyoto.",
+      "This window overlaps the next event."
+    ]
+  },
+  "claims_requiring_a_retrieved_source": [
+    "physical cause of the event (for example a coronal mass ejection or a high-speed stream)",
+    "impacts on satellites, GNSS, radio communication, power grids or aurora",
+    "comparison with, or ranking against, other historical storms",
+    "any forecast or prediction"
+  ]
+}

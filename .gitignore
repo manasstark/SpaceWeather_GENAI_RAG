@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+.DS_Store
+.pytest_cache/
+.ruff_cache/
+data/raw/*/*
+data/interim/*
+data/processed/*
+!data/processed/aligned_hourly.parquet
+knowledge_base/vector_store/*
+models_and_artifacts/*
+logs/*
+!**/.gitkeep

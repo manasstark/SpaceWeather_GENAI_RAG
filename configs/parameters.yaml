@@ -1,0 +1,57 @@
+# Reference of every parameter used in notebooks 01-05.
+# NOTE: in this snapshot the notebooks hold these values in code; this file documents them and
+# is NOT yet read by any code. The final submission moves the notebook logic into src/ and reads this file.
+
+analysis_window:
+  start: "2016-07-26 00:00"          # DSCOVR operational
+  end: "2026-06-29 23:00"            # end of the published DSCOVR archive
+
+alignment:
+  min_valid_minutes_per_hour: 45
+  magnetometer_blank_flags: [maneuver_flag, possible_saturation_flag]
+  plasma_fallback_flag_share: 0.75    # hours with >= 75% reduced_proton_quality minutes use OMNI plasma
+  fill_magnetometer_from_omni: true   # decision 14
+  delay_distance_km: 1.5e6            # delay = distance / speed
+  speed_when_missing_km_s: 430.0
+  f107_column: F10.7_ADJ              # adjusted; observed also stored (decision 7, proposed)
+  f107_spike: {median_window_days: 7, factor: 1.3}
+
+events:
+  storm:
+    dst_threshold_nT: -50
+    merge_gap_hours: 12
+    lookback_hours: 12
+    recovery_level_nT: -30
+    recovery_cap_hours: 72
+    classes: {moderate: [-100, -50], intense: [-250, -100], super: [-1000, -250]}
+    marginal: {max_core_hours: 3, min_dst_above_nT: -60}
+  quiet:
+    window_hours: 48
+    dst_above_nT: -30
+    kp_max: 3
+    min_field_dscovr_share: 0.90
+    min_plasma_any_share: 0.95
+    buffer_hours_from_storms: 24
+    sample: {total: 100, f107_bands: {"<100": 34, "100-150": 33, ">150": 33}, random_seed: 42}
+
+cards:
+  hints:
+    g_level_kp_thresholds: {G1: 5, G2: 6, G3: 7, G4: 8, G5: 9}
+    sustained_southward_bz: {threshold_nT: -5, min_hours: 6}
+    strongly_southward_bz_nT: -20
+    solar_wind_speed_km_s: {fast: 600, very_fast: 800}
+    dynamic_pressure_high_nPa: 10
+    electric_field_strong_mV_m: 5
+    f107_levels: {low_below: 100, high_above: 150}
+  caveat_thresholds: {plasma_dscovr_share_below: 0.80, field_dscovr_share_below: 0.90}
+
+knowledge_base:
+  chunking: {chunk_size: 900, chunk_overlap: 120, min_chunk_chars: 120}
+  embedding: {model: BAAI/bge-small-en-v1.5, normalize: true,
+              query_prefix: "Represent this sentence for searching relevant passages: "}
+  vector_store: {type: chroma, collection: spaceweather_kb, metric: cosine}
+  event_documents: {role: event_2024_may, window: ["2024-05-08", "2024-05-20"]}
+
+retrieval:
+  top_k: 3
+  queries_per_event: [physics, impacts, indices, quality_if_provisional]

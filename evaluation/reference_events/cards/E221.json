@@ -1,0 +1,62 @@
+{
+  "event_id": "E221",
+  "type": "quiet",
+  "class": "quiet",
+  "evaluation_role": "quiet",
+  "window": {
+    "start": "2024-06-12T00:00Z",
+    "end": "2024-06-13T23:00Z",
+    "hours": 48
+  },
+  "dst": {
+    "min_nT": -12,
+    "min_time": "2024-06-12T18:00Z",
+    "first_below_minus50_time": null,
+    "hours_from_minimum_to_back_above_minus30": null,
+    "minimum_is_final": false
+  },
+  "drivers": {
+    "bz_min_hourly_nT": -3.0,
+    "bz_min_time": "2024-06-12T14:00Z",
+    "hours_bz_at_or_below_minus5": 0,
+    "vbs_max_mV_per_m": 1.1,
+    "vbs_mean_12h_before_dst_min_mV_per_m": 0.6,
+    "speed_max_km_per_s": 378,
+    "density_max_per_cm3": 6.3,
+    "dynamic_pressure_max_nPa_protons_only": 1.3,
+    "total_field_max_nT": 5.9
+  },
+  "geomagnetic": {
+    "kp_max": 1.33,
+    "noaa_g_level_approx": null,
+    "ap_max": 5
+  },
+  "solar": {
+    "f107_mean_sfu": 173,
+    "level": "high"
+  },
+  "hints": [
+    "Quiet interval: Dst stayed above -30 nT (minimum -12 nT).",
+    "Kp reached 1.3 (below G1).",
+    "No southward Bz at or below -5 nT; minimum hourly Bz -3.0 nT.",
+    "Ordinary solar wind speed: maximum hourly speed 378 km/s.",
+    "Solar activity high (mean F10.7 173 sfu)."
+  ],
+  "data_quality": {
+    "field_from_dscovr_pct": 100,
+    "plasma_from_dscovr_pct": 94,
+    "plasma_missing_pct": 0,
+    "caveats": [
+      "All values are hourly means in UTC; minute-level extremes are larger.",
+      "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+      "Bz is in GSM coordinates; negative Bz means southward.",
+      "Dst is provisional and may be revised by Kyoto."
+    ]
+  },
+  "claims_requiring_a_retrieved_source": [
+    "physical cause of the event (for example a coronal mass ejection or a high-speed stream)",
+    "impacts on satellites, GNSS, radio communication, power grids or aurora",
+    "comparison with, or ranking against, other historical storms",
+    "any forecast or prediction"
+  ]
+}

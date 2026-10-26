@@ -1,0 +1,66 @@
+{
+  "event_id": "E117",
+  "type": "storm",
+  "class": "moderate",
+  "evaluation_role": "moderate",
+  "window": {
+    "start": "2022-03-13T06:00Z",
+    "end": "2022-03-14T08:00Z",
+    "hours": 27
+  },
+  "dst": {
+    "min_nT": -85,
+    "min_time": "2022-03-13T23:00Z",
+    "first_below_minus50_time": "2022-03-13T18:00Z",
+    "hours_from_minimum_to_back_above_minus30": 9,
+    "minimum_is_final": false
+  },
+  "drivers": {
+    "bz_min_hourly_nT": -16.3,
+    "bz_min_time": "2022-03-13T22:00Z",
+    "hours_bz_at_or_below_minus5": 6,
+    "vbs_max_mV_per_m": 7.4,
+    "vbs_mean_12h_before_dst_min_mV_per_m": 1.9,
+    "speed_max_km_per_s": 517,
+    "density_max_per_cm3": 33.5,
+    "dynamic_pressure_max_nPa_protons_only": 14.3,
+    "total_field_max_nT": 25.0
+  },
+  "geomagnetic": {
+    "kp_max": 6.33,
+    "noaa_g_level_approx": "G2",
+    "ap_max": 94
+  },
+  "solar": {
+    "f107_mean_sfu": 119,
+    "level": "moderate"
+  },
+  "hints": [
+    "Moderate geomagnetic storm: Dst minimum -85 nT.",
+    "Dst first fell below -50 nT 5 hours before reaching its minimum.",
+    "Dst was back above -30 nT 9 hours after the minimum.",
+    "Kp reached 6.3 (approximately NOAA G2 level).",
+    "Sustained southward Bz: 6 hours at or below -5 nT; minimum hourly Bz -16.3 nT.",
+    "Ordinary solar wind speed: maximum hourly speed 517 km/s.",
+    "High solar wind dynamic pressure: up to 14.3 nPa (protons only).",
+    "Strong solar wind electric field: vBs up to 7.4 mV/m.",
+    "Solar activity moderate (mean F10.7 119 sfu)."
+  ],
+  "data_quality": {
+    "field_from_dscovr_pct": 100,
+    "plasma_from_dscovr_pct": 85,
+    "plasma_missing_pct": 0,
+    "caveats": [
+      "All values are hourly means in UTC; minute-level extremes are larger.",
+      "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+      "Bz is in GSM coordinates; negative Bz means southward.",
+      "Dst is provisional and may be revised by Kyoto."
+    ]
+  },
+  "claims_requiring_a_retrieved_source": [
+    "physical cause of the event (for example a coronal mass ejection or a high-speed stream)",
+    "impacts on satellites, GNSS, radio communication, power grids or aurora",
+    "comparison with, or ranking against, other historical storms",
+    "any forecast or prediction"
+  ]
+}

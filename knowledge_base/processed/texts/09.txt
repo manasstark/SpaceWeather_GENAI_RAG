@@ -1,0 +1,79 @@
+## About Kp index
+
+The three-hour Kp index was developed in 1949 by Julius Bartels and is described in his publication 'The standardized index, Ks, and the planetary index, Kp. IATME Bull., 12b, 97– 120'. The publication Matzka et al. (2021) describes the production of the Kp index as well as its history and properties.
+
+Kp is provided by GFZ both in near real-time as nowcast values and monthly as definitive values. The derived indices are the ap (linear index), the Ap (daily mean of ap), Cp and C9. A further product derived from Kp are the international quiet and disturbed days, the Q-days and D-Days. Time series of the Kp and the derived indices and products go back to 1932.
+
+The Kp index distributed by GFZ is the internationally recognised official Kp index endorsed by the International Association of Geomagnetism and Aeronomy, IAGA. GFZ is a member of the International Service of Geomagnetic Indices, ISGI.
+
+All index data and graphs on this website are subject to the Creative Commons Attribution 4.0 International (CC BY 4.0) license. Please refer to GFZ Helmholtz Centre for Geosciences as data source.
+
+Information on the data download and file formats can be found on Data page .
+
+Ks and Kp are calculated from the K values or the geomagnetic recordings of the following 13 geomagnetic observatories:
+
+We thank the operating institutes for contributing their indices and data.
+
+## Information on the international magnetically quiet and disturbed days
+
+The selection of the quietest days (Q-days) and most disturbed days (D-days) of each month is based from the Kp indices and involves three criteria for each day:
+
+The sum of the eight Kp values.
+
+The sum of squares of the eight Kp values.
+
+The maximum of the eight Kp values.
+
+According to each of these criteria, a relative order number is assigned to each day of the month, the three order numbers are averaged and the days with the lowest and the highest mean order numbers are selected as the five (respectively ten) quietest and the five most disturbed days.
+
+It should be noted that these selection criteria give only a relative indication of the character of the selected days with respect to the other days of the same month. As the general disturbance level may be quite different for different years and also for different months of the same year, the selected quietest days of a month may sometimes be rather disturbed or vice versa. In order to indicate such a situation, selected days which do not satisfy certain absolute criteria are marked as follows:
+
+A selected quiet day is considered not really quiet and is marked by the letter A if Ap greater than 6, or marked by the letter K if Ap less or equal 6 and either one Kp value greater than 3 or two Kp values greater than 2+.
+
+A selected disturbed day is considered not really disturbed and marked by an asterisk (*) if Ap less than 20.
+
+## Information on the Musical Diagram
+
+Bartels introduced a musical diagram for a demonstrative presentation of the planetary indices. The musical diagram shows the quantitative values of the Kp . It further enables a quick orientation on the activity by means of the length and the width of the symbols. The repetition of disturbed periods is clearly expressed through the convenient ordering by solar rotations. The musical diagram key is as follows:
+
+## Data products on the FTP server
+
+Note: FTP site may refuse connections due to excessive traffic.
+
+The kp-ap/ directory contains:
+
+readme.txt : ASCII text file, a plain text copy of the Geomagnetic Indices.
+
+music.exe : binary executable for Windows PC. music.exe reads Kp/ap values in WDC format and produces a PostScript file with Bartels Kp music diagram. Download music.exe using binary mode! The data file ssc.dat is also required to run music.exe.
+
+ssc.dat : ASCII data file. List of (storm) sudden commencements (ssc), partly preliminary.
+
+tab/ : Subdirectory. Contains the monthly Kp /ap tables in a simple text format readable for both humans and computers (*.tab). The file tab_fmt.txt provides a format description. The tables distributed by regular mail (PostScript format) are also provided in this directory.
+
+wdc/ : Subdirectory. Contains the monthly (yearly files are found in wdc/yearly/) Kp /ap tables and much more information in condensed tables (ASCII format). The format is nearly identical to the format of Kp /ap tables distributed by the World Data Center A for Solar-Terrestrial Physics. The file wdc_fmt.txt provides a format description. This format does not contain any information on the quiet and most disturbed days as the tables in the tab directory do.
+
+music/ : Subdirectory. Contains the monthly (yearly files are found in music/yearly/) Kp values in the Bartels musical diagram (Postscript format), which is very helpful in visualizing the indices.
+
+quietdst/ : Subdirectory. Contains tables of the quietest and most disturbed days for all months since Jan 1932. (Values since 1900 also supplied, use with caution.)
+
+kp-freq/ : Subdirectory. Contains tables of frequencies of Kp indices.
+
+ap_monyr.ave: ASCII test file. A table with monthly and yearly averages of Ap.
+
+## Literature
+
+Bartels, J., The technique of scaling indices K and Q of geomagnetic activity, Ann. Intern. Geophys. Year 4 , 215-226, 1957
+
+Bartels, J., The geomagnetic measures for the time-variations of solar corpuscular radiation, described for use in correlation studies in other geophysical fields, Ann. Intern. Geophys. Year 4 , 227-236, 1957
+
+Mayaud, P.N., Derivation, Meaning and Use of Geomagnetic Indices, Geophysical Monograph 22 , Am. Geophys. Union, Washington D.C., 1980; for a complete review of the present IAGA indices
+
+M. Menvielle and A. Berthelier, The K-derived planetary indices: description and availability, Rev. Geophys. 29 , 3, 415-432, 1991
+
+Siebert, M., Maßzahlen der erdmagnetischen Aktivität, in Handbuch der Physik, vol. 49 /3, 206-275, Springer, Berlin Heidelberg, 1971; for the description of several indices (in German)
+
+Siebert, M. and J. Meyer, Geomagnetic Activity Indices, in The Upper Atmosphere (Eds. W. Dieminger et al.), 887-911, Springer, Berlin Heidelberg, 1996; for an updated version of the German reference
+
+Rangarajan, G.K. , Indices of magnetic activity, in Geomagnetism, edited by I.A. Jacobs, Academic, San Diego, 1989
+
+Matzka, J., Stolle, C., Yamazaki, Y., Bronkalla, O. and A. Morschhauser, The geomagnetic Kp index and derived indices of geomagnetic activity. Space Weather, https://doi.org/10.1029/2020SW002641 , 2021

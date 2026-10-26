@@ -1,0 +1,66 @@
+{
+  "event_id": "E027",
+  "type": "storm",
+  "class": "intense",
+  "evaluation_role": "intense",
+  "window": {
+    "start": "2017-05-27T12:00Z",
+    "end": "2017-05-29T00:00Z",
+    "hours": 37
+  },
+  "dst": {
+    "min_nT": -146,
+    "min_time": "2017-05-28T07:00Z",
+    "first_below_minus50_time": "2017-05-28T00:00Z",
+    "hours_from_minimum_to_back_above_minus30": 17,
+    "minimum_is_final": true
+  },
+  "drivers": {
+    "bz_min_hourly_nT": -19.7,
+    "bz_min_time": "2017-05-28T00:00Z",
+    "hours_bz_at_or_below_minus5": 14,
+    "vbs_max_mV_per_m": 7.6,
+    "vbs_mean_12h_before_dst_min_mV_per_m": 5.1,
+    "speed_max_km_per_s": 400,
+    "density_max_per_cm3": 56.2,
+    "dynamic_pressure_max_nPa_protons_only": 13.4,
+    "total_field_max_nT": 21.9
+  },
+  "geomagnetic": {
+    "kp_max": 7.0,
+    "noaa_g_level_approx": "G3",
+    "ap_max": 132
+  },
+  "solar": {
+    "f107_mean_sfu": 82,
+    "level": "low"
+  },
+  "hints": [
+    "Intense geomagnetic storm: Dst minimum -146 nT.",
+    "Dst first fell below -50 nT 7 hours before reaching its minimum.",
+    "Dst was back above -30 nT 17 hours after the minimum.",
+    "Kp reached 7.0 (approximately NOAA G3 level).",
+    "Sustained southward Bz: 14 hours at or below -5 nT; minimum hourly Bz -19.7 nT.",
+    "Ordinary solar wind speed: maximum hourly speed 400 km/s.",
+    "High solar wind dynamic pressure: up to 13.4 nPa (protons only).",
+    "Strong solar wind electric field: vBs up to 7.6 mV/m.",
+    "Solar activity low (mean F10.7 82 sfu)."
+  ],
+  "data_quality": {
+    "field_from_dscovr_pct": 100,
+    "plasma_from_dscovr_pct": 100,
+    "plasma_missing_pct": 0,
+    "caveats": [
+      "All values are hourly means in UTC; minute-level extremes are larger.",
+      "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+      "Bz is in GSM coordinates; negative Bz means southward.",
+      "Dst minimum is final."
+    ]
+  },
+  "claims_requiring_a_retrieved_source": [
+    "physical cause of the event (for example a coronal mass ejection or a high-speed stream)",
+    "impacts on satellites, GNSS, radio communication, power grids or aurora",
+    "comparison with, or ranking against, other historical storms",
+    "any forecast or prediction"
+  ]
+}

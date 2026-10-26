@@ -1,0 +1,24 @@
+[project]
+name = "spacewx-rag"
+version = "0.1.0"
+description = "GenAI-Based Multi-Parameter Space Weather Event Analysis and Impact Assessment"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.black]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

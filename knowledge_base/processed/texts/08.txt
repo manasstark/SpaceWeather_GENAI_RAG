@@ -1,0 +1,19 @@
+Satellite communication refers to any communication link that involves the use of an artificial satellite in its propagation path. Satellite communications play a vital role in modern life. There are over 2000 artificial satellites in use. They can be found in geostationary, Molniya, elliptical, and low Earth orbits and are used for traditional point-to-point communications, mobile applications, and the distribution of TV and radio programs. For a brief history of satellite communications see: https://www.britannica.com/technology/satellite-communication​ . For details on communication satellite orbits and satellite communication applications see: https://en.wikipedia.org/wiki/Communications_satellite .
+
+Satellite communications tend to use high frequency signals: Ultra High Frequency (UHF), 300 MHz - 3 GHz and Super High Frequency (SHF), 3 - 30 GHz. Radio signals propagating to and from a satellite in orbit are affected by the environmental conditions along the propagation path. In a vacuum, radio signals propagate at the speed of light, but in the presence of plasma in the ionosphere, the signals are affected by group delay and phase advance and attenuation due to absorption and scintillation. The environment's effect on the signal is frequency dependent and to a first approximation is proportional to the amount of structure in the plasma present along the propagation path.
+
+Due to ionospheric variability (Space Weather), the effects on propagating signals are highly variable. Up to some level, the effects of Space Weather on propagation can be mitigated through engineering design solutions, but space weather can lead to a total loss of communication due to attenuation and/or severe scintillation when the broadcast signals cross the ionosphere. In trans-ionosphere propagation, scintillation refers to the rapid variation of the amplitude and phase of a received signal. Scintillation is produced by structure in the ionosphere. The severity of scintillation depends on the frequency of the used signal and the spatial structure of plasma density and plasma drifts along the propagation path. Specifically, scintillation at the receiver is produced by constructive and destructive interference of refracted and diffracted components of the broadcast signal.
+
+Bibliography
+
+Basu et al., Specification of the occurrence of equatorial ionospheric scintillations during the main phase of large magnetic storms within solar cycle 23, RADIO SCIENCE, VOL. 45, RS5009, doi:10.1029/2009RS004343, 2010.
+
+Bruce R. Elbert, Introduction to Satellite Communications, 3rd ed. (2008).
+
+Virgil S. Labrador and Peter I. Galace, Heavens Fill with Commerce: A Brief History of the Communications Satellite Industry (2005).
+
+Virgil S. Labrador et al., The Satellite Technology Guide for the 21st Century (2008).
+
+Joseph N. Pelton, The Basics of Satellite Communications 2nd ed. (2006).
+
+David J. Whalen, The Origins of Satellite Communications 1945–1965 (2002).

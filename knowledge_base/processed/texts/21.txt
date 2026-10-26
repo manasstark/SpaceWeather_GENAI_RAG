@@ -1,0 +1,127 @@
+Version Definitions of AE and Dst Geomagnetic Indices
+WDC for Geomagnetism, Kyoto
+Original version Oct. 17, 2022
+Updated Oct. 20, 2025
+Note:These definitions can be applied to current procedures for the index calculation but may
+differ from those in the early years.
+1 Version Definition of the Auroral Electrojet (AE) Index
+The fundamental calculation algorithm for the AE index is the same for all versions. The
+primary difference lies in the implementation of visual inspection and correction for higher-level
+versions. The following link describes the calculation method of the AE index (https://wdc.
+kugi.kyoto-u.ac.jp/aedir/ae2/onAEindex.html); however, please note that since December
+2024, we no longer use the average values from the international five quietest days (5QDs) as
+the baseline for the real-time AE index.
+1.1 Real-time AE Index
+The real-time AE index is calculated using real-time geomagnetic field data. The calculation is
+performed automatically every 20 minutes (as of October 2025) for all periods up to the current
+month. Until November 2024, we did not publish digital values of the real-time AE index in
+the standard WDC format. Since December 2024, digital values of the real-time AE index have
+been published with a delay of about three weeks. These digital data have undergone a minimal
+level of quality checking and correction. The digital values can be used for scientific research,
+in addition to monitoring purposes.
+We currently do not use the average values from the 5QDs as the baseline for the real-time
+AE index. Because the 5QDs are published after the end of each month, determining the baseline
+in near real-time with this method is problematic. The baseline is therefore determined on an
+as-needed basis rather than monthly, regardless of whether baseline changes are due to natural
+or artificial variations. For more information about the digital values of the real-time AE index,
+seehttps://wdc.kugi.kyoto-u.ac.jp/ae_realtime/data_dir/00readme.pdf.
+1.2 Provisional AE Index
+The provisional AE index is calculated with a lag of several months. For the calculation, we
+use the highest-level processed field data available at the time (provisional, quasi-definitive, or
+definitive values). The average of geomagnetic data from the international five quietest days
+(5QDs) is used to determine a constant baseline for a given month. Compared to the real-
+time index, more careful data quality checks and corrections are performed. The provisional
+AE index values can be used for scientific analysis, and the digital data are publicly available.
+However, the provisional AE index may be modified if the source field data are updated. In
+such cases, a notification will be published on our website. Currently, the provisional AE index
+is not available for the period from January 1990 onwards, nor for March 1989.
+1
+
+1.3 Final AE Index
+The final AE index is a version for which no future modifications will be made. Final 1-minute
+values are available only for the period from January 1977 to June 1988, and 1-hour values are
+available from July 1957 to June 1988. During these periods, the geomagnetic field data for
+the AE index were digitized from analog magnetograms. As such, the field data used will not
+be updated. Since 1988, the calculation of the final AE index has been on hold. Subsequently,
+field data have been transferred to our center in digital format, making it necessary to calculate
+final AE values from definitive geomagnetic data. However, definitive geomagnetic data are not
+available for some of the recent AE stations. Therefore, we may need to redefine the final AE
+index. Note that before 1976, the AE index was calculated at the Geophysical Institute of the
+University of Alaska and WDC-A for STP in Boulder, not at the WDC for Geomagnetism,
+Kyoto (seehttps://wdc.kugi.kyoto-u.ac.jp/aedir/ae2/onAEindex.htmlfor more details).
+2 Version Definition of the Disturbance Storm Time (Dst) In-
+dex
+There is an important difference in the calculation methods for the real-time/provisional Dst
+and the final Dst, specifically in how the baseline and Sq variation are determined. The basic
+calculation algorithm for the Dst index is described at the following link:https://wdc.kugi.
+kyoto-u.ac.jp/dstdir/dst2/onDstindex.html.
+2.1 Real-time Dst Index
+The real-time Dst index is calculated automatically every 30 minutes (as of October 2025) using
+real-time geomagnetic field data on a monthly basis for the current month. In principle, we do
+not remove artificial noise and baseline offsets. However, manual corrections may be performed
+if these errors are so significant that the calculated index becomes useless even for monitoring
+purposes. Specifically, if a large baseline offset occurs at a particular station, the biased value
+affects the Dst index, resulting in inadequate values.
+For the production of the real-time Dst index, we use the baseline and Sq variation calculated
+from the international five quietest days (5QDs) of the previous month, as the data for the
+current month are not yet available. When recalculating the index for a past month, we use the
+baseline and Sq variation from the 5QDs of that specific month. Note that real-time Dst values
+may be modified frequently. The real-time Dst index is intended for monitoring purposes only
+and not for scientific analysis, but the digital data are publicly available on our webpage. The
+plot of the real-time Dst for a given month is removed from our webpage when the provisional
+Dst values for that month are released.
+Note that the method to determine the baseline and Sq variation for real-time Dst differs
+significantly from the method proposed by Sugiura and Kamei (1991). They suggested modeling
+Sq variations using a double Fourier transform with one year of data (January–December) and
+modeling the long-term secular variation with a second-order polynomial function using data
+from the past five years. However, these methods cannot be used for real-time Dst calculations.
+Instead, we use a simplified method that relies only on the field data from the 5QDs in a single
+month. The sum of the Sq variation and the baseline is determined by averaging the daily
+variation (as a function of local time) over the 5QDs and removing the linear trend. Therefore,
+real-time Dst values may differ significantly from the final Dst values, which are determined
+using the method proposed by Sugiura and Kamei (1991).
+2
+
+2.2 Provisional Dst Index
+The provisional Dst index is generally calculated with a lag of several months. For the calcu-
+lation, we use the highest-level processed field data available at that time (provisional, quasi-
+definitive, or definitive values). The calculation method is the same as that for the real-time
+Dst index, except that manual correction of artificial noise and baseline offsets is performed on
+the original field data. The provisional Dst values can be used for scientific analysis, and the
+digital data are publicly available.
+2.3 Final Dst Index
+The final Dst index is the highest-level version, calculated with a lag of several years, after which
+no further changes will be made. Currently, we use the definitive geomagnetic field data provided
+by INTERMAGNET. These data are reliable, having been corrected both automatically and
+manually, and no additional corrections are made by our center. Unlike the real-time and
+provisional Dst values, the baseline (secular variation) and Sq variation are calculated using the
+method of Sugiura and Kamei (1991). Therefore, calculations are performed on an annual basis
+(January to December). As a general rule, no further updates are made, although recalculation
+may occur under certain circumstances. Please note the caution regarding missing data for the
+index in 2017, 2018, and 2020 (seehttps://wdc.kugi.kyoto-u.ac.jp/dst_final/caution_
+fin_dst_20240724.pdffor more details).
+3 Appendix: Examples of Differences in Values Between Ver-
+sions of the Dst Index
+As an example, we compare the three versions of the Dst index for 2014 (Figure 1). We observe
+that the variations are generally consistent with each other. The real-time and provisional
+values show good agreement because their baseline and Sq variations are determined using the
+same method. Minor differences exist due to variations in noise removal; the magnitude of
+these differences depends on the amount of intense noise in the real-time geomagnetic data and
+whether those errors were corrected (the same applies to the difference between the real-time
+and provisional AE indices).
+In September and December, a substantial discrepancy of about 20–30 nT is observed be-
+tween the provisional and final values. This may be because the baseline for the provisional
+value was determined using data from only that specific month. If the horizontal component of
+the geomagnetic field is lower than usual for an entire month due to a series of magnetic storms,
+the average magnetic field on the 5QDs will also be low. This results in a lower baseline value,
+which can lead to an underestimation of the magnetic storm’s strength. However, the final Dst
+baseline is determined from a longer-term trend, making it less susceptible to large deviations
+caused by temporary declines in the geomagnetic field, even those lasting a month or more.
+References
+[1] Sugiura, M., and T. Kamei (1991), Equatorial Dst-index 1957–1986, in IAGA Bulletin No.
+40, ed. by A. Berthelier, M. Menvielle (ISGI Publ. Off., Saint. Maur-des-Fosses, 1991).
+3
+
+Figure 1: Comparison between final (red), provisional (blue), and real-time (green) Dst values
+in 2014. Data for each month are plotted in each panel.
+4

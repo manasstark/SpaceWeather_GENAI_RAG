@@ -1,0 +1,73 @@
+## National Aeronautics and Space Administration
+
+## Goddard Space Flight Center
+
+Visit NASA.gov
+
+Visit Sun-Earth Day
+
+HOME
+
+GETTING STARTED
+
+FOR EDUCATORS
+
+SPACE WEATHER DATA
+
+## Space Weather Action Center
+
+## Magnetosphere
+
+## Magnetosphere Graph Tutorial:
+
+## Getting to the Data
+
+The easiest way to view this image is by opening the Space Weather Media Viewer . In the 'IMAGES' section select "The Solar Wind" in the small drop-down menu. Next, select the image called, "Magnetosphere Graph-ACE Mission".
+
+## Navigation Tip:
+
+You should see 4 different graphs. Locate and observe the yellow graph labeled 'Bz'. (Each time the yellow line in that graph drops below the dashed white line labeled '0', we know that our magnetosphere has been affected by the solar wind.)
+
+THE ABOVE IMAGE IS NOT LIVE DATA.
+
+## About the Data
+
+When the solar wind and the magnetosphere interact they operate as a system. The Earth's magnetosphere is full of particles from the sun. Depending on the magnetization of the particles in the solar wind the field can be southward (attracting),or northward (repelling) the Earth's field. On the daytime side of the Earth (side of the Earth facing the sun), these fields connect together and cause a transfer of particles and magnetic energy into the Earth's magnetosphere from the solar wind. These changes in the Earth's particles and fields cause severe 'magnetic storms'.
+
+This graph explains the solar wind's effects on Earth's magnetosphere. When the solar wind magnetic field is opposite the Earth's, it is called a southward field and is considered to be negative in sign. You can monitor the ACE data in this graph to identify times when this happens.
+
+## You can use the following levels to determine the intensity of the storm:
+
+Low (0 to -2) Medium (-2 to -4) High (-4 to -6)
+
+## You are viewing a tutorial
+
+Back to Space Weather Data
+
+## Related Tutorials
+
+Kp Index (Estimated Planetary K-index)
+
+Magnetosphere Graph
+
+The above tutorials compliment the downloadable Flip Charts and Data Sheets .
+
+## Additional Tutorials
+
+Tromso, Norway
+
+Alaska
+
+Tixie Bay, Russia
+
+ACE Bz Archive
+
+ACE Solar Wind Archive
+
+Privacy Policy & Important Notices
+
+Contact Us
+
+NASA Official: Alex Young
+
+Curator: Bryan Stephenson

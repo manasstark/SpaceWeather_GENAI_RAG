@@ -1,0 +1,62 @@
+{
+  "event_id": "E105",
+  "type": "quiet",
+  "class": "quiet",
+  "evaluation_role": "quiet",
+  "window": {
+    "start": "2021-12-05T00:00Z",
+    "end": "2021-12-06T23:00Z",
+    "hours": 48
+  },
+  "dst": {
+    "min_nT": -25,
+    "min_time": "2021-12-06T00:00Z",
+    "first_below_minus50_time": null,
+    "hours_from_minimum_to_back_above_minus30": null,
+    "minimum_is_final": false
+  },
+  "drivers": {
+    "bz_min_hourly_nT": -4.4,
+    "bz_min_time": "2021-12-06T15:00Z",
+    "hours_bz_at_or_below_minus5": 0,
+    "vbs_max_mV_per_m": 2.1,
+    "vbs_mean_12h_before_dst_min_mV_per_m": 0.9,
+    "speed_max_km_per_s": 507,
+    "density_max_per_cm3": 11.6,
+    "dynamic_pressure_max_nPa_protons_only": 4.7,
+    "total_field_max_nT": 6.8
+  },
+  "geomagnetic": {
+    "kp_max": 3.0,
+    "noaa_g_level_approx": null,
+    "ap_max": 15
+  },
+  "solar": {
+    "f107_mean_sfu": 79,
+    "level": "low"
+  },
+  "hints": [
+    "Quiet interval: Dst stayed above -30 nT (minimum -25 nT).",
+    "Kp reached 3.0 (below G1).",
+    "No southward Bz at or below -5 nT; minimum hourly Bz -4.4 nT.",
+    "Ordinary solar wind speed: maximum hourly speed 507 km/s.",
+    "Solar activity low (mean F10.7 79 sfu)."
+  ],
+  "data_quality": {
+    "field_from_dscovr_pct": 100,
+    "plasma_from_dscovr_pct": 94,
+    "plasma_missing_pct": 0,
+    "caveats": [
+      "All values are hourly means in UTC; minute-level extremes are larger.",
+      "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+      "Bz is in GSM coordinates; negative Bz means southward.",
+      "Dst is provisional and may be revised by Kyoto."
+    ]
+  },
+  "claims_requiring_a_retrieved_source": [
+    "physical cause of the event (for example a coronal mass ejection or a high-speed stream)",
+    "impacts on satellites, GNSS, radio communication, power grids or aurora",
+    "comparison with, or ranking against, other historical storms",
+    "any forecast or prediction"
+  ]
+}

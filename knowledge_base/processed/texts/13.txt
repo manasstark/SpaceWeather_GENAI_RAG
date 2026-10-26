@@ -1,0 +1,65 @@
+The solar storms of May 2024 were a series of powerful solar storms with extreme solar flares and geomagnetic storm components that occurred from 10 to 13 May 2024 during solar cycle 25 . Different names have been used for the event in different regions, including 2024 Mother's Day Storm , the Gannon storm (after space physicist Jennifer Gannon ), Han Anniversary Storm , and Victory Day Storm . Only a small fraction of the strongest geomagnetic storms of recent decades have acquired names commonly used by the scientific community, and the multiple names assigned to the May 2024 event have prompted calls for a standardized international system for naming space weather events. The geomagnetic storm was the most powerful to affect Earth since March 1989 , and produced aurorae at far lower latitudes than usual.
+
+## Solar flares and coronal mass ejections
+
+On 8 May 2024, a solar active region which had been assigned the NOAA region number 13664 (AR3664) produced an X1.0-class and multiple M-class solar flares and launched several coronal mass ejections (CMEs) toward Earth. On 9 May, the active region produced an X2.25- and X1.12-class flare each associated with a full-halo CME. On 10 May, the region produced an X3.98-class flare, and on 11 May at 01:23 UTC it produced another X-class flare of magnitude 5.4–5.7 with another asymmetrical full-halo CME . The region also caused an S1 solar radiation storm with spikes reaching S2. On 14 May, as the most active region 3664 rotated beyond the sun's western limb, the strongest flare occurred, an X8.7, causing level R3 (strong) radio blackouts.
+
+## Geomagnetic storm
+
+As a result of the interplanetary magnetic field reaching a magnitude of 73 nanotesla (nT), with the component along Earth's magnetic axis oriented south reaching as much as −50 nT , the moderately high solar wind density, and the solar wind speed reaching 750–950 km/s (470–590 mi/s) between 11 and 12 May (UTC time), the event was classified as a G5-class geomagnetic storm ( K p = 9), making it the most intense storm since the 2003 Halloween solar storms . Several other CMEs were expected to reach Earth on 11 and 12 May. In the Mediterranean sector, geomagnetic observatories in Italy recorded the storm sudden commencement (SSC) on 10 May, with a rise time of about three minutes and a maximum magnetic-field variation of approximately 600 nT. The storm also caused substantial ionospheric disturbances across the region, which were observed through networks of magnetometers, ionosondes and GNSS receivers.
+
+## Comparison to other geomagnetic storms
+
+The disturbance storm time index (Dst index) is a measure in the context of space weather. A negative Dst index means that Earth's magnetic field is weakened. This is particularly the case during solar storms, with a higher negative Dst index indicating a stronger solar storm.
+
+The 2003 Halloween solar storms had a peak Dst index of −383 nT, although a second storm on 20 November 2003 reached −422 nT while not reaching G5-class. The March 1989 geomagnetic storm had a peak Dst index of −589 nT, while the May 1921 geomagnetic storm has been estimated to have had a peak Dst index of −907 ± 132 nT . Estimates for the peak Dst index of the Carrington Event superstorm of 1859 are between −800 nT and −1750 nT .
+
+The May 2024 solar storms reached a peak Dst index of −412 nT at 03:00 UTC on 11 May. Some readings indicated a peak Dst index of −518 nT .
+
+The A p -index of 11 May 2024 was 271, higher than the A p -indexes of 13 and 14 March 1989, significantly higher than the A p -indexes of 29 and 30 October and 20 November 2003, and the second-highest ever recorded, after the A p -index of 13 November 1960, which was 280.
+
+The May 2024 solar storms, whilst being the most significant in several decades, have been shown to have a return period of 12.5 years . Based on the rolling-Ap index (rAp), the trailing mean of the ap-index which can be used as a proxy for the duration of geomagnetic storms , the event was a 1-in-41 year event with only the geomagnetic storm of September 1941 having more significant activity over a 24 hour period.
+
+## Aurora sightings
+
+Three CMEs from 8 May reached Earth on 10 May 2024, causing severe to extreme geomagnetic storms with bright and very long-lasting aurorae.
+
+In North America , aurorae were seen across the United States as far south as the Florida Keys , as well as from the Yucatán Peninsula in Mexico , The Bahamas , Jamaica , and Puerto Rico . The aurora was also seen in Hawaii .
+
+Aurorae were seen across Europe from as far south as Ireland , Portugal , Spain , and Sardinia . Aurorae were also visible in Algeria and the Canary Islands in Africa .
+
+In Asia , aurorae could be seen from Turkey , Cyprus , Iran , Japan , northern India , South Korea , and across northern China , including near the cities of Urumqi and Beijing .
+
+In Australia , aurorae were seen as far north as Townsville and Mackay in Queensland , and Karratha in Western Australia , while in the rest of the Southern Hemisphere aurorae were seen in New Zealand , Chile (strongest in the Magallanes Region like Puerto Williams or Torres del Paine , and as far north as Concepción ), Argentina , South Africa , and as far north as New Caledonia , Uruguay , southern Brazil , and Namibia .
+
+While aurorae were able to be seen on camera from many locations across the globe, at locations farther away from the poles where the aurora is less bright, the aurora can often appear desaturated , achromatic , or even invisible to the naked eye as a result of the Purkinje effect .
+
+Camera technology has improved since the last G5-class geomagnetic storm in 2003 , with even standard cell phone cameras having enough sensitivity to pick up the colours of an aurora. Consequently, images of aurorae were spread widely across social media , with much public excitement being generated during the event. The ability to document aurorae at such a wide scale has provided a large opportunity to learn more about the phenomenon. Several citizen science research projects have been underway to make use of the auroral images taken by the public during the storm.
+
+## Impact
+
+The storm compressed the Earth's subsolar magnetopause from higher than 10 R E down to 5 R E .
+
+Significant geoelectric fields were generated across Europe during the sudden commencement of the geomagnetic storm , with notable amplitudes extending into mid- to low-latitude regions (~57° N), which is unusual for such strong responses. However, the spatial distribution was not uniform: the results indicate that the inclination of the CME-driven shock and magnetosphere–ionosphere coupling processes led to stronger geoelectric fields at higher latitudes, while mid-latitude regions still experienced substantial but more variable responses.
+
+The storm negatively affected ground-based broadcasting and two-way radio communications, especially on the HF band and to a lesser extent the VHF and UHF bands, because it increased the density of the D layer of the ionosphere , causing absorption and thus interfering with propagation .
+
+In Canada, power companies BC Hydro and Hydro-Québec stated that they had prepared for the storm, and monitored it as its ejecta struck Earth on 10–11 May. Unlike in 1989 where a previous solar storm caused a nine-hour long power outage in Québec , no outages were reported as a result of the storm's effects.
+
+In New Zealand, Transpower declared a grid emergency, and took some transmission lines out of service as a precaution against the storm.
+
+In the United States, telecommunications companies AT&T and T-Mobile stated that they were prepared to respond to disruptions in their networks, but it was predicted that significant impacts to cell service were unlikely because the networks rely on different frequencies than the HF bands affected by the solar storm. While the National Oceanic and Atmospheric Administration (NOAA) reported that there were power grid irregularities and degradation in GPS and high-frequency radio communications, both the Federal Emergency Management Agency (FEMA) and the United States Department of Energy reported no significant impacts to the population.
+
+Agricultural users of John Deere RTK GPS equipment reported significantly degraded positional accuracy during the geomagnetic storm. As the GPS receivers are used to guide tractors in precision agriculture , certain agricultural workers were forced to suspend planting activities entirely. Affected farms lost an estimated US$17,000 each.
+
+University of Victoria researchers discovered that the geomagnetic storm triggered compasses in sub-sea observatories deployed as deep as 2.7 km under the ocean's surface.
+
+Some aerial drone users flying during the storm experienced unusual behavior, including difficulty maintaining a stable hover, disruption of GPS signals, and in some cases a sudden loss of control which resulted in a crash. Drones rely on GPS and magnetic signals to maintain position during flight, which are affected by geomagnetic activity.
+
+At 00:19 UTC on 13 May, the GOES-16 satellite, the primary operational geostationary weather satellite in the GOES East position, providing a view centered on the Americas, stopped transmitting all data. The transmission of data resumed nearly 2 hours later at 02:00 UTC. There was a second loss of data transmission shortly after, lasting 11 minutes from 03:19 UTC to 03:30 UTC.
+
+Other impacts to satellite services include Starlink 's fleet of low-orbiting satellites, which experienced degraded service because of the intensity of the solar storms, but remained operational. The extreme geomagnetic storm accelerated the re-entry of a Starlink satellite by approximately 11 days with respect to a reference altitude. About half of the ~10,000 LEO payloads—mostly Starlink satellites—performed a coordinated large-scale maneuver during the May 2024 event, the largest satellite migration on record.
+
+The storm caused electrical problems for ESA 's Gaia spacecraft .
+
+## Gallery

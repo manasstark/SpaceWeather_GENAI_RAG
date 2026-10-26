@@ -1,0 +1,1493 @@
+The Solar and Geomagnetic Storms in 2024 May: A Flash Data Report
+Hisashi Hayakawa 1,2,3,4 , Yusuke Ebihara 5,6 , Alexander Mishev 7,8, Sergey Koldobskiy 7,8 , Kanya Kusano 1 ,
+Sabrina Bechet 9 , Seiji Yashiro 10,11 , Kazumasa Iwai 1 , Atsuki Shinbori 1, Kalevi Mursula 8 , Fusa Miyake 1 ,
+Daikou Shiota1,12 , Marcos V. D. Silveira 13, Robert Stuart14, Denny M. Oliveira 11,15, Sachiko Akiyama10,11 , Kouji Ohnishi16 ,
+Vincent Ledvina 17 , and Yoshizumi Miyoshi 1
+1 Institute for Space-Earth Environmental Research, Nagoya University, Nagoya, Japan; hisashi@nagoya-u.jp
+2 Institute for Advanced Research, Nagoya University, Nagoya, Japan
+3 Space Physics and Operations Division, RAL Space, Science and Technology Facilities Council, Rutherford Appleton Laboratory, Harwell Oxford, Did cot, UK
+4 Astro-Glaciology Laboratory, Riken Nishina Centre, Wako, Japan
+5 Research Institute for Sustainable Humanosphere, Kyoto University, Uji, Japan
+6 Unit of Synergetic Studies for Space, Kyoto University, Kyoto, Japan
+7 Sodankylä Geophysical Observatory, University of Oulu, Oulu, Finland
+8 Space Physics and Astronomy Research Unit, University of Oulu, Oulu, Finland
+9 Royal Observatory of Belgium, Brussels, Belgium
+10 The Catholic University of America, Washington, DC, USA
+11 NASA Goddard Space Flight Center, Greenbelt, MD, USA
+12 National Institute of Information and Communications Technology, Japan
+13 University of São Paulo, Lorena School of Engineering, Lorena, Brazil
+14 Newtown Astronomical Society, Rhayader, UK
+15 Goddard Planetary Heliophysics Institute, University of Maryland, Baltimore County, Baltimore, MD, USA
+16 Faculty of Liberal Arts, Department of Engineering, National Institute of Technology, Nagano College, Nagano, Japan
+17 Geophysical Institute, University of Alaska Fairbanks, Fairbanks, AK, USA
+Received 2024 July 9; revised 2024 November 8; accepted 2024 November 8; published 2025 January 16
+Abstract
+In 2024 May, the scienti ﬁc community observed intense solar eruptions that resulted in a great geomagnetic storm
+and auroral extensions, highlighting the need to document and quantify these events. This study mainly focuses on
+their quanti ﬁcation. The source active region (AR; NOAA Active Region 13664 ) evolved from 113 to 2761
+millionths of the solar hemisphere between May 4 and 14. NOAA AR 13664 ’s magnetic free energy surpassed
+1033 erg on May 7, triggering 12 X-class ﬂares on May 8 –15. Multiple interplanetary coronal mass ejections
+(ICMEs) were produced from this AR, accelerating solar energetic particles toward Earth. According to satellite
+and interplanetary scintillation data, at least four ICMEs erupted from AR 13664, eventually overcoming and
+combining each other. The shock arrival at 17:05 UT on May 10 signi ﬁcantly compressed the magnetosphere
+down to ≈5.04 RE and triggered a deep Forbush Decrease. GOES satellite data and ground-based neutron monitors
+conﬁrmed a ground-level enhancement from 2 UT to 10 UT on 2024 May 11. The ICMEs induced exceptional
+geomagnetic storms, peaking at a provisional Dst index of −412 nT at 2 UT on May 11, marking the sixth-largest
+storm since 1957. The AE and AL indices showed great auroral extensions that located the AE /AL stations into
+the polar cap. We gathered auroral records at that time and reconstructed the equatorward boundary of the visual
+auroral oval to 29 °. 8 invariant latitude. We compared naked-eye and camera auroral visibility, providing critical
+caveats on their difference. We also con ﬁrmed global disturbances of the storm-enhanced density of the
+ionosphere.
+Uniﬁed Astronomy Thesaurus concepts: Solar storm (1526); Solar ﬂares (1496); Solar coronal mass ejections
+(310); Solar active regions (1974); Sunspot groups (1651); Cosmic rays (329); Solar particle emission (1517);
+Geomagnetic ﬁelds (646); Aurorae (2192); Earth ionosphere (860); Planetary magnetospheres (997)
+1. Introduction
+Sunspot active regions occasionally direct interplanetary
+coronal mass ejections (ICMEs) to the Earth, disrupting near-
+Earth space environments, altering cosmic ray radiation
+levels, perturbing terrestrial magnetic ﬁelds, and extending the
+auroral oval equatorward (T. Pulkkinen 2007; M. Temmer
+2022; E. W. Cliver et al. 2022;K .K u s a n o2023;I .G .U s o s k i n
+2023). Empirical evidence suggests that such solar eruptions
+occur more often in larger solar cycles, especially in their
+maximum and declining phase, although the maximum
+magnitude of the solar eruption is not necessarily dependent
+on the amplitude of the host solar cycle (E. K. J. Kilpua et al.
+2015; L. Lefèvre et al. 2016; S. C. Chapman et al. 2020;
+M. J. Owens et al. 2022; S. C. Chapman & T. Dudok de
+Wit 2024). Such solar eruptions occasionally cause signi ﬁcant
+terrestrial impacts, such as great geomagnetic storms and
+increases of charged particle ﬂux throughout the atmospheric
+proﬁle, leading to an increased count rate of ground-based
+particle radiation detectors. These increases are known as
+ground-level enhancements (GLEs; E. W. Cliver et al. 2022;
+I. Usoskin et al. 2023). Extending analyses to the extremity of
+solar eruptions and their terrestrial consequences is essential to
+bridge modern scienti ﬁc data with past supersized events,
+develop statistical analyses, and understand impacts on terrestrial
+infrastructure (I. A. Daglis 2001; D. N. Baker et al. 2008;
+
+© 2025. The Author (s). Published by the American Astronomical Society.
+Original content from this work may be used under the terms
+of the Creative Commons Attribution 4.0 licence . Any further
+distribution of this work must maintain attribution to the author (s) and the title
+of the work, journal citation and DOI.
+1
+
+C. D. Beggan et al. 2013; P. Riley et al. 2018;F .M i y a k ee ta l .
+2019; R. T. Desai et al. 2020; M. Hapgood et al. 2021;
+K. Kusano 2023; I. Usoskin et al. 2023).
+In this context, the last solar cycle, Solar Cycle 24 (from
+2008 December to 2019 December ), was notably quiet in terms
+of disturbances in the solar –terrestrial environments (S. Watari
+2017; V. Manu et al. 2022). This solar cycle marked the lowest
+amplitude in sunspot number in the the 20th to 21st centuries
+since Solar Cycle 14 in 1902 January –1913 July (F. Clette et al.
+2023). Solar Cycle 24 witnessed up to X14.8 in 2017
+September in the revised scale (Table 7 of H. Hudson et al.
+2024), geomagnetic storms reached a minimum Dst = −234 nT
+in 2015 March (N. Gopalswamy et al. 2015, 2024;Y .D .L i u
+et al. 2015; World Data Centre for Geomagnetism at Kyoto
+et al. 2015a; M. Piersanti et al. 2017; D. Webb & N. Nitta
+2017), and hosted only two GLEs in 2012 May and 2017
+September (A. L. Mishev et al. 2014, 2018; I. Usoskin et al.
+2020).
+The current solar cycle, Solar Cycle 25, commenced in 2019
+December. Predictions suggest that this cycle may be either as
+quiet as or slightly more active than Solar Cycle 24 (P. Bhowmik
+&D .N a n d y 2018; W. D. Pesnell & K. H. Schatten 2018;
+S. W. McIntosh et al. 2020;K .M u r s u l a2023; L. A. Upton &
+D. H. Hathaway 2023; F. Clette et al. 2024), whereas lessons
+from the previous cycle caution us to closely monitor how these
+forecasts align with the actual temporal evolution of the sunspot
+number (W. D. Pesnell 2016, 2020). Despite these predictions,
+Solar Cycle 25 has shown increased activity compared to Solar
+Cycle 24 in terms of disturbances in terrestrial environments
+(D. Oliveira et al. 2024). Even prior to reaching its maximum,
+Solar Cycle 25 has already witnessed one severe geomagnetic
+storm (with a minimum Dst below −200 nT according to the
+classic classiﬁcation of C. A. Loewe & G. W. Prölss 1997) in
+2023 April, reaching a minimum Dst of −213 nT (L. Li &
+S. Jin 2024), and one GLE in 2021 October (A. L. Mishev et al.
+2022; A. Papaioannou et al. 2022; K.-L. Klein et al. 2022).
+In 2024 May, Solar Cycle 25 witnessed the emergence of a
+signiﬁcant sunspot active region, triggering multiple solar
+eruptions and leading to a GLE and a substantial geomagnetic
+storm. Notably, this geomagnetic disturbance reached −412 nT
+in the provisional Dst index, which is classi ﬁed as a “great”
+storm (min Dst < −350 nT) according to C. A. Loewe &
+G. W. Prölss (1997) and ranked as the sixth greatest in the Dst
+index starting from 1957 and the ninth greatest in the Dxt index
+starting from 1932 (A. Karinen & K. Mursula 2005; WDC for
+Geomagnetism at Kyoto et al. 2015a; K. Mursula et al. 2022).
+This geomagnetic storm extended auroral displays to lower
+magnetic latitudes (e.g., S. Ghosh 2024; M. Greshko 2024;
+D. K. Karan et al. 2024). This solar and geomagnetic storm has
+attracted the scienti ﬁc community to start analyses on several
+aspects such as their solar radio bursts (O. Kruparova et al.
+2024), geomagnetic impacts in the Kp index and HPO index
+(Y. Yamazaki et al. 2024), local geomagnetic and ionospheric
+impacts around Italy (L. Spogli et al. 2024), auroral imageries,
+and resultant satellite drags (W. E. Parker & R. Linares 2024).
+Obviously there are more to come.
+This solar –terrestrial storm serves as a valuable reference
+point for connecting modern scienti ﬁc data with past great
+storms, particularly regarding geomagnetic impacts. Therefore,
+it is valuable to have a ﬂash global overview of this solar and
+geomagnetic storm on the basis of what is available in the
+immediate aftermath. Here, we quantify observational data sets
+from this solar–terrestrial storm to facilitate further analysis and
+discussions regarding this exceptional event and to contextua-
+lize it with historical great storms.
+2. The Source Solar Eruptions
+This event occurred in an ascending phase —or near the
+maximum—of SC25. The daily sunspot number (F. Clette et al.
+2023) signiﬁcantly increased on May 2, reaching 187 on May 6
+and 186 on May 12. At the time of writing, some predictions
+place the expected maximum from late 2024 to early 2025
+(S. W. McIntosh et al. 2020; L. A. Upton & D. H. Hathaway
+2023; F. Clette et al. 2024).
+A new active region (AR), known as NOAA Active Region
+13664 according to the NOAA /SWPC region number, came
+into the southeastern limb of the visible side of the solar disk on
+May 1. Its temporal and spatial evolutions were documented in
+sunspot drawings and images in several observatories, such as
+the Royal Observatory of Belgium using the Uccle Solar
+Equatorial table (USET) telescopes (S. Bechet & F. Clette
+2022). This sunspot group started as a bipolar group, with two
+penumbrae and some intermediate sunspots in between. This
+active region developed rapidly from May 3 –7 and crossed the
+central meridian on May 7. The area measured from the USET
+sunspot drawing with the Digi Sun software (e.g., F. Clette
+2011; H. Hayakawa et al. 2023a) was 1312 millionths of the
+visible solar hemisphere (hereafter MSH ). This group was still
+growing and developed into a Fkc McIntosh type, consisting of
+several moderately sized penumbral sunspots. This group
+continued to grow until May 9 up to an area of 2761 MSH,
+consisting of a compact penumbra containing most of the spots,
+as shown in the sunspot drawing and white-light image
+(Figure 1). The area remained relatively stable for a period
+before rotating over the limb on May 14. The evolution of the
+group area, as measured from sunspot drawings, is illustrated in
+Figure 2, showing a rapid increase until May 10.
+The unsigned magnetic ﬂux constantly increased from May
+7 to 1.9 × 1023 Mx before it reached the west limb. We
+extrapolated the nonlinear force-free ﬁeld (NLFFF; S. Inoue
+et al. 2014) of this AR using near-real-time data of the
+photospheric vector magnetic ﬁeld from the Spaceweather HMI
+Active Region Patch (SHARP) near-real-time (NRT) data set
+(M. G. Bobra et al. 2014). Figure 2 shows the magnetic free
+energy, which is de ﬁned as the difference between the volume-
+integrated magnetic energy of the NLFFF and the potential
+magnetic ﬁeld. We can see that the magnetic free energy
+increased before the M-class ﬂares on May 2 and quickly grew
+on May 7 to ≈1033 erg before the consecutive X-class ﬂares
+(Figure 2 and Table 1). The maximum values of the unsigned
+magnetic ﬂux and magnetic free energy are as large as those of
+AR NOAA 12192, which provides the largest sunspot area,
+unsigned ﬂux, and magnetic free energy in SC 24 (K. Karimov
+et al. 2024).
+Figure 3 shows the distribution of the radial magnetic ﬁeld
+and the contours of nonpotential magnetic ﬁeld intensity
+|B-Bp| = 1000 G (green surfaces ), where B and Bp are the
+magnetic ﬁelds from the SHARP-NRT data and the potential
+magnetic ﬁeld. Red lines are the magnetic ﬁeld lines of force
+for the nonlinear force-free ﬁeld extrapolated by the magneto-
+hydrodynamic (MHD) relaxation method (S. Inoue et al. 2014).
+The notable feature of this region is the presence of several
+high free energy regions (HiFERs) where the nonpotential ﬁeld
+intensity exceeds 1000 G. Likely, the large free energy and the
+2
+
+complex structure of the HiFERs distribution may cause
+consecutive large ﬂares (K. Kusano et al. 2020).
+Eventually, this active region hosted 12 X-class ﬂares from
+May 1 to 15 (Table 1 and Figure 2). Most of these were
+produced during transit over the visible solar hemisphere, while
+four were produced after the AR went over the western limb
+onto the far side. This AR produced a ﬂare as great as X8.7.
+Even though the ﬂare partially occurred on the western limb,
+this was the largest solar ﬂare in the current solar cycle (SC25)
+at the time of writing at that time. Obviously there is more to
+come in this solar cycle, as exempli ﬁed by the X9.0 ﬂare from
+NOAA AR 13842 on October 3. Figure 2 shows the soft X-ray
+ﬂux continuously above the M1 level from May 8 to 12.
+3. Coronal Mass Ejections
+These solar eruptions of 2024 May released a considerable
+number of CMEs. From 2024 May 5 to 15, the Large Angle
+Spectroscopic Coronagraph (LASCO) observed at least 19
+major CMEs (width 60°), including 10 halo CMEs, which
+were produced by NOAA AR 13664 according to the data set
+being prepared by Gopalswamy ’s team. The calibrated LASCO
+data became available in 2024 August in the Coordinated Data
+Analysis Workshop (CDAW) for creating the CME Catalog
+(S. Yashiro et al. 2004, N. Gopalswamy 2009).
+We have identiﬁed the CME that was most likely responsible
+for inducing the space environment disturbances observed near
+the Earth on May 11 with one (X1.0 at 22:36 UT ) on May 8
+that occurred in quick succession. The Solar Dynamics
+Observatory/Atmospheric Imaging Assembly (SDO/AIA;
+J. R. Lemen et al. 2012) observed the eruptive features in
+both ﬂares. However, only a single halo CME was observed at
+22:36 UT (#2 in Table 1, hereafter referred to as CME2 ),a s
+shown in Figure 4. The two eruptions observed in the AIA
+likely merged before reaching the ﬁeld of view of LASCO C2.
+The projected speed of CME2 was 952 km s −1 and if it traveled
+at this speed without any deceleration /acceleration, it would
+have reached Earth at ≈17:33 UT on May 10 (Table 1). While
+this is slightly later than the actual CME arrival of 17:05 UT on
+May 10, this offset shows a considerably good agreement in
+contrast with the usual error margins (up to ±8t o ±12 hr) of
+the CME arrival time predictions (N. Gopalswamy et al.
+2001, 2005, Y. Zhong et al. 2024). In several cases, CMEs
+propagate earthward faster than expected from their apparent
+propagation speed measured in coronagraphs. In such cases,
+the actual arrival time comes earlier than the estimated arrival
+time. Based on these ﬁndings, we believe that CME2 was
+associated with the sudden storm commencement (SSC) at
+17:05 UT on May 10. This estimated arrival time indicated that
+CME2 likely stacked on CME1 (#1 in Table 1). Additionally,
+two more halo CMEs were observed, which were associated
+with M-class ﬂares (Table 2) produced by NOAA AR 13664.
+CME2 likely collided and stacked upon the three preceding
+CMEs originating from the same AR, resulting in a complex
+CME structure, as discussed later. Therefore, the great
+geomagnetic storm of 2024 May 10 –11 is not associated with
+a single fast CME but with a complex accumulation of multiple
+CMEs and southward interplanetary magnetic ﬁelds (IMFs).
+Subsequently, the AR produced more halo CMEs upon
+those, including two major ﬂares (X1.1 at 09:24 on May 9 and
+X3.8 at 07:12 on May 10 ) launched CMEs at similar speeds
+(1226 and 1006 km s −1) and another (X5.8 at 01:36 on May
+11) launched a faster CME (1512 km s−1), as shown in
+Figure 4. These CMEs probably arrived on Earth at ≈9:00
+UT on May 12. This small difference between the observed and
+estimated arrival times, as indicated in Table 1, may imply that
+the preceding CME sequence cleared the interplanetary space,
+Figure 1. Sunspot drawing in a projected image and white-light image on 2024 May 7, as recorded with Uccle Solar Equatorial table telescopes in the Royal
+Observatory of Belgium (in a projected image ). NOAA 13664 is located close to the central meridian.
+3
+
+thereby allowing subsequent CMEs to propagate without
+signiﬁcant deceleration (Y. D. Liu et al. 2014, 2019;
+D. Shiota & R. Kataoka 2016; M. Temmer et al. 2017;
+R. T. Desai et al. 2020). Additionally, the solar wind remained
+compressed owing to these CMES, resulting in a prolonged
+geomagnetic storm.
+CMEs are typically faster or slower than their measured
+projected velocity, owing to the propagation process in the
+interplanetary space and their actual 3D structure. This is
+because the measured projected velocity, which is based on
+transverse expansion speed, is not necessarily equal to the
+propagation speed in the Sun –Earth direction. The difference in
+the speeds depends on the shape of the CME. Therefore, the
+actual arrival time mostly varies from the estimated arrival
+time, as indicated in Table 1. Furthermore, NOAA AR 13664
+produced multiple CMEs at signi ﬁcantly different speeds over
+several days. Therefore, the relationship between the CMEs
+observed through coronagraphs and the CME structures
+observed in situ can be considerably more complex. To
+interpret this relationship, magnetohydrodynamic (MHD)
+simulations of multiple CME propagations should be further
+analyzed. Our results are considerably different from Spogli
+et al. (2024), who used the CME speeds automatically obtained
+from CACTus (E. Robbrecht & D. Berghmans 2004; E. Rob-
+brecht et al. 2009) and associated the solar eruptions on May
+9–11 with this great geomagnetic storm. The CACTus median
+speeds are generally lower than manual measurements, and
+their maximum speeds are occasionally extremely high (e.g.,
+Figure 14 of E. Robbrecht and D. Berghmans 2004). Owing to
+their complexity, in-depth analyses of the interplay between
+CMEs are currently underway by Daikou Shiota ’s team.
+Radio emissions from sources from the outside of the solar
+system can be scattered when CMEs cross the line of sight
+during observation and are detected as interplanetary scintilla-
+tions (IPS). IPS observations have been used to study CMEs in
+the interplanetary space between the Solar and Heliospheric
+Figure 2. Temporal evolutions of the NOAA AR 13664 in millionths of the visible solar hemisphere (MSH) based on the USET measurements, GOES-16 X-ray
+ﬂuence in 0.5 –4.0 Å and 1.0 –8.0 Å, as derived from the NOAA web portal, and the magnetic energy of the active region NOAA 13664 as a function of the day of
+2024 May. E, Ep, and Efree are the total energy of the nonlinear force-free ﬁeld, the potential magnetic ﬁeld, and the free magnetic energy (E–Ep).
+4
+
+Observatory (SOHO) coverage and the geospace space
+satellites located around L1. In this study, we analyzed the
+IPS observational data from early May measured by the ISEE,
+Nagoya University, at 327 MHz (M. Tokumaru et al. 2011).
+Immediately before the shock reached Earth, an increasing
+number of large-amplitude IPS responses were observed from
+May 8 to 10, as shown in Figure 5. It is evident that large-
+amplitude IPS responses were detected across numerous radio
+sources, particularly in the line of sight in the direction of large
+solar separation angles, where these CMEs were expected to be
+situated. IPS response enhancements can be associated with
+high-density regions where fast-propagating CMEs accumulate
+background solar winds (K. Iwai et al. 2019, 2021). Multiple
+CME mergers can enhance the compression of the solar wind
+plasma (C. Scolini et al. 2020). Notably, G. J. Koehn et al.
+(2022) tried a parametric study on this phenomenon and
+Figure 3. The distribution of the magnetic ﬁeld of NOAA AR 13664 at 06:00 UT on 2024 May 10, just before the X3.9 ﬂare. The gray-scale background indicates the
+radial magnetic ﬁeld (Bz [G]), and the green surface is the contour of 10 3 G for the nonpotential ﬁeld intensity, corresponding to HiFERs. Red lines show selected
+magnetic ﬁeld lines of the nonlinear force-free ﬁeld.
+Table 1
+Summary of the CMEs from NOAA AR 13664 Based on the SOHO /LASCO Data Based on their Calibration in 2024 August
+ID GOES Peak Time GOES Class Location CME Speed Travel Time * Arrival Time *
+1 2024-05-08 05:09 X1.0 S22W11 530 78:49 05 –11 11:58
+2 2024-05-08 21:40 X1.0 S20W17 952 43:53 05 –10 17:33
+3 2024-05-09 09:13 X2.2 S20W24 1280 32:38 05 –10 17:51
+4 2024-05-09 17:44 X1.1 S17W28 1024 40:48 05 –11 10:32
+5 2024-05-10 06:54 X3.9 S17W34 953 41:31 05 –12 00:25
+6 2024-05-11 01:23 X5.8 S17W44 1614 25:53 05 –12 03:16
+7 2024-05-11 11:44 X1.5 S19W60 No CME KK
+8 2024-05-12 16:26 X1.0 S20W75 No CME KK
+9 2024-05-14 02:09 X1.7 S17 WL 805 KK
+10 2024-05-14 12:55 X1.2 S17 WL 749 KK
+11 2024-05-14 16:51 X8.7 S18 WL 2010 KK
+12 2024-05-15 08:37 X3.4 S18 WL 1648 KK
+Note. The ﬂare magnitudes and source locations are derived from the Event Archives of Solar Software of the Lockheed Martin Solar & Astrophysics Laboratory,
+with a minor modi ﬁcation for the location of the limb eruptions. We have annotated the longitude of the limb ﬂares on the western limb as WL, in contrast with the
+Event Archives of Solar Software. The CME (coronal mass ejection ) speeds in km s −1 are derived from the Solar and Heliospheric Observatory /Large Angle
+Spectroscopic Coronagraph (SOHO/LASCO) data set that is in preparation under Nat Gopalswamy ’s team. Their travel time (in hh:mm ) and arrival time are
+estimated under the assumption of no deceleration of the CME speed in the ﬁfth column as measured in the SOHO /LASCO data. This is an unrealistic assumption
+with a large error margin, as CMEs do not slow down much, only in extreme preconditioning cases. We estimated travel time and arrival time for CMEs origi nating
+from the central meridian (<|45|°from the central meridian ).
+5
+
+showed how two CMEs with velocities of 500 and
+1500 km s−1 could combine to produce a great geomagnetic
+storm of minimum Dst of ≈− 400 nT (Figure 10 of
+G. J. Koehn et al. 2022). This is similar to what happened in
+2024 May. Furthermore, CME compression can generate
+intense radio scattering if a region of concentrated density
+disturbance is created (Equation 1 of K. Iwai et al. 2019;
+A. T. Young 1971). This may support our aforementioned
+discussion of the CME –CME interactions. Further in-depth
+analyses are in preparation by Kazumasa Iwai ’s team.
+4. Cosmic Ray Variations in Near-Earth Space and on the
+Ground
+To monitor the cosmic ray intensity around this solar –
+terrestrial storm, we gathered proton ﬂux data from the eastern
+Figure 4. Examples of halo CMEs produced by NOAA AR 13664, as observed by LASCO C2 (G. E. Brueckner et al. 1995) from 22:08 to 23:16 UT on 2024 May 8
+(left) and 02:00 –02:03 UT on 2024 May 11 (right). Image courtesy of the CDAW of NASA.
+Table 2
+Major CMEs Produced by NOAA AR 13664, as Observed by the Large Angle Spectroscopic Coronagraph (LASCO)
+Date CME Start Time CME Speed CME WD Flare Start Time Flare Class Location NOAA
+(UT)( km s−1)( °)( UT)( GOES Class )
+2024-05-05 15:36 353 157 14:12 C7.5 S20E19 13664
+2024-05-07 04:48 311 56 02:59 C9.5 S21E05 13664
+2024-05-08 02:24 358 169 02:16 M3.4 S17W04 13664
+2024-05-08 05:36 530 360 04:37 X1.0 S22W11 13664
+2024-05-08 12:24 677 360 11:26 M8.7 S20W17 13664
+2024-05-08 22:36 952 360 21:08 X1.0 S20W17 13664
+2024-05-09 09:24 1280 360 08:45 X2.2 S20W26 13664
+2024-05-09 12:24 563 53 11:52 M3.1 S16W40 13664
+2024-05-09 19:18 1024 360 17:23 X1.1 S14W28 13664
+2024-05-10 07:12 953 360 06:27 X3.9 S17W34 13664
+2024-05-11 01:36 1614 360 01:10 X5.8 S15W45 13664
+2024-05-11 16:12 846 93 14:46 M8.8 S15W49 13664
+2024-05-13 09:12 1690 360 08:48 M6.6 S20W81 13664
+2024-05-14 01:48 331 63 01:23 M2.6 S17W88 13664
+2024-05-14 02:24 805 172 02:03 X1.7 S19W88 13664
+2024-05-14 13:00 749 78 12:40 X1.2 S17W92 13664
+2024-05-14 17:00 2010 360 16:46 X8.7 S18W96 13664
+2024-05-15 08:36 1648 360 08:13 X3.5 S18W98 13664
+2024-05-15 10:48 1024 194 09:47 M3.6 WL 13664
+2024-05-15 21:18 1355 360 20:30 C5.2 WL 13664
+Note. These data were obtained from the data set being prepared by Nat Gopalswamy ’s team. The table presents the dates, start times in Universal Time (UT), speed,
+and angular width (WD) of the CMEs, as well as the ﬂare start times, GOES X-ray classes, location, and NOAA AR numbers for the solar sources. The values were
+updated after a calibration conducted in 2024 August. We have annotated the limb eruption in the western limb as WL (western limb) to annotate their source location.
+6
+
+and western monitors of the Solar and Galactic Proton Sensor
+(SGPS) on board the GOES-16 satellite (B. T. Kress et al. 2021)
+downloaded from the NOAA data portal. We also acquired
+ground-based neutron monitor records from high-latitude
+regions, namely those of Oulu (Oulu in Finland), THUL (Thule
+in Greenland ),S O P O (South Pole in Antarctica ),a n dM W S N
+(Mawson in Antarctica), from the Oulu neutron monitor website
+and the Neutron Monitor Database, as summarized in the
+International GLE Database (I. Usoskin et al. 2020). These data
+are shown in Figure 6 with their source URLs.
+During the period under investigation in this study, speciﬁcally
+on 2024 May 10 –11, we observed a signi ﬁcant variation in
+cosmic ray activity. Corresponding to the arrival of CMEs at
+17:05 UT, as shown by the SSC in the Kakioka Observatory
+(Kakioka Magnetic Observatory et al. 2013; see details in
+Section 6),as i g n iﬁcant Forbush Decrease(S. E. Forbush 1937) in
+cosmic ray intensities was observed in all available data sets with
+different cutoff rigidities. The maximum decrease in the neutron
+monitor count rate of magnitude 15% or more was reached
+around midnight, after which the recovery phase began.
+Around 2 UT on May 11, the ﬂux of high-energy(>500 MeV)
+protons started to increase, as registered by the GOES-16 satellite
+(Figure 6). Notable variation of the solar proton ﬂux triggered
+GLE alerts, e.g., an alert of the Bartol group, the Athens GLE alert
+++ by the Athens group, and an alert issued at 01:55 UT by the
+Kazakhstan group (private communication with O. Kraykunova).
+However, the two latter alerts were produced using several
+midlatitude stations and are likely due to a reduction in the cutoff
+rigidity resulting from strong magnetospheric storms (K. Kudela
+et al. 2008). Detailed neutron monitor records are provided in the
+Neutron Monitor Database (H. Mavromichalaki et al. 2011) and
+the International GLE database(I. Usoskin et al.2020). According
+to a careful inspection of the records, polar neutron monitors, such
+as the South Pole, Thule, Oulu, and Mawson (Figure 6), exhibit a
+small increase from ≈2U Tt o1 0U Td u r i n gt h er e c o v e r yo ft h e
+deep Forbush Decrease, whose pro ﬁle corresponds to the SEP
+proﬁle registered by the SGPS on board the GOES-16 satellite.
+Since the cutoff rigidity of these neutron monitor stations is nearly
+zero, the magnetospheric effect, that is, the reduction of the cutoff
+rigidity, cannot be used to explain the count rate increase.
+Therefore, according to the recently updated GLE de ﬁni-
+tion,18 the global neutron monitor network observed a GLE.
+Therefore, this event was con ﬁrmed as GLE #74, the second
+of the current Solar Cycle 25, after GLE #73 on 2021 October
+28 (A. L. Mishev et al. 2022; A. Papaioannou et al. 2022).
+Accordingly, this GLE was included in the International GLE
+Database. As discussed above, the neutron monitor count rate
+increases during this event are a complicated interplay between
+the recovery of the Forbush Decrease, increased SEP ﬂux, and
+geomagnetic storm impact; the former plays a role at polar
+stations and the latter at mid- and low-latitude stations. A
+detailed analysis of this complex event is desired and reserved
+for further dedicated studies.
+5. Interplanetary Shock Arrivals and Magnetospheric
+Compressions
+We used data sets of measurements conducted by the Time
+History of Events and Macroscale Interactions during Substorms
+(THEMIS) spacecraft (V. Angelopoulos 2008) to evaluate the
+magnetospheric compressions upon shock arrivals. We derived
+the magnetic ﬁeld measurements from ﬂuxgate magnetometers
+(U. Auster et al. 2008) and ion moments from an electrostatic
+analyzer (J. P. McFadden et al. 2008). When the interplanetary
+shock arrived on 2024 May 10, all three THEMIS satellites were
+aligned within the post-noon sector of the dayside magneto-
+sphere during the inbound segment of their orbits.
+Figure 7 shows the THEMIS-E measurements of the magnetic
+ﬁeld and plasma from 17:04 to 17:07 UT on May 10. From top to
+bottom, it shows the magneticﬁeld strength(Btotal), magnetic ﬁeld
+components (Bx, By, Bz) in the Geocentric Solar Ecliptic (GSE)
+Figure 5. All-sky map of the IPS amplitude (g-value) observed by ISEE, Nagoya University on (a) 2024 April 29, when the NOAA AR 13663 was not on the disk,
+and (b) 2024 May 10. +: all observed radio sources, diamonds: radio sources with g-values as follows: 2.0 < g (red), 1.5 < g < 2.0 (green), and 1.2 < g < 1.5 (blue).
+18 “A GLE event is registered when there are near-time coincident and
+statistically signi ﬁcant enhancements of the count rates of at least two
+differently located high-elevation neutron monitors and a corresponding
+enhancement in the proton ﬂux measured by a space-borne instrument (s)” (for
+details see S. V. Poluianov et al. 2017, and the discussion therein ).
+7
+
+coordinate system, ion energyﬂux spectrogram, bulkﬂow velocity
+(Vx, Vy, Vz) in the GSE coordinate system, and number density
+(Ni), respectively. The GSE spacecraft position is annotated in the
+lower part of the plot. Additionally, the vertical dashed line denotes
+the moment of the magnetopause crossing (17:05 UT) at x = 7.1
+RE, y = 3.2 RE,a n d z = –2.7 RE, indicating that THEMIS-E
+crossed over the magnetopause at ≈8.24 RE.F i g u r e7 shows the
+sudden offsets of all magnetic ﬁeld and plasma parameters,
+particularly the particle energy di spersion, at the magnetopause.
+Prior to the magnetopause, we can observe a period of a stable
+magnetic ﬁeld with a positive Bz component accompanied by a
+low bulk ﬂow velocity and high concentration of high-energy ions
+(>1k e V), which are typically observed in the Earth ’sm a g n e t o -
+sphere. The region between the dashed and solid lines corresponds
+to the magnetosheath, which is characterized by a weaker magnetic
+ﬁeld, broader ion energy spectrum, and high ion number density.
+The area after the solid line indicates the THEMIS-E transition into
+the solar wind, characterized by a high plasma ﬂow velocity and
+narrow ion energy spectrum of approximately 1 keV.
+Figure 8 shows the THEMIS-A measurements of the
+magnetic ﬁeld and plasma from 17:04 to 17:07 UT on May
+10. These data sets independently con ﬁrm the estimated values.
+The vertical dashed line denotes the moment of the
+magnetopause crossing (17:05 UT ) at the [x, y, z] coordinates
+in the Earth ’s radius (RE) of x = 7.7 RE, y = 2.4 RE, z = –2.7
+RE, indicating that THEMIS-A crosses over the magnetopause
+at ≈8.51 RE, which is consistent with THEMIS-E ’s crossing at
+≈8.24 RE.
+Figure 9 shows the THEMIS-E measurements of the
+magnetic ﬁeld and plasma data in the same order as that in
+Figure 6. Cosmic ray ﬂux >500 MeV observed by eastern- and western-facing monitors of the SGPS detector on board the GOES-16 satellite, based on the NOAA
+data portal, alongside the increase in ground-based neutron monitor count rates from high-latitude regions. The neutron monitor sites include Oulu (located in Finland
+at N65°03′, E025°28′, 15 m above sea level ), THUL (located in Thule, Greenland, at N76 °30′, W068°42′, 26 m above sea level ), SOPO (located at the South Pole in
+Antarctica, at S90°00′,N /A, 2820 m above sea level ), and MWSN (located at Mawson in Antarctica, at S67 °36, E062°53′, 30 m above sea level ), as sourced from the
+Oulu Neutron Monitor and Neutron Monitor Database, and summarized in the International GLE Database. All data are corrected for barometric pressure s without a
+detrending procedure. For neutron monitor increase calculations, the baseline was selected from 23:00 on May 10 to 01:00 on May 11 for MWSN, SOPO, and T HUL,
+and from 23:30 on May 10 to 01:30 on May 11 for Oulu.
+8
+
+Figure 7. In this case, the spacecraft crosses from the
+magnetosheath to the magnetosphere, encountering the mag-
+netopause at x = 3.4 RE, y = 3.2 RE, and z = −1.9 RE at
+approximately 19:12 UT, as denoted by the dashed line. This
+indicates that THEMIS-E traverses the magnetopause at ≈5.04
+RE. Initially, the magnetic ﬁeld exhibits an intense negative Bz
+component, which subsequently undergoes signi ﬁcant rotation
+within the magnetosheath region. The ion bulk ﬂow velocity is
+also high and ﬂuctuates substantially in this region. A wider ion
+energy spectrum is discernible here. Upon entering the
+magnetospheric region, the magnetic ﬁeld was still strong but
+devoid of high-frequency disturbances. Additionally, as
+expected, the ion bulk ﬂow velocity of magnetospheric plasma
+was considerably lower, while the number density was higher
+than normal.
+This compressed magnetopause value (≈5.04 RE) is some-
+what extreme and lower than that of the geosynchronous orbit
+(6.6 RE). Figure 10 shows the THEMIS-A measurements of the
+magnetic ﬁeld and plasma from 18:50 to 19:30 UT on May 10.
+The vertical dashed line denotes the moment of magnetopause
+crossing (19:19 UT) at x = 4.0 RE, y = 2.9 RE, and z = –2.1 RE,
+indicating that THEMIS-A crossed over the magnetopause at
+≈5.37 RE. This is broadly consistent with THEMIS-E ’s
+crossing at ≈5.04 RE. Here, we considered entry into the
+magnetosphere to occur when the energy of the main particle
+population exceeds 1 keV and particles from the magne-
+tosheath are absent, which are typical characteristics of the
+magnetosphere. The period preceding the dashed lines
+represents particles with a wide range of energies, and indicates
+a mixture of the magnetosphere and magnetosheath plasma.
+This region can be identi ﬁed as a boundary layer characterized
+by open magnetic ﬁeld lines. Overall, these measurements
+conﬁrmed that the magnetosphere compressed considerably
+immediately after the shock arrival at 17:05 UT. However,
+further assessments of this extreme magnetospheric compres-
+sion are required.
+6. Geomagnetic Disturbances
+The geomagnetic measurements captured at least four SSCs
+in 2024 May. The Kakioka ΔH measurement recorded SSCs at
+≈14:07 UT on May 2 (26 nT), 17:05 UT on May 10 (78 nT),
+05:51 UT on May 16 (10 nT), and 13:26 UT on 17 (18 nT),
+respectively (Kakioka Magnetic Observatory et al. 2015).
+According to the real-time solar wind data acquired by ACE, a
+jump in solar wind speed and density arrived at the L1
+Lagrange point at 16:36 UT on May 10. In the vicinity of the
+jump, the speed increased from approximately 460 to
+Figure 7. THEMIS-E’s measurements of magnetic ﬁeld strength (Btotal), magnetic ﬁeld components (Bx, By, Bz) in the GSE coordinate system, ion energy ﬂux
+spectrogram, bulk ﬂow velocity (Vx, Vy, Vz) in the GSE, and number density (Ni) from 17:04 to 17:07 UT on May 10. The magnetopause crossing is indicated by a
+vertical dashed line.
+9
+
+660 km s−1, and the density increased from ≈10 to 27 cm −3.
+This jump caused a substantial SSC from ≈17:05 UT on May
+10 up to ≈78 nT in the Kakioka ΔH measurement (Kakioka
+Magnetic Observatory et al. 2015). This implies that the travel
+time from the L1 point to Earth is 29 min at the SSC moment.
+This estimate includes the transition time from the magneto-
+pause to the ground.
+Figure 11 summarizes ΔX observed at 20 °< MLAT
+(magnetic latitude) < 30° around the SSC. Again, ΔX at 17:04
+UT on 2024 May 10 (immediately before the SSC ) is set to be
+zero as a baseline. An abrupt increase in ΔX is evident at
+17:05–17:06 UT. The SSC amplitude of the abrupt increase in
+ΔX is larger on the duskside than on the dawnside. This is
+consistent with the previous studies and attributed to the
+contribution of the magnetospheric current and the ionospheric
+current as well (e.g., T. Araki et al. 2006). The European sector
+witnessed a relatively large SSC amplitude, as it was located in
+the duskside in the summer hemisphere upon the SSC. This
+favorable location probably enhanced ionospheric conductivity
+and the ﬁeld-aligned current to increase the magnetic variations
+in the European sector (A. Shinbori et al. 2009, 2012). The
+amplitude is ≈130 nT, which is large but not unique in
+comparison with the historical records of SSC (T. Araki 2014;
+H. Hayakawa et al. 2022).
+Figure 12 summarizes measurements of interplanetary
+magnetic ﬁeld (IMF) and solar wind parameters, the SME
+indices, the AE and AL indices, the Dst and Dxt global indices,
+the Dxt local indices, and the absolute values of the magnetic
+latitudes at which the aurorae and stable red auroral (SAR)
+arcs were reported. The IMF and solar wind parameters are
+acquired from the 1 minute OMNI data (N. E. Papitashvili &
+J. H. King 2020). We note that the IMF and the solar wind
+parameters were observed by the ACE spacecraft at 245 RE
+upstream of the solar wind, and the data were time shifted to
+the subsolar point of Earth ’s bow shock. Thus, the time
+variations are not always correct due to the ambiguity of the
+time-shifting algorithm, in particular during the highly
+disturbed conditions. Because of this reason, we intend to
+overview the IMF and solar wind parameters brie ﬂy, without
+going into detail, although the IMF data sets probably indicate
+at least one compressed ﬂux rope inside the sheath of the
+subsequent CME(s) and the density pro ﬁle indicates arrivals of
+multiple sheaths.
+The SSC (Figure 11) was caused by rapid increases in the
+solar wind velocity from ≈450 km s−1 to >700 km s−1 and the
+solar wind density from ≈17 cm−3 to >30 cm−3. At the same
+time, the magnitude of the auroral electrojet increased, as
+indicated by the AE, AL, SMU, and SML indices. The IMF Bz
+Figure 8. THEMIS-A’s measurements of magnetic ﬁeld strength (Btotal), magnetic ﬁeld components (Bx, By, Bz) in the Geocentric Solar Ecliptic (GSE) coordinate
+system, ion energy ﬂux spectrogram, bulk ﬂow velocity (Vx, Vy, Vz) in GSE, and number density (Ni) from 17:04 to 17:07 UT on May 10. The magnetopause crossing
+is indicated by a vertical dashed line.
+10
+
+turned southward just after the SSC, reaching ≈− 40 nT
+around 18:08 UT. After the SSC, there are at least nine
+intervals in which IMF Bz remained negative for 30 minutes
+and more. They are summarized in Table 3. The solar wind
+speed gradually increased to 1026 km s −1 at ≈01:17 UT on
+May 12.
+The Dst /Dxt indices rapidly decrease during the sustained
+southward IMF intervals of 1 and 2 listed in Table 3. They
+reached a minimum value of −412 nT/415.5 nT, respectively,
+during the sustained southward IMF interval 3. This marks the
+end of the storm main phase and the storm peak hour, and
+indicates a considerably fast decrease in Dst /Dxt with peak-to-
+peak amplitudes of 474 and 479.8 nT in 9 hr. According to
+K. Tsubouchi & Y. Omura (2007), it is possible to calculate a
+statistical return period of geomagnetic storms of this minimum
+value (min Dst = −412 nT) as 5.7 yr. The provisional Dst /Dxt
+values are subject to small changes until de ﬁnite values are
+established (A. Karinen & K. Mursula 2005; WDC for
+Geomagnetism at Kyoto et al. 2015a; K. Mursula et al. 2023).
+Figure 12 shows that the Dst and Dxt indices follow each
+other quite closely, with momentary differences varying
+between −9 nT and +6 nT. Over the depicted time interval,
+the Dxt index is only slightly (less than 1 nT ) lower than the
+Dst index. These differences are due to the somewhat different
+normalizations of the two indices (K. Mursula et al. 2008). The
+multiple complicated structures of CMEs (Section 3) likely
+caused the two-step development of this storm. The intensi ﬁca-
+tion of the ring current was caused by the penetration of hot
+ions into the deep inner magnetosphere due to the dawn –dusk
+convection electric ﬁeld intensi ﬁed by the large-amplitude
+southward IMF and fast solar wind. During the main phase
+of the storm, the solar wind speed was as high as
+≈700–800 km s−1, and the southward component of the IMF
+was as high as ≈50 nT. The solar wind speed, maximum value
+of the southward component of the IMF, and minimum Dst
+index were similar to those of the large magnetic storm of 2003
+November 20 –21. The hot ions are speculated to penetrate as
+low as L ≈ 1.5 to largely intensify the ring current (Y. Ebihara
+et al. 2005).
+Figure 12 also shows the local Dxt indices at the four Dst /
+Dxt stations. Their average makes the Dxt index. The largest
+compression at 17 UT on May 10, close to the SSC occurrence,
+was observed at SJG (+93.9 nT), which was located at this
+time closest of all stations to noon, in the early afternoon of
+local time. The main phase development proceeded fairly
+similarly in all four stations (at different local times ) until 22
+UT on May 10, after which somewhat larger differences started
+appearing. Note that only one station, HER, reached its local
+Dxt minimum at 2 UT on May 11, at the time of the (global)
+Dst/Dxt minimum, while SJG had it 1 hr before, HON 2 hr
+Figure 9. THEMIS-E’s measurements of magnetic ﬁeld strength (Btotal), magnetic ﬁeld components (Bx, By, Bz) in the Geocentric Solar Ecliptic (GSE) coordinate
+system, ion energy ﬂux spectrogram, bulk ﬂow velocity (Vx, Vy, Vz) in GSE, and number density (Ni) from 18:50 to 19:30 UT on May 10. The magnetopause crossing
+is indicated by a vertical dashed line.
+11
+
+afterward at 4 UT and KAK only at 8 UT, 6 hr after the Dxt
+minimum.
+After 2 UT on May 11, the Dst/Dxt indices started increasing,
+and the storm recovery phase began. During the recovery, the
+Dst/Dxt indices showed some negative excursions corresp-
+onding to the southward turnings of the IMF Bz.N o t et h a tt h e
+local time of both KAK and HON at the time of their minimum
+observation was around 17 LT. For SJG it was 20 LT, and for
+HER it was 3 LT. This is in agreement with the fact that,
+statistically, at low latitudes, the largest disturbance is found
+around 18 LT (W. D. Cummings 1966;O .S .Y a k o v c h o u ke ta l .
+2012). This local-time dependence of the storm-time geomag-
+netic disturbances is often thought to be the partial ring current
+but is probably not simple (N. Fukushima & Y. Kamide 1973).
+According to in situ observations, the peak of the ring current
+takes place in the dusk –midnight sector (N. Terada et al. 1998;
+Y. Ebihara et al. 2002;G .L ee ta l . 2004). This is different from
+the ground-based magnetic observations. This discrepancy is
+probably attributed to the contribution from the ﬁeld-aligned
+current (S. Ohtani et al. 2010).
+As shown in Figure 12, the auroral electrojet has also
+developed signi ﬁcantly. The provisional AE and AL indices
+(WDC for Geomagnetism at Kyoto et al. 2015b) initiated
+signiﬁcant development at 17:06 UT on May 10 and increased
+to 2379 nT and −1830 nT, respectively, at 17:28 UT. These
+peak values were reached in 22 minutes. The abrupt jump in
+the provisional AE index was probably regarded as a shock-
+triggered substorm (S.-I. Akasofu & J. K. Chao 1980;
+B. T. Tsurutani & X.-Y. Zhou 2003). The ionospheric current
+associated with the main impulse of the SSC have also
+contributed to the abrupt jumps in these indices (T. Araki 1994;
+T. Zhang et al. 2023). During the storm ’s main phase, the
+provisional AE and AL indices reached peak values of 4098
+and −3797 nT, respectively, at 19:48 UT on May 10.
+Subsequently, these indices remained within < |2000| nT
+during the main storm phase. During the storm recovery phase,
+these indices reached peak values of 3982 and −3797 nT at
+09:00 UT on May 11. According to a statistical study by
+M. Nakamura et al. (2015), up to 16 events occurred during
+which AL exceeded −3000 nT from 1996 to 2012, and the
+recurrence period for AL of −3797 nT was 1.49 yr. In this
+sense, the provisional AL index of −3797 nT was not that
+extreme. We have to note that the AE and AL indices are not
+necessarily proportional to the intensity of the auroral
+electrojet.
+Based on the behaviors of the AE index and the AL index
+around the storm peak, the auroral oval is suspected to have
+extended signiﬁcantly equatorward from the AE stations during
+this interval, resulting in the suppression or saturation of the
+AE and AL indices. The SME indices are used to overcome
+Figure 10. THEMIS-A’s measurements of magnetic ﬁeld strength (Btotal), magnetic ﬁeld components (Bx, By, Bz) in the Geocentric Solar Ecliptic (GSE) coordinate
+system, ion energy ﬂux spectrogram, bulk ﬂow velocity (Vx, Vy, Vz) in GSE, and number density (Ni) from 18:50 to 19:30 UT on May 10. The magnetopause crossing
+is indicated by a vertical dashed line.
+12
+
+this issue since it is calculated from many sites, usually
+exceeding 100 (P. T. Newell & J. W. Gjerloev 2011). In that
+sense, the SME indices are better. However, the AE index has
+been used to represent the magnitude of the auroral electrojet.
+We believe that AE is still useful to compare modern events
+with historical events and to drive empirical models depending
+on AE. In order to see this possibility, we have also checked the
+SME, including the SML index in Figure 12. The fourth panel
+of Figure 12 shows the SME indices. Interestingly, the peak
+amplitude of the SML index, which is an extension of the AL
+index, is not always larger than that of the AL index. These
+values are provisional, so a de ﬁnitive conclusion regarding the
+auroral electrojet cannot be obtained.
+Figure 13 summarizes the north component of the
+geomagnetic disturbances ΔX at different latitudinal zones.
+The data was provided by Intermagnet et al. (2021). The sites
+used to plot are summarized in Table 4. ΔX at 17:04 UT on
+2024 May 10 is set to be zero. Diurnal variations, such as Sq,
+were not removed. Figure 13(a) shows ΔX at MLAT > 75°.
+After the SSC, ΔX is negative on the duskside, whereas it is
+positive on the dawnside. The variations are reasonably
+explained by the twin vortices of the Hall current ﬂowing in
+the ionosphere, known as the DP2 equivalent current (A. Nis-
+hida 1968). In the poleward part of the DP2 current, it tends to
+ﬂow westwardly on the duskside and eastwardly on the
+dawnside, as schematically illustrated in the right-bottom
+corner of Figure 13. Figure 13(b) shows ΔX in the latitudinal
+zone, 60 °< MLAT < 70°, which is usually referred to as the
+auroral zone. The lower envelope of ΔX in this panel is
+roughly equivalent to the AL index. The westward current is
+the most intense around midnight and in the postmidnight,
+which is consistent with the previous studies (e.g., Y. Kamide
+et al. 1998). In general, ΔX is positive on the duskside and
+negative on the dawnside. This is consistent with the
+expectation that ΔX is primarily, not all, caused by the
+equatorward part of the DP2 current. Figure 14(c) shows ΔX in
+the lower latitudinal zone, 20 °< MLAT < 30°. The contrib-
+ution from the ionospheric current is likely to be small. The
+contributions from the ring current, the tail current, the
+magnetopause current, and the ﬁeld-aligned current are
+probably signi ﬁcant. The averaged ΔX should be close to the
+Dst index. During the main phase, the variations of ΔX show
+almost coherently with respect to MLT, as mentioned above,
+but it is clearly shown that ΔX tends to be smaller on the
+duskside than on the dawnside. After the storm peak, the MLT
+dependence became signi ﬁcant. There are some negative peaks
+at ≈02 UT, ≈08 UT, and ≈14 UT on May 11. These peaks
+took place in the premidnight sector, suggesting that they were
+primarily caused by the storm-time partial ring current. During
+the interval from ≈06 UT to ≈10 UT on May 11, ΔX shows a
+negative excursion on the premidnight sector, whereas it shows
+a positive excursion in the pre-noon sector. This can be
+reasonably explained using the development of the partial ring
+current in the premidnight sector due to the injection of fresh
+ions from the nightside plasma sheet and the reduction of the
+ring current in the pre-noon sector due to the escape of the
+preexisting ions in response to the rapid enhancement of
+the magnetospheric convection (P. C. Brandt et al. 2002;
+Y. Ebihara et al. 2002; K. K. Hashimoto et al. 2002).
+7. Spatial Extents of the Auroral Visibility and the Auroral
+Oval: Naked Eye Observations
+This storm signi ﬁcantly extended the auroral oval equator-
+ward, as expected from the empirical correlation between the
+extension of the equatorward boundary of the auroral oval and
+the intensity of the associated geomagnetic storm (N. Yokoyama
+et al. 1998; S. P. Blake et al. 2021). As such, auroral visibility
+was reported worldwide. We followed a citizen science approach
+to gather auroral visibility reports. This is a valid approach for
+reconstructing the equatorward boundary of auroral visibility and
+auroral oval, as reported by N. A. Case et al. (2016). The authors
+prepared an online survey and called for auroral reports for the
+naked eye and instrumental visibility. This online inquiry
+allowed us to obtain 80 valid auroral reports, as exempli ﬁed in
+Figure 14. Figure 15 summarizes responses from this online
+survey. Our result is roughly consistent with independent survey
+Figure 11. The north component (ΔX) of the geomagnetic disturbances at 20 °< MLAT < 30°. The color codes indicate MLT (magnetic local time). The abbreviation
+codes indicate the sites used to plot.
+13
+
+Figure 12. Temporal evolutions of interplanetary magnetic ﬁeld (IMF), solar wind speed and density, geomagnetic disturbance, and auroral visibility. The ﬁrst panel
+shows the interplanetary magnetic ﬁeld of the solar wind in By (blue) and Bz (red) in the GSM coordinates. The second panel shows the solar wind velocity. The third
+panel shows the density of the solar wind. For these three panels, we have derived their source data from the 5 minute OMNI data. The IMF and the solar wind data are
+time shifted to the subsolar point of Earth ’s bow shock. Thus, the variations are subject to changes depending on the calculation algorithm. The fourth panel shows the
+SMU (black) and SML (red) indices. The ﬁfth panel shows provisional AE (black) and AL (red) indices. The sixth panel indicates the (global) Dst and Dxt indices,
+and the seventh panel is the local Dxt indices at Hermanus (HER), Honolulu (HON), Kakioka (KAK), and San Juan (SJG). The last panel displays the absolute value
+of the magnetic latitude at which the aurorae and SAR arcs were reported both by naked eyes and instruments. The brightness is generally given with the I nternational
+Brightness Coef ﬁcient (IBC classi ﬁcation), apart from 0 for brightness not enough for naked-eye visibility and 5 for brightness more than a full moon.
+14
+
+data sets for auroral visibility during this storm (e.g., M. Grandin
+& ARCTICS Collaboration 2024;C .W i c k l u n d2024) with
+further possible equatorward extensions of the instrumental
+detections of the auroral emissions, while they do not separate
+naked-eye visibility from camera visibility. We located their
+geographic coordinates and computed their magnetic latitudes
+using the coordinates of the northern geomagnetic pole (N80°.8
+W72°.6) in the IGRF-13 model (P. Alken et al. 2021).
+On this basis, we con ﬁrmed the equatorward extent of naked-
+eye auroral visibility in both hemispheres. In the Southern
+Hemisphere, naked-eye auroral reports have been con ﬁrmed
+down to Boulouparis in New Caledonia (S21°54′, E165 °59′,
+−26°.5 M LA T), Chewko Lookout in Australia (S17°03′, E145°
+22′, −24°.2 MLAT ), and Tivoli Astrofarm in Namibia (S23°28′,
+E018°01′, −23°.2 MLAT ). In the Northern Hemisphere, naked-
+eye auroral reports have been con ﬁrmed down to El Peyote
+(N22°41′,W 1 0 0°36′,3 0 °.7 MLAT ) and Hanle in India (N32°
+28′, E078°34′,2 4 °.3 ML A T).
+Auroral visibility at any site does not immediately indicate
+overhead auroral visibility. Therefore, we must reconstruct the
+equatorward boundaries of the auroral oval considering
+the MLAT and the reported altitude at each site. The altitude
+proﬁles were used to reconstruct the equatorward boundaries
+of the auroral oval conservatively. We assumed the altitude of
+the visual aurorae to be ≈ 400 km, following F. E. Roach et al.
+(1960) and Y. Ebihara et al. (2017), to keep consistency with
+Table 3
+Intervals in which IMF Bz Remained Negative for 30 Minutes and More
+Start Time End Time Duration Minimum IMF Bz
+(minutes)( nT)
+1 19:41 UT on May 10 22:23 UT on May 10 162 −40
+2 22:41 UT on May 10 01:36 UT on May 11 175 −56
+3 01:45 UT on May 11 04:23 UT on May 11 158 −35
+4 06:07 UT on May 11 07:37 UT on May 11 90 −40
+5 07:57 UT on May 11 11:01 UT on May 11 184 −41
+6 11:29 UT on May 11 17:39 UT on May 11 360 −25
+7 20:18 UT on May 11 20:48 UT on May 11 30 −9
+8 23:06 UT on May 11 23:49 UT on May 11 43 −7
+9 00:12 UT on May 12 02:48 UT on May 12 156 −5
+Note. IMF Bz is obtained by the 1 minute OMNI data.
+Figure 13. The north component of the geomagnetic disturbances ΔX at (a) MLAT > 75°, (b) 60°< MLAT < 70° and (c) 20°< MLAT < 30°, where MLAT stands
+for the magnetic latitude. The color codes indicate MLT. The abbreviation codes indicate the sites used to plot.
+15
+
+the previous estimates for the historical storms (F. Miyake et al.
+2019; I. Usoskin et al. 2023). We quanti ﬁed the equatorward
+boundaries of the auroral emission regions by measuring their
+invariant latitude (ILAT) and tracing the footprints of the
+magnetic ﬁeld lines where the auroral electrons precipitated,
+following C. E. McIlwain et al. (1961).
+In the Southern Hemisphere, we have reconstructed the
+equatorward boundaries of the auroral oval down to 29 °. 8 ILAT
+based on a Namibian report from Tivoli Astrofarm (S23°28′,
+E018°01′, −23°. 2 MLAT ) with a naked-eye auroral visibility
+up to 45 °. This is somewhat followed by the Australian report
+from Brom ﬁeld Swamp (S17°22′, E145 °33′, −24°. 5 MLAT )
+with a naked-eye auroral visibility up to 20 ° and the New
+Caledonian report from Boulouparis (−26°. 5 MLAT ) with
+naked-eye auroral visibility of up to 20 ° that allow the
+reconstruction of the equatorward boundaries of the auroral
+oval down to 35 °. 0 ILAT and 36 °. 7 ILAT, respectively. In the
+Northern Hemisphere, a Mexican report from Chirimoyos
+(N23°26′, W105 °48′,3 1 °. 0 MLAT) allowed us to reconstruct
+the equatorward boundaries of the auroral oval down to 35 °.5
+ILAT based on the reported naked-eye auroral altitude of 60 °.
+This is slightly more equatorward than what we can reconstruct
+from another Mexican report from El Peyote (N22°41′, W100°
+36′,3 0 °. 7 ILAT) with a reported naked-eye auroral altitude of
+25°. Overall, our reconstructions in both hemispheres were
+reasonably consistent: 29 °. 8 ILAT in the Southern Hemisphere
+and 35 °. 5 ILAT in the Northern Hemisphere.
+Caveats must be noted on these estimates here. First, their
+naked-eye visibility is considerably different from the camera
+visibility (Appendix A). Second, SAR arcs often reach farther
+toward the magnetic equator from the auroral ovals. It is
+certainly tempting to associate this considerable visibility
+stretch with the SAR arcs (L. Spogli et al. 2024), whereas this
+association con ﬂicts with the analysis of the GOLD imagers
+(D. K. Karan et al. 2024).
+The SAR arcs appear monochromatically in reddish
+coloration, in contrast to the actual reddish auroral emissions
+(J. U. Kozyra et al. 1997; K. Shiokawa et al. 1997).
+M. Mendillo et al. (2016) reported that patches of emission
+at the oxygen green line (557.7 nm) are superimposed to the
+SAR arcs. After considering the possibility that precipitating
+ions gave rise to the oxygen red line, M. H. Rees and
+C. S. Deehr (1961) suggested that precipitation of low energy
+electrons could result in the emission at the oxygen green line,
+together with head conduction from the plasmapause –ring
+current interaction region, which could result in the SAR arcs.
+For now, we cannot exclude the possibility that the
+monochromatic reddish aurora witnessed at low latitudes was
+associated with the SAR arcs, as was also the case with
+historical auroral reports with monochromatic reddish
+coloration.
+Therefore, we need to choose records with nonreddish colors
+or explicit structures (Appendix B) to rule out SAR arcs and
+conservatively reconstruct the equatorward boundaries of the
+auroral oval to be free from contamination of SAR arcs. The
+reports that we used to reconstruct the equatorward boundaries
+of the auroral oval in both hemispheres included nonreddish
+colorations (pinkish and purplish components in Brom ﬁeld in
+Australia, and pinkish components in Chirimoyos in Mexico;
+see Appendix B) and/or explicit structures (in Chirimoyos in
+Mexico and Tivoli Astrofarm in Namibia ), as partially seen in
+Figure 14. Our reconstructions of the equatorward boundary of
+the auroral oval support analyses of the GOLD imager that
+suggested auroral stretch down to the southern tip of South
+Africa and South America (D. K. Karan et al. 2024), rather than
+the SAR arc hypothesis based on a model calculation
+(L. Spogli et al. 2024). Therefore, our reconstructions enhance
+the reliability of an extension of the equatorward boundary of
+the auroral oval during the 2024 May storm in comparison to
+the modeling results of L. Spogli et al. (2024).
+8. Temporal and Spatial Variation of Electron Density
+(Total Electron Content ) in the Ionosphere
+Previously in this paper we elucidated the characteristics of
+temporal and spatial variations of the geomagnetic ﬁeld,
+ionospheric convection, and location of the auroral oval during
+a geomagnetic storm. Considering the magnitude of geomag-
+netic ﬁeld perturbations and ionospheric convection, a
+substantial electromagnetic energy transfer from the magneto-
+sphere to the ionosphere is expected to produce severe positive
+and negative storms that cause the electron density in the
+ionosphere to increase or decrease. To con ﬁrm these signatures
+in the ionosphere during a geomagnetic storm, we analyzed the
+global total electron content (TEC) data at a high spatial
+resolution of 0 °.5 × 0°.5 (in geographic latitude × longitude).
+Figure 16 shows the polar map of the ratio of the TEC
+difference (rTEC; A. Shinbori et al. 2019) in the Northern
+Hemisphere in altitude adjustment-corrected geomagnetic
+(AACGM) coordinates (Section 4.2 in K. M. Laundal &
+A. D. Richmond 2017) at 17:00 and 22:00 UT on May 10 and
+18:00 UT on May 11, corresponding to the prestorm phase,
+main, and recovery phases of this geomagnetic storm,
+respectively. During the prestorm phase, the rTEC value was
+nearly zero across the entire region, except for the west coast of
+Table 4
+Geomagnetic Observatory Sites Used to Plot Figure 13
+Abbreviation Code Geographic Latitude Geographic Longitude
+(°)( deg)
+(a) MLAT > 75°
+CBB 69.12 254.97
+GDH 69.25 306.47
+RES 74.69 265.11
+THL 77.47 290.77
+(b) 60°< MLAT < 70°
+ABK 68.4 18.8
+BRD 49.87 260.03
+CMO 64.87 212.14
+FCC 58.76 265.91
+LYC 64.6 18.7
+MEA 54.62 246.65
+NAQ 61.16 314.56
+SIT 57.06 224.68
+SOD 67.4 26.6
+YKC 62.48 245.52
+(c) 20°< MLAT < 30°
+HON 21.32 202.0
+JAI 26.92 75.8
+KAK 36.23 140.19
+KNY 31.42 130.88
+SFS 36.7 354.1
+SJG 18.11 293.85
+16
+
+North America, exhibiting an MLAT range of 50 °–70°. This
+means that the spatial distribution of rTEC is geomagnetically
+quiet. During the main phase, the characteristic structure of
+rTEC appeared in the high- to low-latitude regions. Further-
+more, the rTEC considerably increased to >1.0 at low latitudes
+(20°–50° MLAT) in the dusk sector (13–20 hr MLT ). These
+characteristics correspond to those of storm-enhanced density
+(SED; J. C. Foster 1993). Furthermore, the SED is associated
+with a spatially narrow enhancement of the rTEC, extending
+from the dayside to the nightside in the polar region. This
+phenomenon is called the tongue of ionization (TOI) and is
+caused by plasma transportation from the dayside midlatitude
+ionosphere into the polar cap owing to the enhanced convection
+electric ﬁelds during the main phase of a geomagnetic storm
+(M. David et al. 2011; J. C. Foster 1989, 1993). A. Shinbori
+et al. (2022) demonstrated the seasonal dependence of
+amplitudes of SED and TOI amplitudes as a function of the
+geomagnetic storm magnitude, and based on a statistical
+analysis, they found that the SED and TOI amplitudes were
+maximal in winter and minimal in summer based on a statistical
+analysis. However, despite the summer season, when most of
+the northern polar region is sunlit, a large rTEC enhancement
+Figure 14. Examples of the reported auroral visibility throughout the world, from top to bottom: (a) Tivoli Astrofarm in Namibia (© Richard Payne ), (b) Chewko
+Lookout near Mareeba in Australia (© Julia Sumerling ), (c) Las Grutas in Argentina (© Denis Martínez ), and (d) Mogán in Gran Canaria (© Víctor R. Ruiz ).
+17
+
+related to the SED and TOI occurrences during the geomag-
+netic storms of 2024 May 10 –11 was observed, which differed
+from those reported in previous studies. This implies that an
+intense convective electric ﬁeld was imposed from the high-to-
+low latitudes of the ionosphere during the geomagnetic storm
+events. Furthermore, a narrowband rTEC enhancement,
+corresponding to the extension of the auroral oval, was
+observed in the MLAT range of 45 °–55° on the nightside (22
+−03 hr MLT), implying that the auroral oval extended to lower
+latitudes, as described in Section 7. Similar to the rTEC
+Figure 14. (Continued.)
+18
+
+enhancement, a narrowband region with decreased rTEC
+appeared in the MLAT range of 25 °–45°. This rTEC depletion
+represents a midlatitude trough corresponding to the plasma-
+pause location in the inner magnetosphere (A. Shinbori et al.
+2019). During the recovery phase, the global spatial distribu-
+tion of the rTEC considerably decreased in the entire region,
+from high-to-low latitudes, reaching −0.75 on the dayside.
+This rTEC depletion corresponded to a negative storm caused
+by a decreasing electron density in the ionosphere owing to the
+enhancement of the recombination process associated with an
+increasing N2 density. Thus, the extensive depletion of electron
+density in the ionosphere severely in ﬂuences the propagation of
+the electromagnetic waves employed in satellite navigation and
+positioning.
+9. Summary and Discussion
+This paper presented a ﬂash report that reviewed the data from
+the 2024 May solar and geomagnetic storms. The area of the
+source active region, NOAA AR 13664, rapidly increased from
+113 to 2761 MSH from May 1 to 9 (Figures 1 and 2).T h i sr a p i d
+growth led to an increase in the total energy of the nonlinear
+force-free ﬁeld, potential magnetic ﬁeld, and free magnetic
+energy, especially from May 7 onward, producing 12 X-class
+ﬂares up to X8.7 between May 8 and 15 (Table 1 and Figure 2).
+This AR was associated with at least 10 halo CMEs. By
+evaluating their velocities, we could associate the CME launched
+at 22:36 UT on 2024 May 8, with the great geomagnetic storm
+that originated from the SSC at 17:05 UT on May 10 (Figure 4).
+Thus, the propagation time of the CME was 42 hr 29 minutes.
+Figure 15. Geographical extents of the reported auroral visibility from 2024 May 10 to 12. The contour lines indicate the magnetic latitude (MLAT) with an interval of
+each 10°. The solid line indicates the magnetic equator (0° MLAT). The red and blue dots indicated auroral report with naked-eye visibility (this section) and camera
+visibility only (Appendix A), respectively. For reference, we have plotted visibility reports from M. Grandin & ARCTICS Collaboration (2024) and C. Wicklund
+(2024) as greenish and gray small dots, respectively.
+Figure 16. Polar maps of the TEC difference ratio (rTEC) in the Northern Hemisphere represented in altitude adjustment-corrected geomagnetic (AACGM)
+coordinates during the prestorm, main, and recovery phases. The color bars indicate the rTEC from −1.0 to 1.0. The black and purple curves represent sunset
+terminators at altitudes of 105 and 300 km, respectively.
+19
+
+This CME collided with at least three preceding CMEs, and all
+of them stacked up before reaching Earth, leading to the
+detection of large IPS amplitudes. These signals are associated
+with the high-density region where fast-propagating CMEs
+accumulate background solar wind and might support CME –
+CME interactions in interplanetary space.
+One of these solar eruptions triggered a signi ﬁcant Forbush
+Decrease in cosmic ray intens ity and a solar proton event. The
+CMEs caused a relatively large Forbush Decrease with the
+magnitude of 15%, as seen in neutron monitors ’ count rate.
+Subsequently, both the polar neutron monitors and the GOES-16
+satellite registered a notable cosmic ray increase from≈2:00–3:00
+UT (Figure 6). This increase was con ﬁrmed to be a GLE and
+included as GLE #74 in the International GLE Database.
+These CME arrivals considerably compressed the magneto-
+sphere. THEMIS measurements conﬁrmed their crossings over the
+boundary of the magnetosphere at ≈8.24 RE at 17:05 UT
+(Figure 7), ≈8.51 RE at 17:05 UT (Figure 8), ≈5.04 RE at 19:12
+UT (Figure9),a n d≈5.37 RE at 19:19 UT(Figure10). Particularly,
+the observations of THEMIS-E and THEMIS-A during their
+crossings at 19:12 and 19:19 UT, respectively, indicated that the
+magnetopause underwent a signiﬁcant inward motion beyond the
+geosynchronous orbit(6.6 RE). Additionally, major loss processes
+for radiation belt particles occur during such great events
+(D. L. Turner et al. 2012). Moreover, these events have profound
+space weather implications for geospace satellites because they can
+be exposed to energetic radiation belt particles that may partially or
+completely damage their electronic systems(A. D. P. Hands et al.
+2018). For example, if a satellite reenters the magnetosphere and
+radiation belts when the magnetopause moves back out, the
+likelihood of damage is ampli ﬁed if energetic particle injections
+associated with rapid energetic particle injections and wave –
+particle interactions increase(D. N. Baker et al. 2017; H. C. Koons
+&J .F .F e n n e l l2006). Therefore, satellitesin geospace may have
+been exposed to harsh space weather conditions during the
+geomagnetic storm of 2024 May 10.
+The SSC at 17:05 UT upon shock arrival was observed at
+multiple observatories, such as Kakioka (≈78 nT) and San
+Fernando (≈130 nT), indicating local enhancements in the
+duskside, especially in the summer hemisphere. This LT effect
+probably enhanced SSCs in the European sector.
+The resultant geomagnetic storm developed to minimum
+provisional Dst and Dxt index values of −412 and −415.5 nT,
+respectively, at 2:00 UT on May 11. In the provisional AE and
+AL indices, the auroral electrojet was intensi ﬁed up to 4098
+and −3797 nT during the storm main phase, respectively, and
+3982 and −3797 nT during the storm recovery phase,
+respectively. However, the intensity in both indices reduced
+between the phases, probably because the auroral oval moved
+equatorward and remained away from the AE /AL observa-
+tories. However, their magnitudes should not be exaggerated as
+statistical studies have indicated that the return period of the
+Dst index is 5.7 yr (K. Tsubouchi & Y. Omura 2007) and that
+of the AE index 1.49 yr (M. Nakamura et al. 2015).I ti s
+possible that geomagnetic activity during Solar Cycle 24 was
+considerably lower than that during normal solar cycles.
+Furthermore, the DP2 ionospheric current was signi ﬁcantly
+enhanced (Figure 14). This enhancement manifested as an
+intensiﬁcation of the magnetospheric convection, which is highly
+likely to cause earthward penetration of the hot plasma originating
+in the plasma sheet, thereby enhancing the ring current.
+This storm also induced considerable disturbances in the
+ionosphere (Figure 16), leading to an SED in the ionosphere,
+large rTECs in the lower MLATs (20°–50°) on the duskside
+(13–20 MLT), and tongues of the ionosphere extending from the
+dayside to the nightside in the northern polar region, despite
+unfavorable seasonality. Theseﬁndings indicated the occurrence of
+an intense convective electric ﬁeld in the high-to-low MLATs in
+the ionosphere. These TEC records also con ﬁrmed rTEC
+enhancements in a narrow MLAT band of 45 °–55° on the
+nightside, conﬁrming the equatorward extension of the auroral oval
+in accordance with the visual records. The rTEC measurements
+also revealed a plasmapause in the inner magnetosphere,
+characterized by a depletion in the 25 °–45° MLAT region and a
+considerably negative storm globally during the recovery phase.
+Among the records collected since the beginning of the space
+age (1957 onward), the min Dst of −412 nT is comparable to
+t h o s eo ff o u ro ft h eﬁve greatest geomagnetic storms, speciﬁcally
+those that occurred in 1957 September(min Dst= −427 nT),1 9 5 8
+February (min Dst = −426 nT), 1959 July (min Dst = −429 nT),
+and 2003 November(min Dst = −422 nT),a n ds i g n iﬁcantly more
+moderate only than that of the e xtreme storm recorded in 1989
+March (WDC for Geomagnetism at Kyoto et al. 2015a;P .R i l e y
+et al. 2018). This value should be revised in the future because this
+provisional Dst index was developed using a method different
+from that for the ﬁnal Dst index that extended only up to 2016 at
+the time of writing this manuscr ipt. Additionally, this storm
+recorded the highest value on the Kp index (Kp = 9)( J. Matzka
+et al. 2021) since 2003 October (Y. Yamazaki et al. 2024).
+Moreover, it is the second to the ﬁfth greatest on the Hp30 index
+since 1985 (Y. Yamazaki et al. 2024). In this regard, this
+geomagnetic storm was certainly large but not unique.
+During this storm, the auroral display was visible to the
+naked eye down to |23.2|° MLAT (Tivoli Astrofarm in
+Namibia; Figure 14). This allowed us to reconstruct the
+equatorward boundaries of the auroral oval at an ILAT of 29 °.8 .
+In Figure 17, this storm is contextualized with the auroral
+visibilities of historical storms, as modi ﬁed from the previous
+presentations in D. J. Knipp et al. (2021) and H. Hayakawa
+et al. (2024). Based on naked-eye observations, this storm was
+comparable to the great storms of 1958 February and 1959
+July, for which the equatorward boundary of the auroral oval
+was reconstructed down to |23.3|° and |27.4|° MLAT,
+respectively (H. Hayakawa et al. 2023c, 2024).
+Historical records indicate that the equatorward boundaries of
+auroral ovals have extended down to 33 °–40° ILAT during the
+greatest geomagnetic storms of the space age(D. H. Boteler 2019,
+H. Hayakawa et al. 2023c, 2024) and 24 °–25° during extreme
+storms in history (H. Hayakawa et al. 2020, 2023b). Analyzing
+modern naked-eye observations of auroral ovals during geomag-
+netic storms and comparing them with those of historical ones is
+crucial for better contextualizing great storms.
+However, our reconstruction wasmost likely an ultraconserva-
+tive estimate. The scienti ﬁc community hosts large-scale citizen
+science portals (E. A. Macdonald et al. 2015,B .C .K o s a re ta l .
+2018a, C. Wicklund 2024), which can signi ﬁcantly increase the
+number of auroral records. The utility of these citizen science
+aurora data sets such as Aurorasaurus has already been conﬁrmed
+through ground-truth validatio n of satellite observations and
+boundary estimations in a case s tudy of the intense geomagnetic
+storm of 2015 March(B. C. Kosar et al. 2018b).I nt h en e a rf u t u r e ,
+we will request detaile d reports from individual contributors to
+document the temporal evolution (Figure 12), spatial evolution
+20
+
+(Figure 15), and coloration of the reported auroral displays
+(Figure B1). These details will a llow us to enhance the
+reconstruction of auroral em issions, their temporal/spatial evol-
+ution, and their equatorward auroral oval boundaries. Moreover, as
+this storm occurred in mid-May, the European and North
+American sectors had the disadvantages of longer daytime
+durations and the advantages o f better weather conditions. The
+timing of the storm peak sugges ts that the auroral visibility
+conditions were favorable in the Southern Hemisphere, particularly
+in South America. Therefore, we need to request the recollection of
+this visual aurora by citizens, especially individual astronomers, in
+multiple languages. This requirement is conﬁrmed with multiple
+critical reports in Latin America and Middle East (Figure 15),
+where non-English speakers are the majority of the local
+populations. Additionally, outreach efforts to explain scienti ﬁc
+phenomena in plain language are imperative for including and
+empowering the public, as exempliﬁed by the Aurorasaurus blog.
+Immediately after this storm, auroral photographs were
+uploaded from various regions worldwide. This signi ﬁcant
+geographical extent can be partially explained by the differences
+in the sensitivities of naked-eye observers and cameras. Today,
+we have access to signiﬁcantly better optical instruments, such as
+cameras, than during past great space weather events. Moreover,
+space weather forecasts have allowed and motivated people to
+observe aurorae at the right time and direct cameras to the sky to
+ﬁgure out whether they can capture aurorae, as con ﬁrmed by
+several case reports. Furthermore, Internet /SNS accessibility
+allows observers to swiftly exchange reports /photos, which
+motivates more people to search for visible aurorae. However,
+light pollution in urban areas hinders aurora visibility in the night
+sky (M. Smith 2009; F. Falchi et al. 2016). Therefore, witnesses
+of this auroral storm have three advantages and one disadvantage
+when documenting auroral extensions during great geomagnetic
+storms compared to those witnessed in historical auroral storms.
+This study is no more than a ﬂash report conducted using
+provisional data sets, and more precise data sets must be
+accumulated and compared with the modeling results. Through
+further analyses, these solar and geomagnetic storm features
+may allow us to bridge our modern scienti ﬁc knowledge with
+that of historical great solar and geomagnetic storms and better
+assess space weather extremes.
+Acknowledgments
+This research was conducted under the ﬁnancial support of
+JSPS Grant-in-Aids JP20H05643, JP21K13957, JP21H04492,
+and JP24H00022, the ISEE director ’s leadership fund for FYs
+2021–2024, the Young Leader Cultivation (YLC) program of
+Nagoya University, Tokai Pathways to Global Excellence
+(Nagoya University) of the Strategic Professional Development
+Program for Young Researchers (MEXT), joint research
+program of Institute for Space –Earth Environmental Research
+(Nagoya University ), the young researcher units for the
+advancement of new and undeveloped ﬁelds in Nagoya
+University Program for Research Enhancement, TranSEHA
+project, and the NIHU Multidisciplinary Collaborative Research
+Projects NINJAL unit “Rediscovery of Citizen Science Culture
+in the Regions and Today. ” This study was supported by the
+Research Council of Finland (projects 330063 QUASARE and
+354280 GERACLIS ). This work was partially funded by the
+Horizon Europe program projects ALBATROS and SPEAR-
+HEAD. We acknowledge the support of the International Space
+Science Institute (Bern, Switzerland) and International Team No.
+585 (REASSESS). IPS observations were made under the solar
+Figure 17. Spatial extents of naked-eye auroral visibility of great historical geomagnetic storms whose auroral visibilities have been reported as <|30|° MLAT. This
+ﬁgure is a modi ﬁed version of those presented in D. J. Knipp et al. (2021) and H. Hayakawa et al. (2024).
+21
+
+wind program of the Institute for Space-Earth Environmental
+Research, Nagoya University.
+We thank Yuichi Otsuka, Michi Nishioka, and Septi
+Perwitasari for developing and sharing the TEC codes, Ilya
+Usoskin and Keith Ryden for their helpful discussions for the
+GLE #74, Takuya Tsugawa and Mamoru Ishii for their valuable
+advice on the ionospheric disturbances at that time., Elizabeth
+Macdonald for her help ful discussions on the citizen science
+approach on the auroral records, Ravindra Desai for interpreta-
+tions of the data sets of the CMEs and the solar wind, and Mirko
+Piersanti for his helpful discussions on the Italian geomagnetic
+measurements. We thank Tony Philipps, Martin Snow, Cristina
+Mandrini, Andrew Lewis, Hong-Jin Yang, Jacques van Delft,
+Kazue Nakagawa, and Ichiro Ota for helping us distribute the said
+survey for the local auroral visibility.
+We thank Frédéric Desmoulin s, Carlos Matos, Angelica D.
+Vazquez Sepulveda, Rene Saade, Shiori Yamada, Ryu Tamura,
+Trent Davis, Joel Weatherly, Tina Booth, Laura-May Abron,
+Landon Oxford, Leyton Riley, David Batchelor, Víctor
+R. Ruiz, Yuto Hoshino, Kate Green, Karl Krammes, Huili Chai,
+Horace A Smith, Akihiro Tamura, Edwin Rivera, Alan Viles, Jeff
+Vollin, Stella Stritch, Sam Deutsch, Robert Stuart, John Bradshaw,
+Shigeki Tomita, M. L. Couprie, Ida Kra ševec, Jesse Wall,
+Rosenberg Róbert, Tim Martin, Jimmie Strouhal, Tyler McLain,
+Greg Redfern, Michael Borman, Evan Saltman, Miriah Shadara,
+Helen Spillane, Jamie McBea n, Graham Whittington, Clark
+A u s t i n ,D r e wM e d l i n ,L a u r aL ockhart, Larkyn Timmerman,
+Ricardo Muracciole, Laura Lockhart, Joël Van Quathem,
+Francisco Martinez Nieto, Gentrit Zenuni, Genna Chiaro,
+Joseph Jiacinto, Paul D. Maley, Julia Sumerling, Denis Martínez,
+Brandon Flores, Yutaka Kagaya, Gerard Kelly Edgar Castro, Edy
+Yoc, Víctor M. S. Carrasco, Becky Gravelle, Miyuki Miyaji,
+Shunsuke Nozawa, Frank Garcia, Richard Payne, Ryosuke Takagi,
+Georg Woeber, Mirko Piersanti, Larry Koehn, Stanzin Norboo,
+Nita Hamilton, and Kimberly Sweeney for contributing their
+experience and photographs through the survey form.
+Data Availability
+We have acquired sunspot numbers and sunspot drawings
+from the SILSO and USET of the Royal Observatory of
+Belgium, the solar wind parameters and proton and X-ray
+ﬂuence from the NOAA, the IPS data used from the ISEE,
+Nagoya University website https://stsw1.isee.nagoya-u.ac.jp/
+vlist/, neutron monitor data from the International GLE
+database, and geomagnetic Dst, AE, and AL indices from
+WDC and the location of north geomagnetic pole for
+Geomagnetism at Kyoto (https://wdc.kugi.kyoto-u.ac.jp/).
+We also acknowledge the Oulu Cosmic Ray Station, the
+Neutron Monitor Database, and individual neutron monitor
+station managers for maintaining the cosmic ray measurement
+data sets over a long time period. The TEC data are available
+on the ISEE, Nagoya University website https://stdb2.isee.
+nagoya-u.ac.jp/GPS/GPS-TEC/. We thank Samuel Freeland
+for offering Event Archives of Solar Soft in the Lockheed
+Martin Solar & Astrophysics Laboratory.
+Appendix A
+Spatial Extents of the Auroral Visibility and the Auroral
+Oval: Instrumental Observations
+Upon this storm, considerable observers managed to
+photograph the auroral displays with their instruments, such as
+digital cameras and smartphones. Such camera observations
+managed to capture the auroral visibility and auroral oval further
+equatorward. Good examples can be easily obtained from
+Japanese cases. As shown in Figure A1, the aurora was
+photographed at least down to Koumi (N36°04, E138°24, 28°.1
+MLAT). More photographs on social media show auroral
+visibility at lower latitudes, but they require further careful
+validation owing to fakes, contaminations, and confusions (e.g.,
+P. Meel & D. K. Vishwakarma 2020). In contrast, the naked-eye
+visibility is conﬁrmed only down to Hiranai (N41°01′, E140°53′,
+33°.2 MLAT ). The Hiranai photographs captured aurora on
+the basis of their evident ray structure, while the Koumi
+photograph might have captured SAR arcs, based on the
+appearance of monochromatic reddish color (Figure A1).
+The Hiranai report showed striking differences in the spatial
+auroral extents in the naked eye visibility and camera visibility: by
+the naked eye, up to 20 ° in elevation, and by optical instruments,
+up to 70 ° in elevation. Following the procedure described in
+Section 7, this study allowed us to reconstruct the equatorward
+boundary of the auroral oval at Hiranai, down to 43 °.0 I L A T a n d
+36°. 8 ILAT, for the naked-eye-based and camera-based estimates,
+respectively. The equatorward boundary looks signiﬁcantly decent
+in contrast to our recon structions in Section 6, as Japanese
+observers were under broad daylight around the storm peak (≈2
+UT), only managed to see the storm recovery phase, and probably
+missed the most dramatic part of the auroral display.
+Similar cases have been reported throughout the world. An
+Indian auroral report from Hanle in India (N32°28′, E078 °34′,
+24°.3 M L A T) described the auroral altitude therein as 5 ° by the
+naked eye and 20 ° by camera. Similarly, the New Caledonian
+report from Boulouparis described auroral altitude as 20 ° by the
+naked eye and 30° by a camera. At Tivoli Astrofarm in Namibia
+(S23°28′, E018°01′, −23°.2 M L AT), aurora was conﬁrmed up to
+45° by the naked eye and up to 55° by the camera. Subsequently,
+its internal structure was con ﬁrmed to be up to 20 ° by photo-
+graphic analysis(Figure 14). Notably, these examples occurred at
+different times during the storm, as shown in Figure 12.
+Overall, in the Northern Hemis phere, the aurora was photo-
+graphed as far equatorward as San Juan Sacatepéquez in
+Guatemala(N14°43′,W 0 9 0°39′,2 3°.4 ML A T) subvisually without
+naked-eye visibility. In the Southern Hemisphere, the aurora was
+photographed as far equatorwar d as Big Mitchell Reserve in
+Australia (S16°48′,E 1 4 5°21′, −23°.0 M L A T). This estimate is
+probably ultraconservative. Independent citizen science data sets
+accommodate potential auroral photographs from further equator-
+w a r d ,d o w nt oS ã oP a u l oi nB r a z i l(S23°48′,W 0 4 6°38′, −15°.2
+MLAT) and Lima (S12°05′,W 0 7 6°52′, −2°.9 M L A T) in the
+Southern Hemisphere and Ad-D āḫilīy a hi nO m a n (N22°52′,
+E057°32′,1 6°.8 M L A T) and Calabarzon in the Philippines (N14°
+06′,E 1 2 1°05′,5 °.2 M L A T) in the Northern Hemisphere, according
+to C. Wicklund (2024).H o w e v e r ,a sC .W i c k l u n d(2024) does not
+provide further details in his data ﬁle, we need to carefully assess
+their reliability on the basis of their source reports.
+Their geographical extensions are signi ﬁcantly different
+from those in the naked-eye visibility. The instrumental
+detectability should be of course somewhat variable up to the
+instrumental setups, such as exposure time. This variation is
+particularly tricky, as each observer had their own instruments
+and settings, such as digital cameras and smartphones, without
+standardizations, unlike well-prepared campaign observations.
+Such record characteristics have made calibration and homo-
+genization of their photographs extremely dif ﬁcult.
+22
+
+The equatorward extent of the visibility with a camera is
+different from that with the naked eye. This discrepancy is
+primarily attributed to the different sensitivity. The sensitivity of
+the camera is much higher than that of the naked eye. We could
+suggest three possible scenarios for its provenance as detectability
+differences in(1) vertical extents,(2) latitudinal extents, or(3) their
+combinations. For Scenario(1), the aurora at high altitudes could
+have been detected only by the cameras so that the aurora was
+visible at lower latitudes. For this scenario, the equatorward
+boundary is assumed to be the same. For Scenario (2),t h e
+Figure A1. Examples of auroral photographs from Japan, from the top to the bottom: (a) Koumi in Japan with Canon EOS R5 (© Kouji Ohnishi ) and (b) Hiranai in
+Japan with SONY α7R IV (© Yutaka Kagaya ). Kouji Ohnishi con ﬁrmed that the aurora was not visible to the naked eye. Yutaka Kagaya con ﬁrmed the spatial extent
+of the auroral display up to 20 ° in elevation by the naked eye and up to 70 ° in elevation by optical instruments.
+23
+
+equatorward boundary of the auroral oval was fairly broad in
+latitude, and the aurora extended further equatorward diffusively.
+According to the DMSP satellite o bservations, the equatorward
+boundary of the electron precipitation is broad in latitude during
+large magnetic storms(K. Shiokawa et al. 1997;Y .E b i h a r ae ta l .
+2017). Precipitations of electrons with low energy and low ﬂux
+could cause auroral emission further equatorward, but the auroral
+emission could be too dim to be visible to the naked-eye
+observations. For this scenario, the altitude distribution of the
+aurora is assumed to be the same. It is of course possible that both
+were the case, as expected in Scenario (3). Further quantitative
+assessments are needed here.
+For the moment, we accommodate as wide error margins as
+possible. It is empirically known that the maximum brightness of
+the reddish component of the aurora (at 630.0 nm ) is located
+around 220 km in altitude, and it can range from 200 to 300 km
+(S. C. Solomon et al. 1988). On the basis of spectra of
+precipitating electrons observed at midlatitudes near the storm
+maximum of the large magnetic storm of 1989 March 13–14, the
+volume emission rate of 630.0 nm peaks at about 270 km altitudes
+(Y. Ebihara et al. 2017). At 400 km altitude, the volume emission
+rate of 630.0 nm is an order of magnitude lower than that at the
+peak altitude. At 500 km altitude, the volume emission rate is
+much lower than that at the peak altitude. From this consideration,
+we set the altitudes of the upper limit of the aurora identiﬁed by a
+camera to be 300, 400, 500, and 800 km. In this case, the
+Namibian report from Tivoli Astrofarm (−23°.2 M L A T),w h i c h
+has a local altitude with instrumental detectability of 55° above the
+local horizon, allows us to derive the equatorward boundaries of
+the auroral oval as, at least, 27 °.6 , 2 8°.9 , 3 0°.1 , a n d 3 3°.3 I L A T ,
+respectively. Alternatively, the Australian report from Big
+Mitchell Reserve (−16°.8 M L A T), which has a local altitude
+with instrumental detectability of 50 ° above the local horizon,
+allows us to derive the equatorward boundaries of the auroral oval
+as 22 °.4 , 2 4°.0 , 2 5°. 4, and 29 °. 1 ILAT, respectively. Further
+detailed assessments are obvious ly needed with parallel case
+studies.
+Appendix B
+Spatial Distribution of the Auroral Activity
+Figure 15 shows a graphical summary of the temporal and
+spatial evolution of auroral visibility during the 2024 May storm,
+showing variations in the maximum auroral brightness. Based on
+the provisional Dst index, the auroral visibility below|40|° MLAT
+was concentrated in the late main phase and early recovery phase
+of this storm. One interesting a ccount is a subvisual auroral
+observation from a ship in th e South Atlantic Ocean (S32°00′,
+E17°00′,3 1°.5 M L A T) that lasted from 18:15 to 18:45 UT on May
+10. This aurora was photographed shortly after an SSC, despite its
+occurrence at lower latitudes. A similar case was observed during
+the 1989 March storm (D. H. Boteler, 2019).
+This ﬁgure also shows the temporal and spatial evolution of
+the maximum auroral brightness at each site. We gathered and
+compared citizen contributors ’ self-classiﬁcation and descrip-
+tions of the maximum brightness in total illumination with an
+IBC reference (J. W. Chamberlain, 1961, p. 124 ) with an
+extension: (0) not visible by the naked eye, (1) Comparable to
+Milky Way, (2) comparable to thin moonlit cirrus clouds, (3)
+comparable to moonlit cumulus clouds, (4) comparable to the
+full moon, and (5) brighter than any such references. This
+ﬁgure shows that the maximum brightness was higher in higher
+latitudes and lower at lower latitudes. This, in turn, shows
+gradual decreases in auroral brightness in lower MLATs and
+partially explains the smaller geographical extent of the naked-
+eye auroral visibility than that by instrumental observations.
+Figure B1 shows the number of auroral colorations reported
+in each MLAT range by the naked eye and the camera. A
+considerable number of reports show reddish and greenish
+coloration. These colors are typically associated with oxygen
+emissions at 630.0 nm (reddish) and 557.7 nm (greenish),
+owing to the precipitation of electrons. Reddish aurorae can
+more easily be seen than green aurorae by camera. Greenish
+aurorae cannot be spotted by the eye as far south, generally
+because they occur at lower altitudes. The yellowish color
+is most likely caused by a mixture of reddish and greenish
+colors. The number of reports with greenish coloration was
+Figure B1. Amounts of reported auroral colorations in each MLAT ranges by the naked eye (left) and by the camera (right), showing (1) <30° MLAT, (2) 30°–40°
+MLAT, (3) 40°–50° MLAT, and (4) >50° MLAT, from left to right.
+24
+
+comparable to that with reddish coloration at >40° MLATs,
+whereas it signi ﬁcantly decreased below 40 ° MLAT by naked-
+eye observation. For camera observations, a greenish coloration
+was reported below 40 ° MLAT. Purplish and pinkish colors
+have also been reported below 40 ° MLAT. They are typically
+associated with nitrogen emissions, including 427.8 nm for N 2+.
+Although bands of N 2+ are known to coexist in the reddish
+auroral arc (M. H. Rees & C. S. Deehr 1961), this may
+challenge the conventional wisdom that a low-latitude aurora is
+dominated by a reddish color. For the purplish auroras that
+appear at high altitudes, the energy of the precipitating
+electrons is not necessarily high. The coloration tempts us to
+associate them with sunlit aurorae (D. M. Hunten 2003), based
+on the similarity with the past auroral displays with bluish /
+purplish coloration during the great geomagnetic storms in
+1909 and 1958 (H. Hayakawa et al. 2019, 2022). The purplish
+aurora appeared to be dominant over the reddish one in some of
+the pictures, as exempli ﬁed by Víctor R. Ruiz ’s photograph in
+Mogán of Gran Canaria (Figure 14). The dominance of the
+purplish aurorae should be investigated in future studies,
+including different response bands of cameras and cell phones.
+It should be noted that the greenish coloration should have been
+seen in different colors, such as greyish, by naked-eye
+observation.

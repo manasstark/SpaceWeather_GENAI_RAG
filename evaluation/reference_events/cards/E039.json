@@ -1,0 +1,65 @@
+{
+  "event_id": "E039",
+  "type": "storm",
+  "class": "moderate",
+  "evaluation_role": "moderate",
+  "window": {
+    "start": "2017-09-27T01:00Z",
+    "end": "2017-09-29T07:00Z",
+    "hours": 55
+  },
+  "dst": {
+    "min_nT": -98,
+    "min_time": "2017-09-28T08:00Z",
+    "first_below_minus50_time": "2017-09-27T13:00Z",
+    "hours_from_minimum_to_back_above_minus30": 23,
+    "minimum_is_final": true
+  },
+  "drivers": {
+    "bz_min_hourly_nT": -10.6,
+    "bz_min_time": "2017-09-27T07:00Z",
+    "hours_bz_at_or_below_minus5": 8,
+    "vbs_max_mV_per_m": 5.1,
+    "vbs_mean_12h_before_dst_min_mV_per_m": 2.1,
+    "speed_max_km_per_s": 713,
+    "density_max_per_cm3": 44.9,
+    "dynamic_pressure_max_nPa_protons_only": 9.2,
+    "total_field_max_nT": 14.1
+  },
+  "geomagnetic": {
+    "kp_max": 6.67,
+    "noaa_g_level_approx": "G2",
+    "ap_max": 111
+  },
+  "solar": {
+    "f107_mean_sfu": 91,
+    "level": "low"
+  },
+  "hints": [
+    "Moderate geomagnetic storm: Dst minimum -98 nT.",
+    "Dst first fell below -50 nT 19 hours before reaching its minimum.",
+    "Dst was back above -30 nT 23 hours after the minimum.",
+    "Kp reached 6.7 (approximately NOAA G2 level).",
+    "Sustained southward Bz: 8 hours at or below -5 nT; minimum hourly Bz -10.6 nT.",
+    "Fast solar wind: maximum hourly speed 713 km/s.",
+    "Strong solar wind electric field: vBs up to 5.1 mV/m.",
+    "Solar activity low (mean F10.7 91 sfu)."
+  ],
+  "data_quality": {
+    "field_from_dscovr_pct": 100,
+    "plasma_from_dscovr_pct": 100,
+    "plasma_missing_pct": 0,
+    "caveats": [
+      "All values are hourly means in UTC; minute-level extremes are larger.",
+      "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+      "Bz is in GSM coordinates; negative Bz means southward.",
+      "Dst minimum is final."
+    ]
+  },
+  "claims_requiring_a_retrieved_source": [
+    "physical cause of the event (for example a coronal mass ejection or a high-speed stream)",
+    "impacts on satellites, GNSS, radio communication, power grids or aurora",
+    "comparison with, or ranking against, other historical storms",
+    "any forecast or prediction"
+  ]
+}
