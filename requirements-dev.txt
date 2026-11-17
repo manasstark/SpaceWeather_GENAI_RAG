@@ -5,3 +5,4 @@ pytest
 ruff
 black
 pre-commit
+playwright        # scripts/capture_screenshots.py

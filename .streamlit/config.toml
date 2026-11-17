@@ -7,6 +7,10 @@ headless = false
 # restart the app after changing code
 fileWatcherType = "none"
 
+[client]
+# hide the developer toolbar ("Deploy" etc.) for a clean demo
+toolbarMode = "viewer"
+
 [theme]
 base = "dark"
 primaryColor = "#ff7b00"

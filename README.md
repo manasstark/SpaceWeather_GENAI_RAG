@@ -5,6 +5,102 @@ upGrad Masters in ML/AI, GenAI track, Bring Your Own Capstone. Mid-work snapshot
 
 > **Where I am right now (17 Nov).** The full pipeline works end to end: data, events, event cards, knowledge base, retrieval, prompt templates, two generators (an offline baseline and a free local LLM), a claim-by-claim checker and the evaluation. The code is in `src/spacewx_rag/` with a command-line entry point, a config file the code reads, and 58 tests. There is a Streamlit demo app (`streamlit run app/main.py`) with a live mode that pulls the last day of real-time NOAA data and analyses it. Still to do: the technical report and the presentation. Section 7 has the table and section 8 the results.
 
+## 🎬 The demo app
+
+### ▶️ How to run it
+
+**First time only** (after the installation steps in section 5):
+```bash
+brew install ollama                 # or the installer from ollama.com
+brew services start ollama
+ollama pull qwen2.5:7b-instruct     # the local LLM, 4.7 GB, free
+cp .env.example .env                # LLM_PROVIDER=ollama, LLM_MODEL=qwen2.5:7b-instruct
+```
+
+**Every time:**
+```bash
+cd Spaceweather_GENAI_RAG
+source .venv/bin/activate
+brew services start ollama          # start the local LLM
+streamlit run app/main.py           # or: make app
+```
+Then open **http://localhost:8501**. The sidebar shows **🟢 ready** when the model is available. The app loads the model in the background on start, so the first answer is quick.
+
+**When you are done:**
+```bash
+# Ctrl+C in the terminal running Streamlit, then
+brew services stop ollama           # frees about 5 GB of memory
+```
+
+**Before a demo:**
+- Turn **Low Power Mode off** (System Settings → Battery). It makes the model about 3× faster: roughly 1 minute per answer instead of 3 to 5.
+- Close Chrome tabs and other heavy apps. The model needs about 5 GB of free memory.
+- Keep the laptop plugged in and on a hard surface. Long runs make it warm.
+- Press **🛰️ Fetch latest NOAA data** once to check the network. Without internet the app falls back to the last saved snapshot.
+
+**Without Ollama** the app still works. Historical events, results, the live data, and the simulator's instant reading all run without it; only the buttons that ask the AI are disabled.
+
+**If something goes wrong:**
+
+| Problem | Fix |
+|---|---|
+| Sidebar shows ⚪ offline and the AI buttons are greyed out | `brew services start ollama`, then reload the page |
+| An error after the code was changed | Auto-reload is off (`.streamlit/config.toml`), so stop the app (Ctrl+C) and run `streamlit run app/main.py` again |
+| Answers are very slow | Low Power Mode is on, or memory is full; close apps and check `ollama ps` shows `100% GPU` |
+| 🟠 "showing the last saved snapshot" on the live tab | NOAA or the network is unavailable; press Fetch again later |
+| Port 8501 already in use | `streamlit run app/main.py --server.port 8502` |
+
+The app has five tabs. Historical events and results read the saved outputs, so they work without the model; the buttons that ask the AI need Ollama running.
+
+### 🛰️ Live now: today's space weather
+One click on **Fetch latest NOAA data** pulls the last day of NOAA SWPC's real-time feeds (L1 solar wind, planetary Kp, Kyoto quick-look Dst, F10.7) and builds an event card with the same rules as the historical events. The solar wind is plotted at 1-minute resolution and Kp and Dst for the past week. **Generate AI analysis** then explains the last 24 hours. It describes recent conditions, it does not forecast, and it falls back to the last saved snapshot if NOAA or the network is down.
+
+![Live tab](docs/screenshots/01_live.png)
+
+### 🎛️ What-if simulator: build your own storm
+Pick a preset (quiet day up to Carrington-like) or move the sliders for Kp, Dst, solar wind speed and Bz. The storm class, NOAA G level, derived electric field and the rule-based reading update instantly, with no AI. Physically unusual combinations are flagged. The scenario card has no dates, so the model cannot present it as a real event.
+
+![What-if simulator](docs/screenshots/02_whatif.png)
+
+### 💬 Asking the AI: a terminal chat
+Pressing **Ask the AI** opens a terminal where the question is asked and the local model (`qwen2.5:7b-instruct`) answers line by line as it writes: first the retrieval step, then each sentence of the summary, each characteristic, the physical interpretation and the potential impacts tagged by area. The model really produces structured JSON in the background (the schema only allows real card fields and retrieved chunk ids as citations); the terminal shows the readable sentences as they arrive.
+
+While it is writing:
+
+![Terminal chat while the model writes](docs/screenshots/03_terminal_chat_streaming.png)
+
+Finished:
+
+![Terminal chat finished](docs/screenshots/04_terminal_chat_done.png)
+
+### ✅ The answer and the claim-by-claim check
+When the model finishes, the answer appears as a summary, characteristics with the card fields they came from, the physical interpretation and impact cards with their source chunks, caveats and what could not be supported. Below it every claim is checked: numbers against the card, causes and impacts against the cited passages (an LLM judge that must quote its support, plus a code check on the NOAA G level), no forecasts, nothing stormy for quiet windows. In this run the checker caught an impact claim slipped into the summary (❌, 11 of 12 grounded).
+
+![AI answer and claim check](docs/screenshots/05_ai_result_and_claim_check.png)
+
+### 📚 Historical events: the 15 evaluation events
+Choose an event in the sidebar (for example E216, the May 2024 super storm) to see its metric cards and the storm plot (Dst, Bz, solar wind speed with the OMNI-filled hours dotted, colour-coded Kp). The sub-tabs show the saved AI description with its claim check (from the main run, the no-retrieval ablation or the offline baseline), the retrieved sources with their licences, and a **Generate live now** button to rerun the model on that event.
+
+![Historical event E216](docs/screenshots/06_historical_event.png)
+
+<details><summary>The saved AI description and claim check for E216</summary>
+
+![E216 AI description and claim check](docs/screenshots/07_historical_claims.png)
+
+</details>
+
+### 📊 Results
+The headline numbers from notebook 07: groundedness with and without retrieval, completeness, number errors and retrieval hit@3, groundedness by event class for the three runs, and a short reading of what they show.
+
+![Results tab](docs/screenshots/08_results.png)
+
+### ℹ️ How it works
+The six pipeline stages on one page, and the scope (explains past and current conditions; no forecasting).
+
+![How it works](docs/screenshots/09_how_it_works.png)
+
+Screenshots are made with `python scripts/capture_screenshots.py` (Playwright) against the running app.
+
 ## 1. What this project is
 Space weather data comes from a few different places: solar wind and the magnetic field measured by the DSCOVR satellite, the Kp and Dst indices that describe how disturbed Earth's magnetic field is, and the F10.7 number for solar activity. To understand what happened during a storm you have to read all of them together, and that takes some expertise.
 
@@ -53,7 +149,8 @@ The knowledge base has 21 documents. Their licence status is listed one by one i
 | `evaluation/results/` | `generations/<run>/E###.json` (every output with its prompt passages), `generation_metrics.csv`, `generation_summary.csv`, `claims.csv`, `consistency.csv`, `retrieval_*.csv`, `judge_cache.jsonl` |
 | `tests/` | `unit/` (hint rules, classes, chunking, retrieval filter, schema, claim checks, judge quote and G-level checks) and `integration/` (src/ rebuilds the notebook outputs exactly) |
 | `docs/` | `architecture.md`, `methodology.md`, `decision_log.md` (58 decisions), `event_definitions.md`, `project_plan.md` |
-| `scripts/download_data.py`, `Makefile` | raw data download; shortcuts for every stage |
+| `scripts/download_data.py`, `scripts/capture_screenshots.py`, `Makefile` | raw data download; README screenshots of the running app; shortcuts for every stage |
+| `docs/screenshots/` | the app screenshots used in this README |
 | `app/main.py` | Streamlit demo: 🛰️ live NOAA conditions, 🎛️ what-if simulator (sliders → AI explanation), 📚 historical events (data, streamed AI description, claim-by-claim check, sources), 📊 results |
 | `src/spacewx_rag/live/` | fetches NOAA SWPC real-time feeds, saves snapshots, builds a live event card (`data/live/`) |
 
