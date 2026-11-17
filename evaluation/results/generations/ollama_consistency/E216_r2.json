@@ -1,0 +1,352 @@
+{
+ "event_id": "E216",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": true,
+ "temperature": 0.7,
+ "run": 2,
+ "valid": true,
+ "output": {
+  "event_id": "E216",
+  "summary": "The event, starting on May 10, 2024, and lasting for 143 hours, was a super geomagnetic storm with aDst minimum of -406 nT. The storm was associated with a southward Bz magnetic field and fast solar wind, which could have caused significant impacts on the Earth's magnetosphere and ionosphere, leading to potential disruptions in radio communications and satellite operations.",
+  "characteristics": [
+   {
+    "statement": "Dst minimum of -406 nT",
+    "evidence": [
+     "dst.min_nT"
+    ]
+   },
+   {
+    "statement": "Sustained southward Bz (23 hours at or below -5 nT, minimum hourly Bz -39.3 nT)",
+    "evidence": [
+     "drivers.bz_min_hourly_nT",
+     "drivers.bz_min_time",
+     "geomagnetic.kp_max"
+    ]
+   },
+   {
+    "statement": "Very fast solar wind (maximum hourly speed 1006 km/s)",
+    "evidence": [
+     "drivers.speed_max_km_per_s"
+    ]
+   },
+   {
+    "statement": "Strong solar wind dynamic pressure (up to 42.0 nPa (protons only))",
+    "evidence": [
+     "drivers.dynamic_pressure_max_nPa_protons_only"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Southward Bz is the main way solar wind energy enters the magnetosphere, leading to significant geomagnetic activity.",
+    "sources": [
+     "d03_c004",
+     "d03_c000"
+    ]
+   }
+  ],
+  "potential_impacts": [
+   {
+    "area": "satellites and spacecraft",
+    "statement": "Increased drag on satellites in low-Earth orbit could have caused orbit changes.",
+    "sources": [
+     "d15_c003",
+     "d11_c002"
+    ]
+   },
+   {
+    "area": "power systems",
+    "statement": "Geoelectric fields could have caused geomagnetically induced currents in power lines, potentially leading to system-wide blackouts or transformer saturation.",
+    "sources": [
+     "d07_c006",
+     "d07_c008"
+    ]
+   },
+   {
+    "area": "HF radio",
+    "statement": "HF radio communications could have been disrupted, especially at high latitudes.",
+    "sources": [
+     "d14_c001",
+     "d14_c002"
+    ]
+   },
+   {
+    "area": "GNSS navigation",
+    "statement": "GPS signals could have been disrupted, affecting positioning accuracy.",
+    "sources": [
+     "d03_c004"
+    ]
+   },
+   {
+    "area": "aurora",
+    "statement": "Auroral displays were observed at lower latitudes than usual, potentially affecting low-latitude observatories and agricultural operations.",
+    "sources": [
+     "d13_c004",
+     "d13_c009",
+     "d12_c109"
+    ]
+   },
+   {
+    "area": "aurora",
+    "statement": "Auroral altitudes could have been observed at lower latitudes due to the storm's intensity.",
+    "sources": [
+     "d13_c009"
+    ]
+   }
+  ],
+  "caveats": [
+   "Dst is provisional and may be revised by Kyoto.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Only 29% of the solar wind plasma hours come from DSCOVR; the rest are OMNI hourly values because DSCOVR plasma was flagged as unreliable or missing."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source",
+   "comparison with, or ranking against, other historical storms: no supporting source",
+   "any forecast or prediction: no supporting source"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E216\",\n  \"summary\": \"The event, starting on May 10, 2024, and lasting for 143 hours, was a super geomagnetic storm with aDst minimum of -406 nT. The storm was associated with a southward Bz magnetic field and fast solar wind, which could have caused significant impacts on the Earth's magnetosphere and ionosphere, leading to potential disruptions in radio communications and satellite operations.\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst minimum of -406 nT\",\n      \"evidence\": [\"dst.min_nT\"]\n    },\n    {\n      \"statement\": \"Sustained southward Bz (23 hours at or below -5 nT, minimum hourly Bz -39.3 nT)\",\n      \"evidence\": [\"drivers.bz_min_hourly_nT\", \"drivers.bz_min_time\", \"geomagnetic.kp_max\"]\n    },\n    {\n      \"statement\": \"Very fast solar wind (maximum hourly speed 1006 km/s)\",\n      \"evidence\": [\"drivers.speed_max_km_per_s\"]\n    },\n    {\n      \"statement\": \"Strong solar wind dynamic pressure (up to 42.0 nPa (protons only))\",\n      \"evidence\": [\"drivers.dynamic_pressure_max_nPa_protons_only\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Southward Bz is the main way solar wind energy enters the magnetosphere, leading to significant geomagnetic activity.\",\n      \"sources\": [\"d03_c004\", \"d03_c000\"]\n    }\n  ],\n  \"potential_impacts\": [\n    {\n      \"area\": \"satellites and spacecraft\",\n      \"statement\": \"Increased drag on satellites in low-Earth orbit could have caused orbit changes.\",\n      \"sources\": [\"d15_c003\", \"d11_c002\"]\n    },\n    {\n      \"area\": \"power systems\",\n      \"statement\": \"Geoelectric fields could have caused geomagnetically induced currents in power lines, potentially leading to system-wide blackouts or transformer saturation.\",\n      \"sources\": [\"d07_c006\", \"d07_c008\"]\n    },\n    {\n      \"area\": \"HF radio\",\n      \"statement\": \"HF radio communications could have been disrupted, especially at high latitudes.\",\n      \"sources\": [\"d14_c001\", \"d14_c002\"]\n    },\n    {\n      \"area\": \"GNSS navigation\",\n      \"statement\": \"GPS signals could have been disrupted, affecting positioning accuracy.\",\n      \"sources\": [\"d03_c004\"]\n    },\n    {\n      \"area\": \"aurora\",\n      \"statement\": \"Auroral displays were observed at lower latitudes than usual, potentially affecting low-latitude observatories and agricultural operations.\",\n      \"sources\": [\"d13_c004\", \"d13_c009\", \"d12_c109\"]\n    },\n    {\n      \"area\": \"aurora\",\n      \"statement\": \"Auroral altitudes could have been observed at lower latitudes due to the storm's intensity.\",\n      \"sources\": [\"d13_c009\"]\n    }\n  ],\n  \"caveats\": [\n    \"Dst is provisional and may be revised by Kyoto.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Only 29% of the solar wind plasma hours come from DSCOVR; the rest are OMNI hourly values because DSCOVR plasma was flagged as unreliable or missing.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source\",\n    \"comparison with, or ranking against, other historical storms: no supporting source\",\n    \"any forecast or prediction: no supporting source\"\n  ]\n}",
+ "error": null,
+ "seconds": 117.0,
+ "prompt_tokens": 4914,
+ "output_tokens": 906,
+ "passages": [
+  {
+   "chunk_id": "d13_c009",
+   "doc_id": 13,
+   "title": "May 2024 solar storms",
+   "section": "Impact",
+   "score": 0.783,
+   "queries": [
+    "physics"
+   ],
+   "text": "The storm compressed the Earth's subsolar magnetopause from higher than 10 R E down to 5 R E .\n\nSignificant geoelectric fields were generated across Europe during the sudden commencement of the geomagnetic storm , with notable amplitudes extending into mid- to low-latitude regions (~57° N), which is unusual for such strong responses. However, the spatial distribution was not uniform: the results indicate that the inclination of the CME-driven shock and magnetosphere–ionosphere coupling processes led to stronger geoelectric fields at higher latitudes, while mid-latitude regions still experienced substantial but more variable responses.",
+   "source_url": "https://en.wikipedia.org/wiki/May_2024_solar_storms",
+   "licence_status": "CC BY-SA 4.0 (page footer): attribution and share-alike apply"
+  },
+  {
+   "chunk_id": "d03_c000",
+   "doc_id": 3,
+   "title": "Geomagnetic Storms",
+   "section": "",
+   "score": 0.778,
+   "queries": [
+    "physics"
+   ],
+   "text": "A geomagnetic storm is a major disturbance of Earth's magnetosphere that occurs when there is a very efficient exchange of energy from the solar wind into the space environment surrounding Earth. These storms result from variations in the solar wind that produces major changes in the currents, plasmas, and fields in Earth’s magnetosphere. The solar wind conditions that are effective for creating geomagnetic storms are sustained (for several to many hours) periods of high-speed solar wind, and most importantly, a southward directed solar wind magnetic field (opposite the direction of Earth’s field) at the dayside of the magnetosphere. This condition is effective for transferring energy from the solar wind into Earth’s magnetosphere.",
+   "source_url": "https://www.swpc.noaa.gov/phenomena/geomagnetic-storms",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d11_c002",
+   "doc_id": 11,
+   "title": "Space Weather Action Center: Magnetosphere graph tutorial (Bz)",
+   "section": "About the Data",
+   "score": 0.761,
+   "queries": [
+    "physics"
+   ],
+   "text": "When the solar wind and the magnetosphere interact they operate as a system. The Earth's magnetosphere is full of particles from the sun. Depending on the magnetization of the particles in the solar wind the field can be southward (attracting),or northward (repelling) the Earth's field. On the daytime side of the Earth (side of the Earth facing the sun), these fields connect together and cause a transfer of particles and magnetic energy into the Earth's magnetosphere from the solar wind. These changes in the Earth's particles and fields cause severe 'magnetic storms'.\n\nThis graph explains the solar wind's effects on Earth's magnetosphere. When the solar wind magnetic field is opposite the Earth's, it is called a southward field and is considered to be negative in sign. You can monitor the ACE data in this graph to identify times when this happens.",
+   "source_url": "https://spdf.gsfc.nasa.gov/pub/documents/old/websites/sunearthday.nasa.gov/swac/tutorials/mag_ace.php",
+   "licence_status": "NASA-hosted; expected public domain; not verified; no notice found on the page"
+  },
+  {
+   "chunk_id": "d07_c006",
+   "doc_id": 7,
+   "title": "Impacts: Electric Power Transmission",
+   "section": "",
+   "score": 0.845,
+   "queries": [
+    "impacts: power systems"
+   ],
+   "text": "Assessing the impact of geomagnetic storms on the electrical power grid involves a number of considerations. The path for current flow that responds to the varying external currents in the upper atmosphere follows artificial current paths on the ground (the power lines) as well as various natural current paths ( e.g. conducting structures below the ground and nearby bodies of water). Once the natural current paths are accounted for, the net geoelectric field that is imposed on the artificial current paths results in a quasi D.C. (periods of 10 seconds to 10’s (tens) of minutes) current in the power lines. These geomagnetically induced currents cause the ‘exciting current’ in power transformers to operate out of their designed range, resulting in saturation of the magnetic core material inside the transformer",
+   "source_url": "https://www.swpc.noaa.gov/impacts/electric-power-transmission",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d07_c008",
+   "doc_id": 7,
+   "title": "Impacts: Electric Power Transmission",
+   "section": "",
+   "score": 0.829,
+   "queries": [
+    "impacts: power systems"
+   ],
+   "text": ". This means that a system that is near peak levels of demand prior to the geomagnetic storm event may not be able to meet the total power demand when the geomagnetic storm occurs, leading to partial or system wide blackouts.",
+   "source_url": "https://www.swpc.noaa.gov/impacts/electric-power-transmission",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d03_c004",
+   "doc_id": 3,
+   "title": "Geomagnetic Storms",
+   "section": "",
+   "score": 0.809,
+   "queries": [
+    "impacts: satellites and spacecraft",
+    "impacts: GNSS navigation"
+   ],
+   "text": "During storms, the currents in the ionosphere, as well as the energetic particles that precipitate into the ionosphere add energy in the form of heat that can increase the density and distribution of density in the upper atmosphere, causing extra drag on satellites in low-earth orbit. The local heating also creates strong horizontal variations in the in the ionospheric density that can modify the path of radio signals and create errors in the positioning information provided by GPS. While the storms create beautiful aurora, they also can disrupt navigation systems such as the Global Navigation Satellite System (GNSS) and create harmful geomagnetic induced currents (GICs) in the power grid and pipelines.",
+   "source_url": "https://www.swpc.noaa.gov/phenomena/geomagnetic-storms",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d15_c003",
+   "doc_id": 15,
+   "title": "Impacts: Satellite Drag",
+   "section": "",
+   "score": 0.801,
+   "queries": [
+    "impacts: satellites and spacecraft"
+   ],
+   "text": "In addition to these long-term changes in upper atmospheric temperature and density caused by the solar cycle, interactions between the solar wind and the Earth’s magnetic field during geomagnetic storms can produce large short-term increases in upper atmosphere temperature and density, increasing drag on satellites and changing their orbits. The North American Aerospace Defense Command (NORAD) has to re-identify hundreds of objects and record their new orbits after a large solar storm event (Figure 2). During the March 1989 storm event, for example, the NASA's Solar Maximum Mission (SMM) spacecraft was reported to have \"dropped as if it hit a brick wall\" due to the increased atmospheric drag.\n\nFigure 2. Number of satellites lost in connection with the March 13-14, 1989 storm (UCAR) .",
+   "source_url": "https://www.swpc.noaa.gov/impacts/satellite-drag",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d13_c012",
+   "doc_id": 13,
+   "title": "May 2024 solar storms",
+   "section": "Impact",
+   "score": 0.8,
+   "queries": [
+    "impacts: GNSS navigation"
+   ],
+   "text": "Agricultural users of John Deere RTK GPS equipment reported significantly degraded positional accuracy during the geomagnetic storm. As the GPS receivers are used to guide tractors in precision agriculture , certain agricultural workers were forced to suspend planting activities entirely. Affected farms lost an estimated US$17,000 each.\n\nUniversity of Victoria researchers discovered that the geomagnetic storm triggered compasses in sub-sea observatories deployed as deep as 2.7 km under the ocean's surface.\n\nSome aerial drone users flying during the storm experienced unusual behavior, including difficulty maintaining a stable hover, disruption of GPS signals, and in some cases a sudden loss of control which resulted in a crash. Drones rely on GPS and magnetic signals to maintain position during flight, which are affected by geomagnetic activity.",
+   "source_url": "https://en.wikipedia.org/wiki/May_2024_solar_storms",
+   "licence_status": "CC BY-SA 4.0 (page footer): attribution and share-alike apply"
+  },
+  {
+   "chunk_id": "d14_c002",
+   "doc_id": 14,
+   "title": "Impacts: HF Radio Communications",
+   "section": "",
+   "score": 0.832,
+   "queries": [
+    "impacts: HF radio"
+   ],
+   "text": "Another type of space weather, the Radiation Storm caused by energetic solar protons, can also disrupt HF radio communication. The protons are guided by Earth’s magnetic field such that they collide with the upper atmosphere near the north and south poles. The fast-moving protons have an effect similar to the x-ray photons and create an enhanced D-Layer thus blocking HF radio communication at high latitudes. During auroral displays, the precipitating electrons can enhance other layers of the ionosphere and have similar disrupting and blocking effects on radio communication. This occurs mostly on the night side of the polar regions of Earth where the aurora is most intense and most frequent.\n\nMore information on solar activity from an amateur radio operator’s perspective is available at https://qrparci.org/wp-content/uploads/2013/01/FDIM81.pdf",
+   "source_url": "https://www.swpc.noaa.gov/impacts/hf-radio-communications",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d14_c001",
+   "doc_id": 14,
+   "title": "Impacts: HF Radio Communications",
+   "section": "",
+   "score": 0.82,
+   "queries": [
+    "impacts: HF radio"
+   ],
+   "text": "There are several types of space weather that can impact HF radio communication. In a typical sequence of space weather storms, the first impacts are felt during the solar flare itself. The solar x-rays from the sun penetrate to the bottom of the ionosphere (to around 80 km). There the x-ray photons ionize the atmosphere and create an enhancement of the D layer of the ionosphere. This enhanced D-layer acts both as a reflector of radio waves at some frequencies and an absorber of waves at other frequencies. The Radio Blackout associated with solar flares occurs on the dayside region of Earth and is most intense when the sun is directly overhead.",
+   "source_url": "https://www.swpc.noaa.gov/impacts/hf-radio-communications",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d12_c109",
+   "doc_id": 12,
+   "title": "The Solar and Geomagnetic Storms in 2024 May: A Flash Data Report (26 pages)",
+   "section": "",
+   "score": 0.785,
+   "queries": [
+    "impacts: aurora"
+   ],
+   "text": "observers were under broad daylight around the storm peak (≈2\nUT), only managed to see the storm recovery phase, and probably\nmissed the most dramatic part of the auroral display.\nSimilar cases have been reported throughout the world. An\nIndian auroral report from Hanle in India (N32°28′, E078 °34′,\n24°.3 M L A T) described the auroral altitude therein as 5 ° by the\nnaked eye and 20 ° by camera. Similarly, the New Caledonian\nreport from Boulouparis described auroral altitude as 20 ° by the\nnaked eye and 30° by a camera. At Tivoli Astrofarm in Namibia\n(S23°28′, E018°01′, −23°.2 M L AT), aurora was conﬁrmed up to\n45° by the naked eye and up to 55° by the camera. Subsequently,\nits internal structure was con ﬁrmed to be up to 20 ° by photo-\ngraphic analysis(Figure 14). Notably, these examples occurred at\ndifferent times during the storm, as shown in Figure 12.",
+   "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ad9335/pdf",
+   "licence_status": "CC BY 4.0 (stated in the PDF text)"
+  },
+  {
+   "chunk_id": "d12_c112",
+   "doc_id": 12,
+   "title": "The Solar and Geomagnetic Storms in 2024 May: A Flash Data Report (26 pages)",
+   "section": "",
+   "score": 0.78,
+   "queries": [
+    "impacts: aurora"
+   ],
+   "text": "The equatorward extent of the visibility with a camera is\ndifferent from that with the naked eye. This discrepancy is\nprimarily attributed to the different sensitivity. The sensitivity of\nthe camera is much higher than that of the naked eye. We could\nsuggest three possible scenarios for its provenance as detectability\ndifferences in(1) vertical extents,(2) latitudinal extents, or(3) their\ncombinations. For Scenario(1), the aurora at high altitudes could\nhave been detected only by the cameras so that the aurora was\nvisible at lower latitudes. For this scenario, the equatorward\nboundary is assumed to be the same. For Scenario (2),t h e\nFigure A1. Examples of auroral photographs from Japan, from the top to the bottom: (a) Koumi in Japan with Canon EOS R5 (© Kouji Ohnishi ) and (b) Hiranai in",
+   "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ad9335/pdf",
+   "licence_status": "CC BY 4.0 (stated in the PDF text)"
+  },
+  {
+   "chunk_id": "d13_c004",
+   "doc_id": 13,
+   "title": "May 2024 solar storms",
+   "section": "Comparison to other geomagnetic storms",
+   "score": 0.762,
+   "queries": [
+    "indices"
+   ],
+   "text": "The disturbance storm time index (Dst index) is a measure in the context of space weather. A negative Dst index means that Earth's magnetic field is weakened. This is particularly the case during solar storms, with a higher negative Dst index indicating a stronger solar storm.\n\nThe 2003 Halloween solar storms had a peak Dst index of −383 nT, although a second storm on 20 November 2003 reached −422 nT while not reaching G5-class. The March 1989 geomagnetic storm had a peak Dst index of −589 nT, while the May 1921 geomagnetic storm has been estimated to have had a peak Dst index of −907 ± 132 nT . Estimates for the peak Dst index of the Carrington Event superstorm of 1859 are between −800 nT and −1750 nT .\n\nThe May 2024 solar storms reached a peak Dst index of −412 nT at 03:00 UTC on 11 May. Some readings indicated a peak Dst index of −518 nT .",
+   "source_url": "https://en.wikipedia.org/wiki/May_2024_solar_storms",
+   "licence_status": "CC BY-SA 4.0 (page footer): attribution and share-alike apply"
+  },
+  {
+   "chunk_id": "d20_c008",
+   "doc_id": 20,
+   "title": "On the Dst index",
+   "section": "",
+   "score": 0.753,
+   "queries": [
+    "indices"
+   ],
+   "text": "We denote by Dst the disturbance field, which is axially symmetric with respect to the dipole axis, and which is regarded as a function of storm-time. If an index monitoring the Dst in H is derived continuously as a function of UT, this variation will clearly indicate the occurrences of magnetic storms and their severity when they occur. Furthermore, even in the absence of distinct magnetic storms, this index will continuously monitor disturbances that are smaller in magnitude than those usually called magnetic storms, or disturbances that begin gradually without a well-defined commencement. Thus, the Dst variation so derived will provide a quantitative measure of geomagnetic disturbance that can be correlated with other solar and geophysical parameters. It is for these purposes that the Dst index is derived and published through the IAGA on a continuous basis.",
+   "source_url": "https://wdc.kugi.kyoto-u.ac.jp/dstdir/dst2/onDstindex.html",
+   "licence_status": "Not verified; no notice on the page; cite WDC Kyoto (Nose et al., doi:10.17593/14515-74000)"
+  },
+  {
+   "chunk_id": "d12_c094",
+   "doc_id": 12,
+   "title": "The Solar and Geomagnetic Storms in 2024 May: A Flash Data Report (26 pages)",
+   "section": "",
+   "score": 0.743,
+   "queries": [
+    "indices"
+   ],
+   "text": "those that occurred in 1957 September(min Dst= −427 nT),1 9 5 8\nFebruary (min Dst = −426 nT), 1959 July (min Dst = −429 nT),\nand 2003 November(min Dst = −422 nT),a n ds i g n iﬁcantly more\nmoderate only than that of the e xtreme storm recorded in 1989\nMarch (WDC for Geomagnetism at Kyoto et al. 2015a;P .R i l e y\net al. 2018). This value should be revised in the future because this\nprovisional Dst index was developed using a method different\nfrom that for the ﬁnal Dst index that extended only up to 2016 at\nthe time of writing this manuscr ipt. Additionally, this storm\nrecorded the highest value on the Kp index (Kp = 9)( J. Matzka\net al. 2021) since 2003 October (Y. Yamazaki et al. 2024).\nMoreover, it is the second to the ﬁfth greatest on the Hp30 index\nsince 1985 (Y. Yamazaki et al. 2024). In this regard, this\ngeomagnetic storm was certainly large but not unique.",
+   "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ad9335/pdf",
+   "licence_status": "CC BY 4.0 (stated in the PDF text)"
+  },
+  {
+   "chunk_id": "d21_c009",
+   "doc_id": 21,
+   "title": "Version Definitions of AE and Dst Geomagnetic Indices (4 pages, updated 2025-10-20)",
+   "section": "",
+   "score": 0.847,
+   "queries": [
+    "quality"
+   ],
+   "text": "2.2 Provisional Dst Index\nThe provisional Dst index is generally calculated with a lag of several months. For the calcu-\nlation, we use the highest-level processed field data available at that time (provisional, quasi-\ndefinitive, or definitive values). The calculation method is the same as that for the real-time\nDst index, except that manual correction of artificial noise and baseline offsets is performed on\nthe original field data. The provisional Dst values can be used for scientific analysis, and the\ndigital data are publicly available.\n2.3 Final Dst Index\nThe final Dst index is the highest-level version, calculated with a lag of several years, after which\nno further changes will be made. Currently, we use the definitive geomagnetic field data provided\nby INTERMAGNET. These data are reliable, having been corrected both automatically and",
+   "source_url": "https://wdc.kugi.kyoto-u.ac.jp/wdc/pdf/AEDst_version_def_v4.pdf",
+   "licence_status": "Not verified; cite WDC Kyoto"
+  },
+  {
+   "chunk_id": "d21_c011",
+   "doc_id": 21,
+   "title": "Version Definitions of AE and Dst Geomagnetic Indices (4 pages, updated 2025-10-20)",
+   "section": "",
+   "score": 0.816,
+   "queries": [
+    "quality"
+   ],
+   "text": "sions of the Dst Index\nAs an example, we compare the three versions of the Dst index for 2014 (Figure 1). We observe\nthat the variations are generally consistent with each other. The real-time and provisional\nvalues show good agreement because their baseline and Sq variations are determined using the\nsame method. Minor differences exist due to variations in noise removal; the magnitude of\nthese differences depends on the amount of intense noise in the real-time geomagnetic data and\nwhether those errors were corrected (the same applies to the difference between the real-time\nand provisional AE indices).\nIn September and December, a substantial discrepancy of about 20–30 nT is observed be-\ntween the provisional and final values. This may be because the baseline for the provisional\nvalue was determined using data from only that specific month. If the horizontal component of",
+   "source_url": "https://wdc.kugi.kyoto-u.ac.jp/wdc/pdf/AEDst_version_def_v4.pdf",
+   "licence_status": "Not verified; cite WDC Kyoto"
+  },
+  {
+   "chunk_id": "d21_c013",
+   "doc_id": 21,
+   "title": "Version Definitions of AE and Dst Geomagnetic Indices (4 pages, updated 2025-10-20)",
+   "section": "",
+   "score": 0.802,
+   "queries": [
+    "quality"
+   ],
+   "text": "Figure 1: Comparison between final (red), provisional (blue), and real-time (green) Dst values\nin 2014. Data for each month are plotted in each panel.\n4",
+   "source_url": "https://wdc.kugi.kyoto-u.ac.jp/wdc/pdf/AEDst_version_def_v4.pdf",
+   "licence_status": "Not verified; cite WDC Kyoto"
+  }
+ ]
+}

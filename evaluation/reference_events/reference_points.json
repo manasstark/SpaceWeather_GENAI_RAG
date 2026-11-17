@@ -1,0 +1,1064 @@
+{
+ "note": "Hand-written reference points for the 15 evaluation events (completeness and must-not checks). Drafted on 2026-11-17 by the coding assistant from the event cards and docs/event_definitions.md, then reviewed by the author: PENDING. Regexes are case-insensitive. Sections: summary, characteristics, possible_physical_interpretation, potential_impacts, caveats, unsupported_or_unknown, summary+characteristics, all.",
+ "events": {
+  "E216": {
+   "class": "super",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-406 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?406(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 9.0 or the G5 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(9|9\\.0)\\b|\\bG5\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "omni_plasma",
+     "text": "Says part of the plasma data comes from OMNI",
+     "type": "regex",
+     "pattern": "\\bOMNI\\b",
+     "section": "all"
+    },
+    {
+     "id": "overlap",
+     "text": "Says the window overlaps a neighbouring event",
+     "type": "regex",
+     "pattern": "overlap",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-39.3 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?39\\.3(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a super storm",
+     "type": "regex",
+     "pattern": "\\bsuper\\b",
+     "section": "all"
+    },
+    {
+     "id": "fast_wind",
+     "text": "States the fast solar wind (1006 km/s)",
+     "type": "regex",
+     "pattern": "(?<![\\d.])1006(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "cause_cited",
+     "text": "Gives the CME cause from the May 2024 documents, with a citation",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b",
+     "section": "possible_physical_interpretation"
+    },
+    {
+     "id": "strong_bz",
+     "text": "Mentions strongly southward Bz / strong electric field",
+     "type": "regex",
+     "pattern": "strongly southward|27(\\.0)?\\s*mV/m|electric field",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E158": {
+   "class": "intense",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-213 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?213(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 8.33 or the G4 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(8\\.3|8\\.33)\\b|\\bG4\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "omni_plasma",
+     "text": "Says part of the plasma data comes from OMNI",
+     "type": "regex",
+     "pattern": "\\bOMNI\\b",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-31.8 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?31\\.8(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a intense storm",
+     "type": "regex",
+     "pattern": "\\bintense\\b",
+     "section": "all"
+    },
+    {
+     "id": "fast_wind",
+     "text": "States the fast solar wind (711 km/s)",
+     "type": "regex",
+     "pattern": "(?<![\\d.])711(?![\\d])",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E231": {
+   "class": "intense",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-188 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?188(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 8.0 or the G4 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(8|8\\.0)\\b|\\bG4\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-19.1 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?19\\.1(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a intense storm",
+     "type": "regex",
+     "pattern": "\\bintense\\b",
+     "section": "all"
+    },
+    {
+     "id": "high_solar",
+     "text": "States high solar activity (F10.7 271 sfu)",
+     "type": "regex",
+     "pattern": "271|high solar activity|solar activity high",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_fast_wind_claim",
+     "text": "Does not call the wind fast (card: ordinary, 516 km/s)",
+     "type": "regex",
+     "pattern": "(?<!not )\\b(very )?fast solar wind|high[- ]speed solar wind",
+     "section": "summary+characteristics"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E058": {
+   "class": "intense",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-176 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?176(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 7.33 or the G3 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(7\\.3|7\\.33)\\b|\\bG3\\b",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-16.3 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?16\\.3(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a intense storm",
+     "type": "regex",
+     "pattern": "\\bintense\\b",
+     "section": "all"
+    },
+    {
+     "id": "fast_wind",
+     "text": "States the fast solar wind (627 km/s)",
+     "type": "regex",
+     "pattern": "(?<![\\d.])627(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "dst_final",
+     "text": "Says the Dst minimum is final",
+     "type": "regex",
+     "pattern": "\\bfinal\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E027": {
+   "class": "intense",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-146 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?146(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 7.0 or the G3 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(7|7\\.0)\\b|\\bG3\\b",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-19.7 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?19\\.7(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a intense storm",
+     "type": "regex",
+     "pattern": "\\bintense\\b",
+     "section": "all"
+    },
+    {
+     "id": "dst_final",
+     "text": "Says the Dst minimum is final",
+     "type": "regex",
+     "pattern": "\\bfinal\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_fast_wind_claim",
+     "text": "Does not call the wind fast (card: ordinary, 400 km/s)",
+     "type": "regex",
+     "pattern": "(?<!not )\\b(very )?fast solar wind|high[- ]speed solar wind",
+     "section": "summary+characteristics"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E256": {
+   "class": "intense",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-138 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?138(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 7.67 or the G3 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(7\\.67|7\\.7)\\b|\\bG3\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-16.8 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?16\\.8(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a intense storm",
+     "type": "regex",
+     "pattern": "\\bintense\\b",
+     "section": "all"
+    },
+    {
+     "id": "fast_wind",
+     "text": "States the fast solar wind (606 km/s)",
+     "type": "regex",
+     "pattern": "(?<![\\d.])606(?![\\d])",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E039": {
+   "class": "moderate",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-98 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?98(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 6.67 or the G2 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(6\\.67|6\\.7)\\b|\\bG2\\b",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-10.6 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?10\\.6(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a moderate storm",
+     "type": "regex",
+     "pattern": "\\bmoderate\\b",
+     "section": "all"
+    },
+    {
+     "id": "fast_wind",
+     "text": "States the fast solar wind (713 km/s)",
+     "type": "regex",
+     "pattern": "(?<![\\d.])713(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "dst_final",
+     "text": "Says the Dst minimum is final",
+     "type": "regex",
+     "pattern": "\\bfinal\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E117": {
+   "class": "moderate",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-85 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?85(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 6.33 or the G2 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(6\\.3|6\\.33)\\b|\\bG2\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-16.3 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?16\\.3(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a moderate storm",
+     "type": "regex",
+     "pattern": "\\bmoderate\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_fast_wind_claim",
+     "text": "Does not call the wind fast (card: ordinary, 517 km/s)",
+     "type": "regex",
+     "pattern": "(?<!not )\\b(very )?fast solar wind|high[- ]speed solar wind",
+     "section": "summary+characteristics"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E095": {
+   "class": "moderate",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-61 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?61(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 7.0 or the G3 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(7|7\\.0)\\b|\\bG3\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-18.2 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?18\\.2(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a moderate storm",
+     "type": "regex",
+     "pattern": "\\bmoderate\\b",
+     "section": "all"
+    },
+    {
+     "id": "g3_vs_moderate",
+     "text": "States Kp 7 / G3 even though Dst is only moderate",
+     "type": "regex",
+     "pattern": "\\bG3\\b|Kp\\D{0,25}7(\\.0)?\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_fast_wind_claim",
+     "text": "Does not call the wind fast (card: ordinary, 530 km/s)",
+     "type": "regex",
+     "pattern": "(?<!not )\\b(very )?fast solar wind|high[- ]speed solar wind",
+     "section": "summary+characteristics"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E002": {
+   "class": "moderate",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-52 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?52(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 5.0 or the G1 level",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(5|5\\.0)\\b|\\bG1\\b",
+     "section": "all"
+    },
+    {
+     "id": "bz_min",
+     "text": "States the minimum hourly Bz (-14.5 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?14\\.5(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "storm_class",
+     "text": "Calls it a moderate storm",
+     "type": "regex",
+     "pattern": "\\bmoderate\\b",
+     "section": "all"
+    },
+    {
+     "id": "dst_final",
+     "text": "Says the Dst minimum is final",
+     "type": "regex",
+     "pattern": "\\bfinal\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_fast_wind_claim",
+     "text": "Does not call the wind fast (card: ordinary, 559 km/s)",
+     "type": "regex",
+     "pattern": "(?<!not )\\b(very )?fast solar wind|high[- ]speed solar wind",
+     "section": "summary+characteristics"
+    },
+    {
+     "id": "no_unsourced_cause",
+     "text": "Summary and characteristics name no cause (the card has none)",
+     "type": "regex",
+     "pattern": "coronal mass ejection|\\bCMEs?\\b|high[- ]speed (solar wind )?streams?|coronal holes?|solar flares?",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E105": {
+   "class": "quiet",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-25 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?25(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 3.0",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(3|3\\.0)\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "calm",
+     "text": "Describes calm or quiet conditions",
+     "type": "regex",
+     "pattern": "\\b(quiet|calm)\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_impacts",
+     "text": "No potential impacts for a quiet interval",
+     "type": "empty",
+     "section": "potential_impacts"
+    },
+    {
+     "id": "no_storm_language",
+     "text": "Does not describe a storm",
+     "type": "regex",
+     "pattern": "geomagnetic storm (occurred|developed|was observed|took place)|\\b(minor|moderate|intense|severe|strong|major|extreme|super) (geomagnetic )?storm\\b",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E121": {
+   "class": "quiet",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-14 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?14(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 3.0",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(3|3\\.0)\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "calm",
+     "text": "Describes calm or quiet conditions",
+     "type": "regex",
+     "pattern": "\\b(quiet|calm)\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_impacts",
+     "text": "No potential impacts for a quiet interval",
+     "type": "empty",
+     "section": "potential_impacts"
+    },
+    {
+     "id": "no_storm_language",
+     "text": "Does not describe a storm",
+     "type": "regex",
+     "pattern": "geomagnetic storm (occurred|developed|was observed|took place)|\\b(minor|moderate|intense|severe|strong|major|extreme|super) (geomagnetic )?storm\\b",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E078": {
+   "class": "quiet",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-12 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?12(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 2.0",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(2|2\\.0)\\b",
+     "section": "all"
+    },
+    {
+     "id": "calm",
+     "text": "Describes calm or quiet conditions",
+     "type": "regex",
+     "pattern": "\\b(quiet|calm)\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_impacts",
+     "text": "No potential impacts for a quiet interval",
+     "type": "empty",
+     "section": "potential_impacts"
+    },
+    {
+     "id": "no_storm_language",
+     "text": "Does not describe a storm",
+     "type": "regex",
+     "pattern": "geomagnetic storm (occurred|developed|was observed|took place)|\\b(minor|moderate|intense|severe|strong|major|extreme|super) (geomagnetic )?storm\\b",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E221": {
+   "class": "quiet",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-12 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?12(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 1.33",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(1\\.3|1\\.33)\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "calm",
+     "text": "Describes calm or quiet conditions",
+     "type": "regex",
+     "pattern": "\\b(quiet|calm)\\b",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_impacts",
+     "text": "No potential impacts for a quiet interval",
+     "type": "empty",
+     "section": "potential_impacts"
+    },
+    {
+     "id": "no_storm_language",
+     "text": "Does not describe a storm",
+     "type": "regex",
+     "pattern": "geomagnetic storm (occurred|developed|was observed|took place)|\\b(minor|moderate|intense|severe|strong|major|extreme|super) (geomagnetic )?storm\\b",
+     "section": "summary+characteristics"
+    }
+   ]
+  },
+  "E143": {
+   "class": "quiet",
+   "must_include": [
+    {
+     "id": "dst_min",
+     "text": "States the Dst minimum (-6 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?6(?![\\d])",
+     "section": "all"
+    },
+    {
+     "id": "kp_max",
+     "text": "States Kp max 3.0",
+     "type": "regex",
+     "pattern": "Kp\\D{0,25}(3|3\\.0)\\b",
+     "section": "all"
+    },
+    {
+     "id": "provisional_dst",
+     "text": "Says Dst is provisional",
+     "type": "regex",
+     "pattern": "provisional",
+     "section": "all"
+    },
+    {
+     "id": "calm",
+     "text": "Describes calm or quiet conditions",
+     "type": "regex",
+     "pattern": "\\b(quiet|calm)\\b",
+     "section": "all"
+    },
+    {
+     "id": "brief_bz",
+     "text": "Mentions the single brief southward Bz hour (-7.1 nT)",
+     "type": "regex",
+     "pattern": "[-−–]\\s?7\\.1(?![\\d])|brief southward",
+     "section": "all"
+    }
+   ],
+   "must_not": [
+    {
+     "id": "no_forecast",
+     "text": "No forecast or prediction",
+     "type": "regex",
+     "pattern": "\\b(will (occur|happen|cause|affect|be|lead)|forecast(s|ed)?|predict(s|ed|ion)?|expected to)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_observed_damage",
+     "text": "Impacts stated as potential, not observed damage",
+     "type": "regex",
+     "pattern": "\\b(caused|resulted in|led to|triggered)\\s+(widespread\\s+)?(blackouts?|outages?|damage|failures?)\\b",
+     "section": "summary+characteristics+possible_physical_interpretation+potential_impacts+caveats"
+    },
+    {
+     "id": "no_impacts",
+     "text": "No potential impacts for a quiet interval",
+     "type": "empty",
+     "section": "potential_impacts"
+    },
+    {
+     "id": "no_storm_language",
+     "text": "Does not describe a storm",
+     "type": "regex",
+     "pattern": "geomagnetic storm (occurred|developed|was observed|took place)|\\b(minor|moderate|intense|severe|strong|major|extreme|super) (geomagnetic )?storm\\b",
+     "section": "summary+characteristics"
+    }
+   ]
+  }
+ }
+}

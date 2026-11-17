@@ -1,0 +1,318 @@
+{
+ "event_id": "E158",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": true,
+ "temperature": 0.7,
+ "run": 2,
+ "valid": true,
+ "output": {
+  "event_id": "E158",
+  "summary": "An intense geomagnetic storm with a Dst minimum of -213 nT began on April 23, 2023, and lasted for 81 hours. Sustained southward Bz and fast solar wind contributed to the storm, with the Bz reaching a minimum of -31.8 nT and the solar wind speed peaking at 711 km/s.",
+  "characteristics": [
+   {
+    "statement": "Dst minimum of -213 nT",
+    "evidence": [
+     "dst.min_nT"
+    ]
+   },
+   {
+    "statement": "Sustained southward Bz for 20 hours",
+    "evidence": [
+     "drivers.bz_min_hourly_nT",
+     "drivers.hours_bz_at_or_below_minus5"
+    ]
+   },
+   {
+    "statement": "Solar wind speed up to 711 km/s",
+    "evidence": [
+     "drivers.speed_max_km_per_s"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Sustained southward Bz is the main way solar wind energy enters the magnetosphere.",
+    "sources": [
+     "d03_c000",
+     "d03_c001"
+    ]
+   },
+   {
+    "statement": "Fast solar wind can drive intense geomagnetic storms.",
+    "sources": [
+     "d03_c000",
+     "d03_c001"
+    ]
+   }
+  ],
+  "potential_impacts": [],
+  "caveats": [
+   "Dst is provisional and may be revised by Kyoto.",
+   "All values are hourly means in UTC; minute-level extremes are larger.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Bz is in GSM coordinates; negative Bz means southward.",
+   "63% of the solar wind plasma hours come from DSCOVR; the rest are OMNI hourly values."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream)",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora",
+   "comparison with, or ranking against, other historical storms",
+   "any forecast or prediction"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E158\",\n  \"summary\": \"An intense geomagnetic storm with a Dst minimum of -213 nT began on April 23, 2023, and lasted for 81 hours. Sustained southward Bz and fast solar wind contributed to the storm, with the Bz reaching a minimum of -31.8 nT and the solar wind speed peaking at 711 km/s.\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst minimum of -213 nT\",\n      \"evidence\": [\"dst.min_nT\"]\n    },\n    {\n      \"statement\": \"Sustained southward Bz for 20 hours\",\n      \"evidence\": [\"drivers.bz_min_hourly_nT\", \"drivers.hours_bz_at_or_below_minus5\"]\n    },\n    {\n      \"statement\": \"Solar wind speed up to 711 km/s\",\n      \"evidence\": [\"drivers.speed_max_km_per_s\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Sustained southward Bz is the main way solar wind energy enters the magnetosphere.\",\n      \"sources\": [\"d03_c000\", \"d03_c001\"]\n    },\n    {\n      \"statement\": \"Fast solar wind can drive intense geomagnetic storms.\",\n      \"sources\": [\"d03_c000\", \"d03_c001\"]\n    }\n  ],\n  \"potential_impacts\": [],\n  \"caveats\": [\n    \"Dst is provisional and may be revised by Kyoto.\",\n    \"All values are hourly means in UTC; minute-level extremes are larger.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Bz is in GSM coordinates; negative Bz means southward.\",\n    \"63% of the solar wind plasma hours come from DSCOVR; the rest are OMNI hourly values.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream)\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora\",\n    \"comparison with, or ranking against, other historical storms\",\n    \"any forecast or prediction\"\n  ]\n}",
+ "error": null,
+ "seconds": 68.0,
+ "prompt_tokens": 4235,
+ "output_tokens": 529,
+ "passages": [
+  {
+   "chunk_id": "d03_c000",
+   "doc_id": 3,
+   "title": "Geomagnetic Storms",
+   "section": "",
+   "score": 0.797,
+   "queries": [
+    "physics"
+   ],
+   "text": "A geomagnetic storm is a major disturbance of Earth's magnetosphere that occurs when there is a very efficient exchange of energy from the solar wind into the space environment surrounding Earth. These storms result from variations in the solar wind that produces major changes in the currents, plasmas, and fields in Earth’s magnetosphere. The solar wind conditions that are effective for creating geomagnetic storms are sustained (for several to many hours) periods of high-speed solar wind, and most importantly, a southward directed solar wind magnetic field (opposite the direction of Earth’s field) at the dayside of the magnetosphere. This condition is effective for transferring energy from the solar wind into Earth’s magnetosphere.",
+   "source_url": "https://www.swpc.noaa.gov/phenomena/geomagnetic-storms",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d03_c001",
+   "doc_id": 3,
+   "title": "Geomagnetic Storms",
+   "section": "",
+   "score": 0.782,
+   "queries": [
+    "physics"
+   ],
+   "text": "The largest storms that result from these conditions are associated with solar coronal mass ejections (CMEs) where a billion tons or so of plasma from the sun, with its embedded magnetic field, arrives at Earth. CMEs typically take several days to arrive at Earth, but have been observed, for some of the most intense storms, to arrive in as short as 18 hours. Another solar wind disturbance that creates conditions favorable to geomagnetic storms is a high-speed solar wind stream (HSS). HSSs plow into the slower solar wind in front and create co-rotating interaction regions, or CIRs. These regions are often related to geomagnetic storms that while less intense than CME storms, often can deposit more energy in Earth’s magnetosphere over a longer interval.",
+   "source_url": "https://www.swpc.noaa.gov/phenomena/geomagnetic-storms",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d07_c002",
+   "doc_id": 7,
+   "title": "Impacts: Electric Power Transmission",
+   "section": "",
+   "score": 0.762,
+   "queries": [
+    "physics"
+   ],
+   "text": ". Geomagnetic storms in turn are caused by disturbances that propagate away from the Sun, travel through interplanetary space and interact with Earth’s space environment.",
+   "source_url": "https://www.swpc.noaa.gov/impacts/electric-power-transmission",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d07_c006",
+   "doc_id": 7,
+   "title": "Impacts: Electric Power Transmission",
+   "section": "",
+   "score": 0.834,
+   "queries": [
+    "impacts: power systems"
+   ],
+   "text": "Assessing the impact of geomagnetic storms on the electrical power grid involves a number of considerations. The path for current flow that responds to the varying external currents in the upper atmosphere follows artificial current paths on the ground (the power lines) as well as various natural current paths ( e.g. conducting structures below the ground and nearby bodies of water). Once the natural current paths are accounted for, the net geoelectric field that is imposed on the artificial current paths results in a quasi D.C. (periods of 10 seconds to 10’s (tens) of minutes) current in the power lines. These geomagnetically induced currents cause the ‘exciting current’ in power transformers to operate out of their designed range, resulting in saturation of the magnetic core material inside the transformer",
+   "source_url": "https://www.swpc.noaa.gov/impacts/electric-power-transmission",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d07_c008",
+   "doc_id": 7,
+   "title": "Impacts: Electric Power Transmission",
+   "section": "",
+   "score": 0.825,
+   "queries": [
+    "impacts: power systems"
+   ],
+   "text": ". This means that a system that is near peak levels of demand prior to the geomagnetic storm event may not be able to meet the total power demand when the geomagnetic storm occurs, leading to partial or system wide blackouts.",
+   "source_url": "https://www.swpc.noaa.gov/impacts/electric-power-transmission",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d15_c003",
+   "doc_id": 15,
+   "title": "Impacts: Satellite Drag",
+   "section": "",
+   "score": 0.795,
+   "queries": [
+    "impacts: satellites and spacecraft"
+   ],
+   "text": "In addition to these long-term changes in upper atmospheric temperature and density caused by the solar cycle, interactions between the solar wind and the Earth’s magnetic field during geomagnetic storms can produce large short-term increases in upper atmosphere temperature and density, increasing drag on satellites and changing their orbits. The North American Aerospace Defense Command (NORAD) has to re-identify hundreds of objects and record their new orbits after a large solar storm event (Figure 2). During the March 1989 storm event, for example, the NASA's Solar Maximum Mission (SMM) spacecraft was reported to have \"dropped as if it hit a brick wall\" due to the increased atmospheric drag.\n\nFigure 2. Number of satellites lost in connection with the March 13-14, 1989 storm (UCAR) .",
+   "source_url": "https://www.swpc.noaa.gov/impacts/satellite-drag",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d03_c004",
+   "doc_id": 3,
+   "title": "Geomagnetic Storms",
+   "section": "",
+   "score": 0.794,
+   "queries": [
+    "impacts: satellites and spacecraft"
+   ],
+   "text": "During storms, the currents in the ionosphere, as well as the energetic particles that precipitate into the ionosphere add energy in the form of heat that can increase the density and distribution of density in the upper atmosphere, causing extra drag on satellites in low-earth orbit. The local heating also creates strong horizontal variations in the in the ionospheric density that can modify the path of radio signals and create errors in the positioning information provided by GPS. While the storms create beautiful aurora, they also can disrupt navigation systems such as the Global Navigation Satellite System (GNSS) and create harmful geomagnetic induced currents (GICs) in the power grid and pipelines.",
+   "source_url": "https://www.swpc.noaa.gov/phenomena/geomagnetic-storms",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d16_c002",
+   "doc_id": 16,
+   "title": "Space Weather and GPS Systems",
+   "section": "",
+   "score": 0.776,
+   "queries": [
+    "impacts: GNSS navigation"
+   ],
+   "text": "In calm conditions, single frequency GPS systems can provide position information with an accuracy of a meter or less. During a severe space weather storm, these errors can increase to tens of meters or more. Dual frequency GPS systems can provide position information accurate to a few centimeters. In this case the two different GPS signals are used to better characterize the ionosphere and remove its impact on the position calculation. But when the ionosphere becomes highly disturbed, the GPS receiver cannot lock on the satellite signal and position information becomes inaccurate.",
+   "source_url": "https://www.swpc.noaa.gov/impacts/space-weather-and-gps-systems",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d16_c003",
+   "doc_id": 16,
+   "title": "Space Weather and GPS Systems",
+   "section": "",
+   "score": 0.771,
+   "queries": [
+    "impacts: GNSS navigation"
+   ],
+   "text": "Geomagnetic storms create large disturbances in the ionosphere. The currents and energy introduced by a geomagnetic storm enhance the ionosphere and increase the total height-integrated number of ionospheric electrons, or the Total Electron Count (TEC). GPS systems cannot correctly model this dynamic enhancement and errors are introduced into the position calculations. This usually occurs at high latitudes, though major storms can produce large TEC enhancements at mid-latitudes as well.",
+   "source_url": "https://www.swpc.noaa.gov/impacts/space-weather-and-gps-systems",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d14_c002",
+   "doc_id": 14,
+   "title": "Impacts: HF Radio Communications",
+   "section": "",
+   "score": 0.836,
+   "queries": [
+    "impacts: HF radio"
+   ],
+   "text": "Another type of space weather, the Radiation Storm caused by energetic solar protons, can also disrupt HF radio communication. The protons are guided by Earth’s magnetic field such that they collide with the upper atmosphere near the north and south poles. The fast-moving protons have an effect similar to the x-ray photons and create an enhanced D-Layer thus blocking HF radio communication at high latitudes. During auroral displays, the precipitating electrons can enhance other layers of the ionosphere and have similar disrupting and blocking effects on radio communication. This occurs mostly on the night side of the polar regions of Earth where the aurora is most intense and most frequent.\n\nMore information on solar activity from an amateur radio operator’s perspective is available at https://qrparci.org/wp-content/uploads/2013/01/FDIM81.pdf",
+   "source_url": "https://www.swpc.noaa.gov/impacts/hf-radio-communications",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d14_c001",
+   "doc_id": 14,
+   "title": "Impacts: HF Radio Communications",
+   "section": "",
+   "score": 0.822,
+   "queries": [
+    "impacts: HF radio"
+   ],
+   "text": "There are several types of space weather that can impact HF radio communication. In a typical sequence of space weather storms, the first impacts are felt during the solar flare itself. The solar x-rays from the sun penetrate to the bottom of the ionosphere (to around 80 km). There the x-ray photons ionize the atmosphere and create an enhancement of the D layer of the ionosphere. This enhanced D-layer acts both as a reflector of radio waves at some frequencies and an absorber of waves at other frequencies. The Radio Blackout associated with solar flares occurs on the dayside region of Earth and is most intense when the sun is directly overhead.",
+   "source_url": "https://www.swpc.noaa.gov/impacts/hf-radio-communications",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d17_c003",
+   "doc_id": 17,
+   "title": "Aurora",
+   "section": "",
+   "score": 0.772,
+   "queries": [
+    "impacts: aurora"
+   ],
+   "text": "When space weather activity increases and more frequent and larger storms and substorms occur, the aurora extends equatorward. During large events, the aurora can be observed as far south as the US, Europe, and Asia. During very large events, the aurora can be observed even farther from the poles. ( Tips on viewing the aurora and maps of the typical extent of the aurora ). Of course, to observe the aurora, the skies must be clear and free of clouds. It must also be dark so during the summer months at auroral latitudes, the midnight sun prevents auroral observations. Photo by Neal Brown (Fairbanks)",
+   "source_url": "https://www.swpc.noaa.gov/phenomena/aurora",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d17_c002",
+   "doc_id": 17,
+   "title": "Aurora",
+   "section": "",
+   "score": 0.723,
+   "queries": [
+    "impacts: aurora"
+   ],
+   "text": "Then in the early morning the auroral forms can take on a more cloud-like appearance. These diffuse patches often blink on and off repeatedly for hours, then they disappear as the sun rises in the east. The best place to observe the aurora is under an oval shaped region between the north and south latitudes of about 60 and 75 degrees. At these polar latitudes, the aurora can be observed more than half of the nights of a given year.",
+   "source_url": "https://www.swpc.noaa.gov/phenomena/aurora",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d20_c008",
+   "doc_id": 20,
+   "title": "On the Dst index",
+   "section": "",
+   "score": 0.75,
+   "queries": [
+    "indices"
+   ],
+   "text": "We denote by Dst the disturbance field, which is axially symmetric with respect to the dipole axis, and which is regarded as a function of storm-time. If an index monitoring the Dst in H is derived continuously as a function of UT, this variation will clearly indicate the occurrences of magnetic storms and their severity when they occur. Furthermore, even in the absence of distinct magnetic storms, this index will continuously monitor disturbances that are smaller in magnitude than those usually called magnetic storms, or disturbances that begin gradually without a well-defined commencement. Thus, the Dst variation so derived will provide a quantitative measure of geomagnetic disturbance that can be correlated with other solar and geophysical parameters. It is for these purposes that the Dst index is derived and published through the IAGA on a continuous basis.",
+   "source_url": "https://wdc.kugi.kyoto-u.ac.jp/dstdir/dst2/onDstindex.html",
+   "licence_status": "Not verified; no notice on the page; cite WDC Kyoto (Nose et al., doi:10.17593/14515-74000)"
+  },
+  {
+   "chunk_id": "d20_c020",
+   "doc_id": 20,
+   "title": "On the Dst index",
+   "section": "",
+   "score": 0.728,
+   "queries": [
+    "indices"
+   ],
+   "text": "3. INTERPRETATION OF THE Dst INDEX\n\nThe Dst index represents the axially symmetric disturbance magnetic field at the dipole equator on the Earth's surface. Major disturbances in Dst are negative, namely decreases in the geomagnetic field. These field decreases are produced mainly by the equatorial current system in the magnetosphere, usually referred to as the ring current. The neutral sheet current flowing across the magnetospheric tail makes a small contribution to the field decreases near the Earth. Positive variations in Dst are mostly caused by the compression of the magnetosphere from solar wind pressure increases.",
+   "source_url": "https://wdc.kugi.kyoto-u.ac.jp/dstdir/dst2/onDstindex.html",
+   "licence_status": "Not verified; no notice on the page; cite WDC Kyoto (Nose et al., doi:10.17593/14515-74000)"
+  },
+  {
+   "chunk_id": "d01_c000",
+   "doc_id": 1,
+   "title": "NOAA Space Weather Scales (one page, dated 2023-12-11)",
+   "section": "",
+   "score": 0.726,
+   "queries": [
+    "indices"
+   ],
+   "text": "Category Effect Physical \nmeasure \nAverage Frequency \n(1 cycle = 11 years) \nScale Descriptor Duration of event will influence severity of effects \nGeomagnetic Storms \nKp values* \ndetermined \nevery 3 hours \nNumber of storm events \nwhen Kp level was met; \n(number of storm days) \nG 5 Extreme \nPower systems: widespread voltage control problems and protective system problems can occur, some grid \nsystems may experience complete collapse or blackouts. Transformers may experience damage. \nSpacecraft operations: may experience extensive surface charging, problems with orientation, uplink/downlink \nand tracking satellites. \nOther systems: pipeline currents can reach hundreds of amps, HF (high frequency) radio propagation may be \nimpossible in many areas for one to two days, satellite navigation may be degraded for days, low-frequency radio",
+   "source_url": "https://www.swpc.noaa.gov/sites/default/files/images/NOAAscales.pdf",
+   "licence_status": "NOAA/NWS web page; NWS policy (weather.gov/disclaimer, read 2026-10-25): public domain unless specifically noted, free to use for any lawful purpose if not claimed as own, not presented as official when modified, no NWS endorsement implied; no annotation found on this page"
+  },
+  {
+   "chunk_id": "d21_c009",
+   "doc_id": 21,
+   "title": "Version Definitions of AE and Dst Geomagnetic Indices (4 pages, updated 2025-10-20)",
+   "section": "",
+   "score": 0.847,
+   "queries": [
+    "quality"
+   ],
+   "text": "2.2 Provisional Dst Index\nThe provisional Dst index is generally calculated with a lag of several months. For the calcu-\nlation, we use the highest-level processed field data available at that time (provisional, quasi-\ndefinitive, or definitive values). The calculation method is the same as that for the real-time\nDst index, except that manual correction of artificial noise and baseline offsets is performed on\nthe original field data. The provisional Dst values can be used for scientific analysis, and the\ndigital data are publicly available.\n2.3 Final Dst Index\nThe final Dst index is the highest-level version, calculated with a lag of several years, after which\nno further changes will be made. Currently, we use the definitive geomagnetic field data provided\nby INTERMAGNET. These data are reliable, having been corrected both automatically and",
+   "source_url": "https://wdc.kugi.kyoto-u.ac.jp/wdc/pdf/AEDst_version_def_v4.pdf",
+   "licence_status": "Not verified; cite WDC Kyoto"
+  },
+  {
+   "chunk_id": "d21_c011",
+   "doc_id": 21,
+   "title": "Version Definitions of AE and Dst Geomagnetic Indices (4 pages, updated 2025-10-20)",
+   "section": "",
+   "score": 0.816,
+   "queries": [
+    "quality"
+   ],
+   "text": "sions of the Dst Index\nAs an example, we compare the three versions of the Dst index for 2014 (Figure 1). We observe\nthat the variations are generally consistent with each other. The real-time and provisional\nvalues show good agreement because their baseline and Sq variations are determined using the\nsame method. Minor differences exist due to variations in noise removal; the magnitude of\nthese differences depends on the amount of intense noise in the real-time geomagnetic data and\nwhether those errors were corrected (the same applies to the difference between the real-time\nand provisional AE indices).\nIn September and December, a substantial discrepancy of about 20–30 nT is observed be-\ntween the provisional and final values. This may be because the baseline for the provisional\nvalue was determined using data from only that specific month. If the horizontal component of",
+   "source_url": "https://wdc.kugi.kyoto-u.ac.jp/wdc/pdf/AEDst_version_def_v4.pdf",
+   "licence_status": "Not verified; cite WDC Kyoto"
+  },
+  {
+   "chunk_id": "d21_c013",
+   "doc_id": 21,
+   "title": "Version Definitions of AE and Dst Geomagnetic Indices (4 pages, updated 2025-10-20)",
+   "section": "",
+   "score": 0.802,
+   "queries": [
+    "quality"
+   ],
+   "text": "Figure 1: Comparison between final (red), provisional (blue), and real-time (green) Dst values\nin 2014. Data for each month are plotted in each panel.\n4",
+   "source_url": "https://wdc.kugi.kyoto-u.ac.jp/wdc/pdf/AEDst_version_def_v4.pdf",
+   "licence_status": "Not verified; cite WDC Kyoto"
+  }
+ ]
+}

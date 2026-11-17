@@ -1,0 +1,53 @@
+{
+ "event_id": "E027",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": false,
+ "temperature": 0.0,
+ "run": 0,
+ "valid": true,
+ "output": {
+  "event_id": "E027",
+  "summary": "The event, lasting 37 hours from May 27, 2017, 12:00 UTC to May 29, 2017, 00:00 UTC, featured a Dst minimum of -146 nT, indicating an intense geomagnetic storm (approximately NOAA G3 level). Southward Bz values were sustained at or below -5 nT for 14 hours, with a minimum hourly Bz of -19.7 nT.",
+  "characteristics": [
+   {
+    "statement": "Dst minimum -146 nT",
+    "evidence": [
+     "dst.min_nT"
+    ]
+   },
+   {
+    "statement": "Sustained southward Bz: 14 hours at or below -5 nT; minimum hourly Bz -19.7 nT",
+    "evidence": [
+     "drivers.bz_min_hourly_nT",
+     "drivers.bz_min_time"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Southward Bz is the main way solar wind energy enters the magnetosphere.",
+    "sources": []
+   }
+  ],
+  "potential_impacts": [],
+  "caveats": [
+   "All values are hourly means in UTC; minute-level extremes are larger.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Bz is in GSM coordinates; negative Bz means southward.",
+   "Dst minimum is final."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source",
+   "comparison with, or ranking against, other historical storms: no supporting source",
+   "any forecast or prediction: no supporting source"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E027\",\n  \"summary\": \"The event, lasting 37 hours from May 27, 2017, 12:00 UTC to May 29, 2017, 00:00 UTC, featured a Dst minimum of -146 nT, indicating an intense geomagnetic storm (approximately NOAA G3 level). Southward Bz values were sustained at or below -5 nT for 14 hours, with a minimum hourly Bz of -19.7 nT.\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst minimum -146 nT\",\n      \"evidence\": [\"dst.min_nT\"]\n    },\n    {\n      \"statement\": \"Sustained southward Bz: 14 hours at or below -5 nT; minimum hourly Bz -19.7 nT\",\n      \"evidence\": [\"drivers.bz_min_hourly_nT\", \"drivers.bz_min_time\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Southward Bz is the main way solar wind energy enters the magnetosphere.\",\n      \"sources\": []\n    }\n  ],\n  \"potential_impacts\": [],\n  \"caveats\": [\n    \"All values are hourly means in UTC; minute-level extremes are larger.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Bz is in GSM coordinates; negative Bz means southward.\",\n    \"Dst minimum is final.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source\",\n    \"comparison with, or ranking against, other historical storms: no supporting source\",\n    \"any forecast or prediction: no supporting source\"\n  ]\n}",
+ "error": null,
+ "seconds": 51.2,
+ "prompt_tokens": 1404,
+ "output_tokens": 453,
+ "passages": []
+}

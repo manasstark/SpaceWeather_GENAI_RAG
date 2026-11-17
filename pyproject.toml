@@ -22,3 +22,6 @@ line-length = 100
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[project.scripts]
+spacewx = "spacewx_rag.cli:main"

@@ -1,0 +1,69 @@
+{
+ "event_id": "E216",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": false,
+ "temperature": 0.0,
+ "run": 0,
+ "valid": true,
+ "output": {
+  "event_id": "E216",
+  "summary": "The event, lasting 143 hours, featured a super geomagnetic storm with a Dst minimum of -406 nT, reaching an approximate NOAA G5 level. The southward Bz component was sustained for 23 hours, and the solar wind was very fast with a maximum speed of 1006 km/s.",
+  "characteristics": [
+   {
+    "statement": "Dst minimum -406 nT",
+    "evidence": [
+     "dst.min_nT"
+    ]
+   },
+   {
+    "statement": "Kp reached 9.0, indicating a G5 level storm",
+    "evidence": [
+     "geomagnetic.kp_max",
+     "geomagnetic.noaa_g_level_approx"
+    ]
+   },
+   {
+    "statement": "Southward Bz component was sustained for 23 hours, with a minimum hourly value of -39.3 nT",
+    "evidence": [
+     "drivers.bz_min_hourly_nT",
+     "drivers.bz_min_time",
+     "drivers.hours_bz_at_or_below_minus5"
+    ]
+   },
+   {
+    "statement": "Solar wind was very fast, with a maximum speed of 1006 km/s",
+    "evidence": [
+     "drivers.speed_max_km_per_s"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Southward Bz is the main way solar wind energy enters the magnetosphere",
+    "sources": []
+   }
+  ],
+  "potential_impacts": [],
+  "caveats": [
+   "All values are hourly means in UTC; minute-level extremes are larger.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Bz is in GSM coordinates; negative Bz means southward.",
+   "Only 29% of the solar wind plasma hours come from DSCOVR; the rest are OMNI hourly values because DSCOVR plasma was flagged as unreliable or missing.",
+   "Dst is provisional and may be revised by Kyoto.",
+   "This window overlaps the next event."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source",
+   "comparison with, or ranking against, other historical storms: no supporting source",
+   "any forecast or prediction: no supporting source"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E216\",\n  \"summary\": \"The event, lasting 143 hours, featured a super geomagnetic storm with a Dst minimum of -406 nT, reaching an approximate NOAA G5 level. The southward Bz component was sustained for 23 hours, and the solar wind was very fast with a maximum speed of 1006 km/s.\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst minimum -406 nT\",\n      \"evidence\": [\"dst.min_nT\"]\n    },\n    {\n      \"statement\": \"Kp reached 9.0, indicating a G5 level storm\",\n      \"evidence\": [\"geomagnetic.kp_max\", \"geomagnetic.noaa_g_level_approx\"]\n    },\n    {\n      \"statement\": \"Southward Bz component was sustained for 23 hours, with a minimum hourly value of -39.3 nT\",\n      \"evidence\": [\"drivers.bz_min_hourly_nT\", \"drivers.bz_min_time\", \"drivers.hours_bz_at_or_below_minus5\"]\n    },\n    {\n      \"statement\": \"Solar wind was very fast, with a maximum speed of 1006 km/s\",\n      \"evidence\": [\"drivers.speed_max_km_per_s\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Southward Bz is the main way solar wind energy enters the magnetosphere\",\n      \"sources\": []\n    }\n  ],\n  \"potential_impacts\": [],\n  \"caveats\": [\n    \"All values are hourly means in UTC; minute-level extremes are larger.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Bz is in GSM coordinates; negative Bz means southward.\",\n    \"Only 29% of the solar wind plasma hours come from DSCOVR; the rest are OMNI hourly values because DSCOVR plasma was flagged as unreliable or missing.\",\n    \"Dst is provisional and may be revised by Kyoto.\",\n    \"This window overlaps the next event.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source\",\n    \"comparison with, or ranking against, other historical storms: no supporting source\",\n    \"any forecast or prediction: no supporting source\"\n  ]\n}",
+ "error": null,
+ "seconds": 70.6,
+ "prompt_tokens": 1484,
+ "output_tokens": 564,
+ "passages": []
+}

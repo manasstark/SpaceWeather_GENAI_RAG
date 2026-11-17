@@ -1,0 +1,61 @@
+{
+ "event_id": "E221",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": false,
+ "temperature": 0.0,
+ "run": 0,
+ "valid": true,
+ "output": {
+  "event_id": "E221",
+  "summary": "The event, lasting from June 12 to June 13, 2024, featured a Dst minimum of -12 nT at 18:00 UTC on June 12, with southward Bz values as low as -3.0 nT. The solar wind speed was 378 km/s, and solar activity was high with an F10.7 index of 173 sfu.",
+  "characteristics": [
+   {
+    "statement": "Dst minimum of -12 nT at 18:00 UTC on June 12, 2024.",
+    "evidence": [
+     "dst.min_nT",
+     "dst.min_time"
+    ]
+   },
+   {
+    "statement": "Southward Bz values as low as -3.0 nT at 14:00 UTC on June 12, 2024.",
+    "evidence": [
+     "drivers.bz_min_hourly_nT",
+     "drivers.bz_min_time"
+    ]
+   },
+   {
+    "statement": "Solar wind speed of 378 km/s and high solar activity with an F10.7 index of 173 sfu.",
+    "evidence": [
+     "drivers.speed_max_km_per_s",
+     "solar.f107_mean_sfu"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Southward Bz is the main way solar wind energy enters the magnetosphere.",
+    "sources": []
+   }
+  ],
+  "potential_impacts": [],
+  "caveats": [
+   "All values are hourly means in UTC; minute-level extremes are larger.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Bz is in GSM coordinates; negative Bz means southward.",
+   "Dst is provisional and may be revised by Kyoto."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source",
+   "comparison with, or ranking against, other historical storms: no supporting source",
+   "any forecast or prediction: no supporting source"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E221\",\n  \"summary\": \"The event, lasting from June 12 to June 13, 2024, featured a Dst minimum of -12 nT at 18:00 UTC on June 12, with southward Bz values as low as -3.0 nT. The solar wind speed was 378 km/s, and solar activity was high with an F10.7 index of 173 sfu.\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst minimum of -12 nT at 18:00 UTC on June 12, 2024.\",\n      \"evidence\": [\"dst.min_nT\", \"dst.min_time\"]\n    },\n    {\n      \"statement\": \"Southward Bz values as low as -3.0 nT at 14:00 UTC on June 12, 2024.\",\n      \"evidence\": [\"drivers.bz_min_hourly_nT\", \"drivers.bz_min_time\"]\n    },\n    {\n      \"statement\": \"Solar wind speed of 378 km/s and high solar activity with an F10.7 index of 173 sfu.\",\n      \"evidence\": [\"drivers.speed_max_km_per_s\", \"solar.f107_mean_sfu\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Southward Bz is the main way solar wind energy enters the magnetosphere.\",\n      \"sources\": []\n    }\n  ],\n  \"potential_impacts\": [],\n  \"caveats\": [\n    \"All values are hourly means in UTC; minute-level extremes are larger.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Bz is in GSM coordinates; negative Bz means southward.\",\n    \"Dst is provisional and may be revised by Kyoto.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source\",\n    \"comparison with, or ranking against, other historical storms: no supporting source\",\n    \"any forecast or prediction: no supporting source\"\n  ]\n}",
+ "error": null,
+ "seconds": 64.5,
+ "prompt_tokens": 1295,
+ "output_tokens": 536,
+ "passages": []
+}

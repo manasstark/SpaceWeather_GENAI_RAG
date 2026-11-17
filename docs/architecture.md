@@ -1,6 +1,6 @@
 # Architecture
 
-This document explains how the system is put together and what I still plan to build. Stages 1 to 5 are done (as notebooks with saved results). Stages 6 to 9 are only designed so far. The reasons behind each choice are in `decision_log.md`.
+This document explains how the system is put together. Stages 1 to 8 are built (in `src/spacewx_rag/`, with notebooks 01 to 07 as the record; updated 17 Nov). Stage 9, the Streamlit app, is still planned. The reasons behind each choice are in `decision_log.md`.
 
 ## 1. The big picture
 
@@ -20,13 +20,9 @@ flowchart LR
     K --> L[8. Evaluation]
     K --> M[9. Streamlit app]
     style F fill:#eee
-    style I stroke-dasharray: 5 5
-    style J stroke-dasharray: 5 5
-    style K stroke-dasharray: 5 5
-    style L stroke-dasharray: 5 5
     style M stroke-dasharray: 5 5
 ```
-Solid boxes are built. Dashed boxes are still planned.
+Solid boxes are built. The dashed box (the app) is still planned.
 
 The same thing in plain text:
 ```
@@ -60,7 +56,7 @@ A card is a small JSON file for one event. It holds the time window, the Dst num
 - For each event I run several searches, not one: one about the physics, one about impacts at that storm level, one about what the Kp and Dst values mean, and (when the card says Dst is provisional) one about provisional versus final Dst. The two May 2024 documents are only returned for events that fall in 8 to 20 May 2024.
 - What I measured: hit@1 0.78 and hit@3 1.0 on 18 hand-labelled questions. One limit I found: the similarity score can't separate questions the documents really answer from questions they don't.
 
-### 2.5 Prompting and generation (planned)
+### 2.5 Prompting and generation (built, notebook 06; decisions 44 to 47, 55)
 **What the model will get:** the event card (with the `evaluation_role` field removed) and the retrieved passages, each with a chunk id.
 
 **Rules I plan to put in the prompt** (templates will live in `prompts/`):
@@ -85,10 +81,12 @@ A card is a small JSON file for one event. It holds the time window, the Dst num
 
 **Two generators behind the same interface:**
 - an **offline baseline** that builds the description straight from the card fields and the top retrieved passages without any model. Anyone can run it without an API key;
-- an **LLM generator** where you pick the provider in a setting (OpenAI, Anthropic or a local model) and the key comes from `.env`.
+- an **LLM generator**: `qwen2.5:7b-instruct` running locally through Ollama (free, no key). The provider is a setting (`LLM_PROVIDER`, `LLM_MODEL` in `.env`), so a hosted model can be added behind the same interface.
 
-### 2.6 Checking and evaluation (planned)
-- **Claim-by-claim check:** every number in the text has to match the card. Every statement about a cause or an impact has to cite a retrieved chunk whose text really supports it. I'll do this with simple rule-based checks for citations and numbers, plus an LLM judge to decide whether a passage supports a claim. Anything without support gets marked as unsupported.
+As built, Ollama also receives a per-event JSON schema in which `evidence` can only be card field paths and `sources` only the retrieved chunk ids (decision 45).
+
+### 2.6 Checking and evaluation (built, notebook 07; decisions 48 to 52, 56)
+- **Claim-by-claim check:** every number in the text has to match the card. Every statement about a cause or an impact has to cite a retrieved chunk whose text really supports it. As built: rule-based checks for numbers (and written dates), cause and impact language in the card-only sections, evidence paths and citations; an LLM judge (same local model) that must quote the supporting sentence, which is checked against the passages; and a code-based check that an impact isn't taken from a higher NOAA G level than the event's (decision 56). A manual audit of 21 claims measures how far to trust the judge. Anything without support gets marked as unsupported.
 - **Metrics**, run on the 15 reference events in `evaluation/reference_events/`:
   - groundedness (the main one): the share of factual claims backed by the card or the retrieved sources;
   - retrieval relevance: hit rates on a labelled question set, which I still need to review and extend;

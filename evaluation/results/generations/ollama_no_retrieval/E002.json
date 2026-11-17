@@ -1,0 +1,62 @@
+{
+ "event_id": "E002",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": false,
+ "temperature": 0.0,
+ "run": 0,
+ "valid": true,
+ "output": {
+  "event_id": "E002",
+  "summary": "A moderate geomagnetic storm with aDst minimum of -52 nT occurred from August 2 to 3, 2016, lasting 25 hours. The storm was driven by southward Bz values and ordinary solar wind conditions.",
+  "characteristics": [
+   {
+    "statement": "Dst minimum was -52 nT at 15:00Z on August 3, 2016.",
+    "evidence": [
+     "dst.min_nT",
+     "dst.min_time"
+    ]
+   },
+   {
+    "statement": "Southward Bz values were sustained at or below -5 nT for 6 hours, with a minimum hourly Bz of -14.5 nT.",
+    "evidence": [
+     "drivers.bz_min_hourly_nT",
+     "drivers.bz_min_time",
+     "drivers.hours_bz_at_or_below_minus5"
+    ]
+   },
+   {
+    "statement": "The storm lasted 25 hours, with the Dst first falling below -50 nT at 10:00Z on August 3, 2016, and returning to above -30 nT 7 hours after the minimum.",
+    "evidence": [
+     "dst.first_below_minus50_time",
+     "dst.hours_from_minimum_to_back_above_minus30"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Southward Bz is the main way solar wind energy enters the magnetosphere.",
+    "sources": []
+   }
+  ],
+  "potential_impacts": [],
+  "caveats": [
+   "All values are hourly means in UTC; minute-level extremes are larger.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Bz is in GSM coordinates; negative Bz means southward.",
+   "Dst minimum is final."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source",
+   "comparison with, or ranking against, other historical storms: no supporting source",
+   "any forecast or prediction: no supporting source"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E002\",\n  \"summary\": \"A moderate geomagnetic storm with aDst minimum of -52 nT occurred from August 2 to 3, 2016, lasting 25 hours. The storm was driven by southward Bz values and ordinary solar wind conditions.\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst minimum was -52 nT at 15:00Z on August 3, 2016.\",\n      \"evidence\": [\"dst.min_nT\", \"dst.min_time\"]\n    },\n    {\n      \"statement\": \"Southward Bz values were sustained at or below -5 nT for 6 hours, with a minimum hourly Bz of -14.5 nT.\",\n      \"evidence\": [\"drivers.bz_min_hourly_nT\", \"drivers.bz_min_time\", \"drivers.hours_bz_at_or_below_minus5\"]\n    },\n    {\n      \"statement\": \"The storm lasted 25 hours, with the Dst first falling below -50 nT at 10:00Z on August 3, 2016, and returning to above -30 nT 7 hours after the minimum.\",\n      \"evidence\": [\"dst.first_below_minus50_time\", \"dst.hours_from_minimum_to_back_above_minus30\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Southward Bz is the main way solar wind energy enters the magnetosphere.\",\n      \"sources\": []\n    }\n  ],\n  \"potential_impacts\": [],\n  \"caveats\": [\n    \"All values are hourly means in UTC; minute-level extremes are larger.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Bz is in GSM coordinates; negative Bz means southward.\",\n    \"Dst minimum is final.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source\",\n    \"comparison with, or ranking against, other historical storms: no supporting source\",\n    \"any forecast or prediction: no supporting source\"\n  ]\n}",
+ "error": null,
+ "seconds": 68.4,
+ "prompt_tokens": 1371,
+ "output_tokens": 524,
+ "passages": []
+}

@@ -19,6 +19,7 @@ chromadb
 faiss-cpu
 sentence-transformers
 openai
+ollama
 tiktoken
 # Document parsing (knowledge base)
 beautifulsoup4

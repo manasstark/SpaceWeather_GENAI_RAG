@@ -1,6 +1,6 @@
-# Reference of every parameter used in notebooks 01-05.
-# NOTE: in this snapshot the notebooks hold these values in code; this file documents them and
-# is NOT yet read by any code. The final submission moves the notebook logic into src/ and reads this file.
+# Every parameter the pipeline uses. The code in src/spacewx_rag/ reads this file
+# (spacewx_rag.utils.config.load_params). Notebooks 01-05 hold the same values in code; the
+# regression tests in tests/ check that src/ reproduces their outputs exactly.
 
 analysis_window:
   start: "2016-07-26 00:00"          # DSCOVR operational
@@ -14,7 +14,7 @@ alignment:
   delay_distance_km: 1.5e6            # delay = distance / speed
   speed_when_missing_km_s: 430.0
   f107_column: F10.7_ADJ              # adjusted; observed also stored (decision 7, proposed)
-  f107_spike: {median_window_days: 7, factor: 1.3}
+  f107_spike: {median_window_days: 7, min_periods: 4, factor: 1.3}
 
 events:
   storm:
@@ -25,6 +25,7 @@ events:
     recovery_cap_hours: 72
     classes: {moderate: [-100, -50], intense: [-250, -100], super: [-1000, -250]}
     marginal: {max_core_hours: 3, min_dst_above_nT: -60}
+    driver_lookback_hours: 12         # window for vbs_mean_12h_before_min
   quiet:
     window_hours: 48
     dst_above_nT: -30
@@ -43,7 +44,7 @@ cards:
     dynamic_pressure_high_nPa: 10
     electric_field_strong_mV_m: 5
     f107_levels: {low_below: 100, high_above: 150}
-  caveat_thresholds: {plasma_dscovr_share_below: 0.80, field_dscovr_share_below: 0.90}
+  caveat_thresholds: {plasma_dscovr_pct_low: 50, plasma_dscovr_pct_partial: 80, field_dscovr_pct_below: 90}
 
 knowledge_base:
   chunking: {chunk_size: 900, chunk_overlap: 120, min_chunk_chars: 120}
@@ -53,5 +54,28 @@ knowledge_base:
   event_documents: {role: event_2024_may, window: ["2024-05-08", "2024-05-20"]}
 
 retrieval:
-  top_k: 3
-  queries_per_event: [physics, impacts, indices, quality_if_provisional]
+  top_k: 3                            # per query
+  impact_top_k: 2                     # per impact-area query (decision 41)
+  impact_areas:                       # one query per area, storms only
+    power systems: "Effects of a {g} geomagnetic storm on power grids and transformers"
+    satellites and spacecraft: "Effects of a {g} geomagnetic storm on satellite drag, orientation and spacecraft charging"
+    GNSS navigation: "Effects of a {g} geomagnetic storm on GPS and GNSS navigation accuracy"
+    HF radio: "Effects of a {g} geomagnetic storm on HF radio communication"
+    aurora: "How far from the poles aurora can be seen during a {g} geomagnetic storm"
+
+generation:
+  provider: ollama                    # ollama | baseline (overridden by LLM_PROVIDER in .env)
+  model: qwen2.5:7b-instruct          # overridden by LLM_MODEL in .env
+  temperature: 0.0                    # single deterministic run per event
+  consistency_temperature: 0.7        # repeated runs for the consistency metric
+  consistency_runs: 3
+  num_ctx: 8192                       # Ollama's default 4096 is too small for card + passages
+  num_predict: 1500
+  seed: 42
+  max_list_items: 6                   # cap on evidence/sources lists (added after E039 looped; decision 55)
+
+evaluation:
+  judge_model: qwen2.5:7b-instruct    # same local model; a stated limitation
+  judge_temperature: 0.0
+  judge_version: v2                   # v1 was lenient (decision 56)
+  number_tolerance: 0.051             # |stated - card| allowed for numbers (rounding to 0.1)

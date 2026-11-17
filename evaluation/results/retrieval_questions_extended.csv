@@ -1,0 +1,43 @@
+set,question,relevant,retrieved,rank,top1_score
+original_18,What Kp value corresponds to a severe G4 geomagnetic storm?,"[1, 2]","[9, 1, 9, 3, 1]",2.0,0.749
+original_18,What does the Kp index measure and how is it calculated?,[9],"[9, 9, 9, 9, 9]",1.0,0.78
+original_18,What does the Dst index measure?,[20],"[20, 20, 20, 20, 20]",1.0,0.81
+original_18,"What is the difference between final, provisional and real-time Dst?",[21],"[21, 21, 21, 21, 21]",1.0,0.757
+original_18,Why does a southward interplanetary magnetic field matter for geomagnetic storms?,"[3, 18]","[3, 7, 11, 3, 3]",1.0,0.817
+original_18,What is a coronal mass ejection and how long does it take to reach Earth?,[5],"[5, 3, 5, 6, 5]",1.0,0.833
+original_18,What are high-speed solar wind streams from coronal holes?,"[6, 3]","[4, 6, 6, 6, 6]",2.0,0.813
+original_18,How can geomagnetic storms affect power grids and transformers?,[7],"[7, 7, 7, 7, 7]",1.0,0.854
+original_18,How does a geomagnetic storm affect satellite drag?,[15],"[3, 15, 3, 7, 18]",2.0,0.839
+original_18,How does space weather degrade GPS navigation?,[16],"[16, 16, 1, 16, 16]",1.0,0.829
+original_18,Which radio communications are affected during geomagnetic storms?,[14],"[14, 7, 3, 14, 3]",1.0,0.805
+original_18,How far south can aurora be seen during a severe storm?,"[17, 1]","[17, 17, 17, 1, 3]",1.0,0.78
+original_18,What is F10.7 and what does it indicate about solar activity?,[19],"[19, 19, 19, 9, 19]",1.0,0.817
+original_18,How does the solar wind transfer energy into the magnetosphere?,"[18, 3, 4]","[11, 18, 4, 18, 18]",2.0,0.778
+original_18,What problems can spacecraft charging cause during extreme storms?,"[1, 2]","[2, 2, 7, 15, 16]",1.0,0.75
+original_18,What is the solar wind and how fast does it normally flow?,[4],"[4, 4, 4, 4, 3]",1.0,0.841
+original_18,What caused the May 2024 geomagnetic storm?,"[12, 13]","[13, 12, 12, 12, 12]",1.0,0.819
+original_18,What was the minimum Dst reached in the May 2024 storm?,"[12, 13]","[12, 12, 12, 12, 12]",1.0,0.779
+extended_2026_11_17,At what Kp value does a minor G1 storm begin?,"[1, 2]","[20, 20, 1, 9, 1]",3.0,0.684
+extended_2026_11_17,Which power grid effects are expected during an extreme G5 storm?,"[1, 2]","[7, 7, 7, 7, 7]",,0.787
+extended_2026_11_17,How do geomagnetically induced currents damage power transformers?,[7],"[7, 7, 7, 7, 7]",1.0,0.839
+extended_2026_11_17,Why does extra atmospheric drag make it hard to track satellites in low Earth orbit?,[15],"[15, 15, 15, 15, 15]",1.0,0.784
+extended_2026_11_17,How does ionospheric scintillation disrupt satellite communication links?,[8],"[8, 16, 14, 8, 8]",1.0,0.875
+extended_2026_11_17,Which high-precision GPS users such as surveying and farming are affected by space weather?,[16],"[16, 16, 16, 2, 16]",1.0,0.724
+extended_2026_11_17,How do solar flares cause HF radio blackouts on the sunlit side of Earth?,[14],"[1, 2, 14, 2, 14]",3.0,0.835
+extended_2026_11_17,How are aurora produced by electrons colliding with the upper atmosphere?,[17],"[17, 17, 3, 17, 3]",1.0,0.831
+extended_2026_11_17,What is the magnetopause and what compresses it?,[18],"[18, 18, 18, 11, 20]",1.0,0.716
+extended_2026_11_17,How is the ring current related to the Dst index?,[20],"[20, 20, 20, 20, 20]",1.0,0.829
+extended_2026_11_17,Which magnetometer observatories are used to compute Dst?,[20],"[20, 20, 20, 21, 20]",1.0,0.773
+extended_2026_11_17,How long does Kyoto take to replace provisional Dst with final Dst?,[21],"[20, 21, 20, 21, 21]",2.0,0.658
+extended_2026_11_17,What is the real-time quick-look Dst and how reliable is it?,[21],"[21, 21, 20, 21, 21]",1.0,0.71
+extended_2026_11_17,Who developed the Kp index and when?,[9],"[9, 9, 9, 9, 9]",1.0,0.821
+extended_2026_11_17,How fast is the solar wind that comes from coronal holes?,"[4, 6]","[4, 6, 6, 6, 5]",1.0,0.846
+extended_2026_11_17,How fast do coronal mass ejections travel and how soon can they reach Earth?,[5],"[5, 3, 6, 5, 5]",1.0,0.831
+extended_2026_11_17,How do you read the Bz value on a real-time magnetometer graph?,[11],"[11, 11, 11, 11, 21]",1.0,0.769
+extended_2026_11_17,At what wavelength is the F10.7 index measured and since when?,[19],"[19, 19, 19, 19, 21]",1.0,0.711
+extended_2026_11_17,Which sunspot region produced the flares before the May 2024 storm?,"[12, 13]","[13, 12, 12, 13, 12]",1.0,0.801
+extended_2026_11_17,How far from the poles was aurora observed during the May 2024 storm?,"[12, 13]","[13, 12, 12, 12, 12]",1.0,0.809
+extended_2026_11_17,What is the solar wind made of?,[4],"[4, 20, 4, 4, 4]",1.0,0.796
+extended_2026_11_17,Why are coronal holes more common around solar minimum?,[6],"[6, 6, 6, 6, 6]",1.0,0.821
+extended_2026_11_17,What does the NOAA S-scale for solar radiation storms describe?,"[1, 2]","[3, 5, 1, 20, 2]",3.0,0.772
+extended_2026_11_17,Do commercial airlines rely on HF radio that space weather can disrupt?,[14],"[14, 14, 14, 2, 1]",1.0,0.816

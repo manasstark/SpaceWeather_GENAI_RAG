@@ -1,0 +1,72 @@
+{
+ "event_id": "E256",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": false,
+ "temperature": 0.0,
+ "run": 0,
+ "valid": true,
+ "output": {
+  "event_id": "E256",
+  "summary": "The event, lasting 37 hours from April 16, 2025, 01:00Z to April 17, 2025, 13:00Z, featured a Dst minimum of -138 nT, with geomagnetic activity reaching approximately NOAA G3 levels. Southward Bz values were sustained at or below -5 nT for 9 hours, and the solar wind was fast, with a maximum speed of 606 km/s and a dynamic pressure of up to 14.2 nPa (protons only).",
+  "characteristics": [
+   {
+    "statement": "Dst minimum -138 nT",
+    "evidence": [
+     "dst.min_nT"
+    ]
+   },
+   {
+    "statement": "Geomagnetic activity at approximately NOAA G3 levels",
+    "evidence": [
+     "geomagnetic.kp_max",
+     "geomagnetic.noaa_g_level_approx"
+    ]
+   },
+   {
+    "statement": "Sustained southward Bz at or below -5 nT for 9 hours",
+    "evidence": [
+     "drivers.bz_min_hourly_nT",
+     "drivers.hours_bz_at_or_below_minus5"
+    ]
+   },
+   {
+    "statement": "Fast solar wind with a maximum speed of 606 km/s",
+    "evidence": [
+     "drivers.speed_max_km_per_s"
+    ]
+   },
+   {
+    "statement": "High solar wind dynamic pressure of up to 14.2 nPa (protons only)",
+    "evidence": [
+     "drivers.dynamic_pressure_max_nPa_protons_only"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Southward Bz is the main way solar wind energy enters the magnetosphere.",
+    "sources": []
+   }
+  ],
+  "potential_impacts": [],
+  "caveats": [
+   "All values are hourly means in UTC; minute-level extremes are larger.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Bz is in GSM coordinates; negative Bz means southward.",
+   "Dst is provisional and may be revised by Kyoto."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source",
+   "comparison with, or ranking against, other historical storms: no supporting source",
+   "any forecast or prediction: no supporting source"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E256\",\n  \"summary\": \"The event, lasting 37 hours from April 16, 2025, 01:00Z to April 17, 2025, 13:00Z, featured a Dst minimum of -138 nT, with geomagnetic activity reaching approximately NOAA G3 levels. Southward Bz values were sustained at or below -5 nT for 9 hours, and the solar wind was fast, with a maximum speed of 606 km/s and a dynamic pressure of up to 14.2 nPa (protons only).\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst minimum -138 nT\",\n      \"evidence\": [\"dst.min_nT\"]\n    },\n    {\n      \"statement\": \"Geomagnetic activity at approximately NOAA G3 levels\",\n      \"evidence\": [\"geomagnetic.kp_max\", \"geomagnetic.noaa_g_level_approx\"]\n    },\n    {\n      \"statement\": \"Sustained southward Bz at or below -5 nT for 9 hours\",\n      \"evidence\": [\"drivers.bz_min_hourly_nT\", \"drivers.hours_bz_at_or_below_minus5\"]\n    },\n    {\n      \"statement\": \"Fast solar wind with a maximum speed of 606 km/s\",\n      \"evidence\": [\"drivers.speed_max_km_per_s\"]\n    },\n    {\n      \"statement\": \"High solar wind dynamic pressure of up to 14.2 nPa (protons only)\",\n      \"evidence\": [\"drivers.dynamic_pressure_max_nPa_protons_only\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Southward Bz is the main way solar wind energy enters the magnetosphere.\",\n      \"sources\": []\n    }\n  ],\n  \"potential_impacts\": [],\n  \"caveats\": [\n    \"All values are hourly means in UTC; minute-level extremes are larger.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Bz is in GSM coordinates; negative Bz means southward.\",\n    \"Dst is provisional and may be revised by Kyoto.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source\",\n    \"comparison with, or ranking against, other historical storms: no supporting source\",\n    \"any forecast or prediction: no supporting source\"\n  ]\n}",
+ "error": null,
+ "seconds": 76.5,
+ "prompt_tokens": 1407,
+ "output_tokens": 598,
+ "passages": []
+}

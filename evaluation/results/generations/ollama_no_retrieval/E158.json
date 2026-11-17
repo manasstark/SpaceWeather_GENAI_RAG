@@ -1,0 +1,95 @@
+{
+ "event_id": "E158",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": false,
+ "temperature": 0.0,
+ "run": 0,
+ "valid": true,
+ "output": {
+  "event_id": "E158",
+  "summary": "The event started on April 23, 2023, and lasted for 81 hours, with aDst minimum of -213 nT at 05:00 UTC on April 24, 2023. The southward Bz component was sustained at or below -5 nT for 20 hours, with a minimum hourly value of -31.8 nT.",
+  "characteristics": [
+   {
+    "statement": "Dst first fell below -50 nT 13 hours before reaching its minimum.",
+    "evidence": [
+     "dst.first_below_minus50_time",
+     "dst.min_time"
+    ]
+   },
+   {
+    "statement": "Dst was back above -30 nT 55 hours after the minimum.",
+    "evidence": [
+     "dst.hours_from_minimum_to_back_above_minus30",
+     "dst.min_time"
+    ]
+   },
+   {
+    "statement": "Kp reached 8.3 (approximately NOAA G4 level).",
+    "evidence": [
+     "geomagnetic.kp_max",
+     "geomagnetic.noaa_g_level_approx"
+    ]
+   },
+   {
+    "statement": "Sustained southward Bz: 20 hours at or below -5 nT; minimum hourly Bz -31.8 nT.",
+    "evidence": [
+     "drivers.bz_min_time",
+     "drivers.bz_min_hourly_nT",
+     "drivers.hours_bz_at_or_below_minus5"
+    ]
+   },
+   {
+    "statement": "Fast solar wind: maximum hourly speed 711 km/s.",
+    "evidence": [
+     "drivers.speed_max_km_per_s"
+    ]
+   },
+   {
+    "statement": "High solar wind dynamic pressure: up to 12.8 nPa (protons only).",
+    "evidence": [
+     "drivers.dynamic_pressure_max_nPa_protons_only"
+    ]
+   },
+   {
+    "statement": "Strong solar wind electric field: vBs up to 18.2 mV/m.",
+    "evidence": [
+     "drivers.vbs_max_mV_per_m"
+    ]
+   },
+   {
+    "statement": "Solar activity moderate (mean F10.7 135 sfu).",
+    "evidence": [
+     "solar.f107_mean_sfu",
+     "solar.level"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Southward Bz is the main way solar wind energy enters the magnetosphere.",
+    "sources": []
+   }
+  ],
+  "potential_impacts": [],
+  "caveats": [
+   "All values are hourly means in UTC; minute-level extremes are larger.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Bz is in GSM coordinates; negative Bz means southward.",
+   "63% of the solar wind plasma hours come from DSCOVR; the rest are OMNI hourly values.",
+   "Dst is provisional and may be revised by Kyoto."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source",
+   "comparison with, or ranking against, other historical storms: no supporting source",
+   "any forecast or prediction: no supporting source"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E158\",\n  \"summary\": \"The event started on April 23, 2023, and lasted for 81 hours, with aDst minimum of -213 nT at 05:00 UTC on April 24, 2023. The southward Bz component was sustained at or below -5 nT for 20 hours, with a minimum hourly value of -31.8 nT.\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst first fell below -50 nT 13 hours before reaching its minimum.\",\n      \"evidence\": [\"dst.first_below_minus50_time\", \"dst.min_time\"]\n    },\n    {\n      \"statement\": \"Dst was back above -30 nT 55 hours after the minimum.\",\n      \"evidence\": [\"dst.hours_from_minimum_to_back_above_minus30\", \"dst.min_time\"]\n    },\n    {\n      \"statement\": \"Kp reached 8.3 (approximately NOAA G4 level).\",\n      \"evidence\": [\"geomagnetic.kp_max\", \"geomagnetic.noaa_g_level_approx\"]\n    },\n    {\n      \"statement\": \"Sustained southward Bz: 20 hours at or below -5 nT; minimum hourly Bz -31.8 nT.\",\n      \"evidence\": [\"drivers.bz_min_time\", \"drivers.bz_min_hourly_nT\", \"drivers.hours_bz_at_or_below_minus5\"]\n    },\n    {\n      \"statement\": \"Fast solar wind: maximum hourly speed 711 km/s.\",\n      \"evidence\": [\"drivers.speed_max_km_per_s\"]\n    },\n    {\n      \"statement\": \"High solar wind dynamic pressure: up to 12.8 nPa (protons only).\",\n      \"evidence\": [\"drivers.dynamic_pressure_max_nPa_protons_only\"]\n    },\n    {\n      \"statement\": \"Strong solar wind electric field: vBs up to 18.2 mV/m.\",\n      \"evidence\": [\"drivers.vbs_max_mV_per_m\"]\n    },\n    {\n      \"statement\": \"Solar activity moderate (mean F10.7 135 sfu).\",\n      \"evidence\": [\"solar.f107_mean_sfu\", \"solar.level\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Southward Bz is the main way solar wind energy enters the magnetosphere.\",\n      \"sources\": []\n    }\n  ],\n  \"potential_impacts\": [],\n  \"caveats\": [\n    \"All values are hourly means in UTC; minute-level extremes are larger.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Bz is in GSM coordinates; negative Bz means southward.\",\n    \"63% of the solar wind plasma hours come from DSCOVR; the rest are OMNI hourly values.\",\n    \"Dst is provisional and may be revised by Kyoto.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source\",\n    \"comparison with, or ranking against, other historical storms: no supporting source\",\n    \"any forecast or prediction: no supporting source\"\n  ]\n}",
+ "error": null,
+ "seconds": 88.1,
+ "prompt_tokens": 1460,
+ "output_tokens": 769,
+ "passages": []
+}

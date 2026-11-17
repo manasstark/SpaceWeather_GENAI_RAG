@@ -1,0 +1,356 @@
+{
+ "note": "Retrieval relevance questions. The first 18 are notebook 05's set (the spacecraft-charging label was corrected after reading the documents, decision 43). The 24 extended questions were written and labelled on 2026-11-17 BEFORE running retrieval on them; each label was checked against the document text (grep), not against retrieval results. 'general' searches without the May 2024 documents.",
+ "questions": [
+  {
+   "question": "What Kp value corresponds to a severe G4 geomagnetic storm?",
+   "relevant_docs": [
+    1,
+    2
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "What does the Kp index measure and how is it calculated?",
+   "relevant_docs": [
+    9
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "What does the Dst index measure?",
+   "relevant_docs": [
+    20
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "What is the difference between final, provisional and real-time Dst?",
+   "relevant_docs": [
+    21
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "Why does a southward interplanetary magnetic field matter for geomagnetic storms?",
+   "relevant_docs": [
+    3,
+    18
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "What is a coronal mass ejection and how long does it take to reach Earth?",
+   "relevant_docs": [
+    5
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "What are high-speed solar wind streams from coronal holes?",
+   "relevant_docs": [
+    6,
+    3
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "How can geomagnetic storms affect power grids and transformers?",
+   "relevant_docs": [
+    7
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "How does a geomagnetic storm affect satellite drag?",
+   "relevant_docs": [
+    15
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "How does space weather degrade GPS navigation?",
+   "relevant_docs": [
+    16
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "Which radio communications are affected during geomagnetic storms?",
+   "relevant_docs": [
+    14
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "How far south can aurora be seen during a severe storm?",
+   "relevant_docs": [
+    17,
+    1
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "What is F10.7 and what does it indicate about solar activity?",
+   "relevant_docs": [
+    19
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "How does the solar wind transfer energy into the magnetosphere?",
+   "relevant_docs": [
+    18,
+    3,
+    4
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "What problems can spacecraft charging cause during extreme storms?",
+   "relevant_docs": [
+    1,
+    2
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "What is the solar wind and how fast does it normally flow?",
+   "relevant_docs": [
+    4
+   ],
+   "filter": "general",
+   "set": "original_18"
+  },
+  {
+   "question": "What caused the May 2024 geomagnetic storm?",
+   "relevant_docs": [
+    12,
+    13
+   ],
+   "filter": "all",
+   "set": "original_18"
+  },
+  {
+   "question": "What was the minimum Dst reached in the May 2024 storm?",
+   "relevant_docs": [
+    12,
+    13
+   ],
+   "filter": "all",
+   "set": "original_18"
+  },
+  {
+   "question": "At what Kp value does a minor G1 storm begin?",
+   "relevant_docs": [
+    1,
+    2
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "Which power grid effects are expected during an extreme G5 storm?",
+   "relevant_docs": [
+    1,
+    2
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How do geomagnetically induced currents damage power transformers?",
+   "relevant_docs": [
+    7
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "Why does extra atmospheric drag make it hard to track satellites in low Earth orbit?",
+   "relevant_docs": [
+    15
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How does ionospheric scintillation disrupt satellite communication links?",
+   "relevant_docs": [
+    8
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "Which high-precision GPS users such as surveying and farming are affected by space weather?",
+   "relevant_docs": [
+    16
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How do solar flares cause HF radio blackouts on the sunlit side of Earth?",
+   "relevant_docs": [
+    14
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How are aurora produced by electrons colliding with the upper atmosphere?",
+   "relevant_docs": [
+    17
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "What is the magnetopause and what compresses it?",
+   "relevant_docs": [
+    18
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How is the ring current related to the Dst index?",
+   "relevant_docs": [
+    20
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "Which magnetometer observatories are used to compute Dst?",
+   "relevant_docs": [
+    20
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How long does Kyoto take to replace provisional Dst with final Dst?",
+   "relevant_docs": [
+    21
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "What is the real-time quick-look Dst and how reliable is it?",
+   "relevant_docs": [
+    21
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "Who developed the Kp index and when?",
+   "relevant_docs": [
+    9
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How fast is the solar wind that comes from coronal holes?",
+   "relevant_docs": [
+    4,
+    6
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How fast do coronal mass ejections travel and how soon can they reach Earth?",
+   "relevant_docs": [
+    5
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How do you read the Bz value on a real-time magnetometer graph?",
+   "relevant_docs": [
+    11
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "At what wavelength is the F10.7 index measured and since when?",
+   "relevant_docs": [
+    19
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "Which sunspot region produced the flares before the May 2024 storm?",
+   "relevant_docs": [
+    12,
+    13
+   ],
+   "filter": "all",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "How far from the poles was aurora observed during the May 2024 storm?",
+   "relevant_docs": [
+    12,
+    13
+   ],
+   "filter": "all",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "What is the solar wind made of?",
+   "relevant_docs": [
+    4
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "Why are coronal holes more common around solar minimum?",
+   "relevant_docs": [
+    6
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "What does the NOAA S-scale for solar radiation storms describe?",
+   "relevant_docs": [
+    1,
+    2
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  },
+  {
+   "question": "Do commercial airlines rely on HF radio that space weather can disrupt?",
+   "relevant_docs": [
+    14
+   ],
+   "filter": "general",
+   "set": "extended_2026_11_17"
+  }
+ ]
+}

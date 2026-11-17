@@ -1,0 +1,22 @@
+event_id,kind,claim_start,manual_supported,note
+E002,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d03_c000: southward field 'most importantly' effective for energy transfer
+E027,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d03_c000
+E058,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d03_c000
+E078,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d11_c002: southward field connects and transfers energy (general physics)
+E095,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d03_c000
+E105,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,False,second half ('quiet Dst suggests the energy was not sufficient') is an inference no passage makes
+E117,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d03_c000
+E121,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d11_c002 (general physics)
+E143,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d11_c002
+E158,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d03_c000
+E216,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,False,cited d03_c004 is about impacts and never mentions southward Bz (wrong citation)
+E216,impact,Could cause increased drag on satellites,True,d15_c003
+E216,impact,May cause geomagnetically induced currents in power grids,True,d07_c006 + d07_c008 ('partial or system wide blackouts')
+E216,impact,Could create errors in the positioning information provided by GPS,True,d03_c004
+E216,impact,Could disrupt HF radio communication,False,d14_c001's dayside blackout is caused by solar flares not by the geomagnetic storm (wrong mechanism)
+E216,impact,Could cause beautiful auroral displays,False,d12_c109's 55 degrees is an auroral elevation angle seen by camera in Namibia not a latitude
+E221,interpretation,Ordinary solar wind speed and high solar activity suggest a calm,False,d04_c003 links slow wind to calm conditions but says nothing about high solar activity implying calm
+E231,interpretation,Southward Bz is the main way solar wind energy enters the magnetosphere,True,d03_c000
+E231,impact,Could cause voltage control problems and protective system issues,False,'complete collapse or blackouts' is the G5 entry in d01_c000; the event is G4
+E231,impact,Could cause extensive surface charging,False,this is the G5 spacecraft entry in d01_c000; the event is G4
+E256,interpretation,Sustained southward Bz is the main way solar wind energy enters the magnetosphere,True,d03_c000

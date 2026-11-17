@@ -1,0 +1,67 @@
+{
+ "event_id": "E058",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": false,
+ "temperature": 0.0,
+ "run": 0,
+ "valid": true,
+ "output": {
+  "event_id": "E058",
+  "summary": "The event, lasting from August 25 to August 28, 2018, was an intense geomagnetic storm with aDst minimum of -176 nT, reaching a Kp of 7.3, corresponding to an approximate NOAA G3 level. The southward Bz component was sustained at or below -5 nT for 24 hours, and the solar wind was fast, with a maximum speed of 627 km/s.",
+  "characteristics": [
+   {
+    "statement": "Dst minimum -176 nT",
+    "evidence": [
+     "dst.min_nT"
+    ]
+   },
+   {
+    "statement": "Kp reached 7.3 (approximately NOAA G3 level)",
+    "evidence": [
+     "geomagnetic.kp_max",
+     "geomagnetic.noaa_g_level_approx"
+    ]
+   },
+   {
+    "statement": "Sustained southward Bz: 24 hours at or below -5 nT; minimum hourly Bz -16.3 nT",
+    "evidence": [
+     "drivers.bz_min_hourly_nT",
+     "drivers.bz_min_time",
+     "drivers.hours_bz_at_or_below_minus5"
+    ]
+   },
+   {
+    "statement": "Fast solar wind: maximum hourly speed 627 km/s",
+    "evidence": [
+     "drivers.speed_max_km_per_s"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Southward Bz is the main way solar wind energy enters the magnetosphere.",
+    "sources": []
+   }
+  ],
+  "potential_impacts": [],
+  "caveats": [
+   "All values are hourly means in UTC; minute-level extremes are larger.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Bz is in GSM coordinates; negative Bz means southward.",
+   "Dst minimum is final."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source",
+   "comparison with, or ranking against, other historical storms: no supporting source",
+   "any forecast or prediction: no supporting source"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E058\",\n  \"summary\": \"The event, lasting from August 25 to August 28, 2018, was an intense geomagnetic storm with aDst minimum of -176 nT, reaching a Kp of 7.3, corresponding to an approximate NOAA G3 level. The southward Bz component was sustained at or below -5 nT for 24 hours, and the solar wind was fast, with a maximum speed of 627 km/s.\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst minimum -176 nT\",\n      \"evidence\": [\"dst.min_nT\"]\n    },\n    {\n      \"statement\": \"Kp reached 7.3 (approximately NOAA G3 level)\",\n      \"evidence\": [\"geomagnetic.kp_max\", \"geomagnetic.noaa_g_level_approx\"]\n    },\n    {\n      \"statement\": \"Sustained southward Bz: 24 hours at or below -5 nT; minimum hourly Bz -16.3 nT\",\n      \"evidence\": [\"drivers.bz_min_hourly_nT\", \"drivers.bz_min_time\", \"drivers.hours_bz_at_or_below_minus5\"]\n    },\n    {\n      \"statement\": \"Fast solar wind: maximum hourly speed 627 km/s\",\n      \"evidence\": [\"drivers.speed_max_km_per_s\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Southward Bz is the main way solar wind energy enters the magnetosphere.\",\n      \"sources\": []\n    }\n  ],\n  \"potential_impacts\": [],\n  \"caveats\": [\n    \"All values are hourly means in UTC; minute-level extremes are larger.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Bz is in GSM coordinates; negative Bz means southward.\",\n    \"Dst minimum is final.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source\",\n    \"comparison with, or ranking against, other historical storms: no supporting source\",\n    \"any forecast or prediction: no supporting source\"\n  ]\n}",
+ "error": null,
+ "seconds": 59.2,
+ "prompt_tokens": 1379,
+ "output_tokens": 538,
+ "passages": []
+}

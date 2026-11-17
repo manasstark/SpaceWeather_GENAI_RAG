@@ -1,6 +1,6 @@
 # Methodology
 
-This describes how I'm approaching the project and what I've done so far. Sections marked *planned* are things I haven't built yet.
+This describes how I'm approaching the project and what I've done so far. Everything up to the evaluation is built; the Streamlit app is next.
 
 ## 1. Objective
 I want to turn data about past space weather events into clear, structured explanations that are backed up by evidence. The system describes an event from the observations, pulls supporting scientific background from a knowledge base, and writes an explanation that sticks to those two sources. It doesn't forecast anything.
@@ -52,11 +52,15 @@ The full definitions are in `docs/event_definitions.md`, and the output is `data
 - Quality: on 18 hand-labelled questions I get hit@1 0.78, hit@3 1.0, hit@5 1.0 and MRR 0.889 (0.72, 0.94, 0.94 and 0.833 with the labels as first written; one label was corrected after I read the text). The set is small and I still need to review it properly before quoting these numbers as a result.
 - Limits: the similarity score can't tell supported questions from unsupported ones on related topics (unsupported questions scored 0.47 to 0.79 and real ones 0.749 to 0.854). So "no supporting source" has to come from a claim-by-claim check when the text is generated. Outside May 2024 the background I retrieve is about the storm class, not the specific event. I couldn't find an official NOAA report on the May 2024 event.
 
-## 7. Generation (*planned*)
-A retrieval-augmented prompt will produce a structured description of the event: what happened, a likely physical explanation and potential impacts. The model only gets the event's computed features and the retrieved passages. Every claim has to cite one of them, and claims with no supporting source get reported as unsupported.
+## 7. Generation (done, notebook 06)
+- For each event the prompt holds the card (without the evaluation label) and 15 to 18 de-duplicated passages from targeted queries: physics, one per impact area for storms (power, satellites, GNSS, HF radio, aurora), what the index values mean, and provisional versus final Dst when it applies. The rules are in `prompts/system.md`: facts only from the card, causes and impacts only with a cited passage, impacts as "could" at the card's storm level, quiet windows described as calm, caveats repeated, and "no supporting source" for anything else.
+- The output is JSON in a fixed format (summary, characteristics with card evidence, possible physical interpretation and potential impacts with chunk ids, caveats, unsupported or unknown). For each event the schema limits the evidence to real card fields and the citations to the retrieved chunks.
+- Two generators: an offline extractive baseline (no model) and `qwen2.5:7b-instruct` running locally through Ollama at temperature 0. Also a no-retrieval ablation (card only) and a consistency run (five events, three runs each at temperature 0.7).
 
-## 8. Evaluation (*planned*)
-The reference events cover quiet, moderate and severe conditions and have good data coverage. I'll write reference points for them by hand, then measure groundedness, retrieval relevance, completeness and the unsupported-claim rate against them.
+## 8. Evaluation (done, notebook 07)
+- Every claim is checked: numbers and written dates against the card (or the cited passages for causes and impacts), no cause or impact language in the card-only sections, real evidence paths and citations, no forecasts, no impacts for quiet windows, and an LLM judge for whether the cited passages support each cause or impact. The judge must quote the supporting sentence (checked against the passages), and code checks that an impact isn't taken from a higher NOAA G level than the event's.
+- Metrics on the 15 reference events: groundedness (main), unsupported-claim rate, completeness against hand-written reference points, must-not violations, consistency, and retrieval relevance on 42 labelled questions (24 new ones labelled before retrieval was run). A manual audit of the 21 cause and impact claims of the main run measures how far the judge can be trusted.
+- Main results: groundedness 0.935 with retrieval (0.920 after the manual audit) against 0.825 without; completeness 0.86 against 0.75; no number errors; no impacts or storm language for quiet windows. The full figures are in notebook 07 and the README.
 
 ## 9. Limitations so far
 - The DSCOVR magnetometer and plasma instruments have long outages (2019-06 to 2020-02, 2025-07 to 2025-10, and early 2026), and the archive ends on 2026-06-29.

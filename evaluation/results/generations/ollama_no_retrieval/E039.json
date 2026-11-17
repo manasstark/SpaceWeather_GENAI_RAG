@@ -1,0 +1,77 @@
+{
+ "event_id": "E039",
+ "generator": "ollama",
+ "model": "qwen2.5:7b-instruct",
+ "use_retrieval": false,
+ "temperature": 0.0,
+ "run": 0,
+ "valid": true,
+ "output": {
+  "event_id": "E039",
+  "summary": "The event, lasting from 2017-09-27T01:00Z to 2017-09-29T07:00Z, was a moderate geomagnetic storm with aDst minimum of -98 nT, occurring approximately 19 hours after the first drop below -50 nT and 23 hours before returning to above -30 nT. The storm reached a kp index of 6.67, corresponding to an approximate NOAA G2 level.",
+  "characteristics": [
+   {
+    "statement": "Dst minimum -98 nT",
+    "evidence": [
+     "dst.min_nT"
+    ]
+   },
+   {
+    "statement": "Dst first fell below -50 nT 19 hours before reaching its minimum",
+    "evidence": [
+     "dst.first_below_minus50_time"
+    ]
+   },
+   {
+    "statement": "Dst was back above -30 nT 23 hours after the minimum",
+    "evidence": [
+     "dst.hours_from_minimum_to_back_above_minus30"
+    ]
+   },
+   {
+    "statement": "Kp reached 6.67 (approximately NOAA G2 level)",
+    "evidence": [
+     "geomagnetic.kp_max",
+     "geomagnetic.noaa_g_level_approx"
+    ]
+   }
+  ],
+  "possible_physical_interpretation": [
+   {
+    "statement": "Sustained southward Bz: 8 hours at or below -5 nT; minimum hourly Bz -10.6 nT",
+    "sources": []
+   },
+   {
+    "statement": "Fast solar wind: maximum hourly speed 713 km/s",
+    "sources": []
+   },
+   {
+    "statement": "Strong solar wind electric field: vBs up to 5.1 mV/m",
+    "sources": []
+   },
+   {
+    "statement": "Solar activity low (mean F10.7 91 sfu)",
+    "sources": []
+   }
+  ],
+  "potential_impacts": [],
+  "caveats": [
+   "All values are hourly means in UTC; minute-level extremes are larger.",
+   "Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).",
+   "Bz is in GSM coordinates; negative Bz means southward.",
+   "Dst minimum is final."
+  ],
+  "unsupported_or_unknown": [
+   "physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source",
+   "impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source",
+   "comparison with, or ranking against, other historical storms: no supporting source",
+   "any forecast or prediction: no supporting source"
+  ]
+ },
+ "raw": "{\n  \"event_id\": \"E039\",\n  \"summary\": \"The event, lasting from 2017-09-27T01:00Z to 2017-09-29T07:00Z, was a moderate geomagnetic storm with aDst minimum of -98 nT, occurring approximately 19 hours after the first drop below -50 nT and 23 hours before returning to above -30 nT. The storm reached a kp index of 6.67, corresponding to an approximate NOAA G2 level.\",\n  \"characteristics\": [\n    {\n      \"statement\": \"Dst minimum -98 nT\",\n      \"evidence\": [\"dst.min_nT\"]\n    },\n    {\n      \"statement\": \"Dst first fell below -50 nT 19 hours before reaching its minimum\",\n      \"evidence\": [\"dst.first_below_minus50_time\"]\n    },\n    {\n      \"statement\": \"Dst was back above -30 nT 23 hours after the minimum\",\n      \"evidence\": [\"dst.hours_from_minimum_to_back_above_minus30\"]\n    },\n    {\n      \"statement\": \"Kp reached 6.67 (approximately NOAA G2 level)\",\n      \"evidence\": [\"geomagnetic.kp_max\", \"geomagnetic.noaa_g_level_approx\"]\n    }\n  ],\n  \"possible_physical_interpretation\": [\n    {\n      \"statement\": \"Sustained southward Bz: 8 hours at or below -5 nT; minimum hourly Bz -10.6 nT\",\n      \"sources\": [\n        \t]\n    },\n    {\n      \"statement\": \"Fast solar wind: maximum hourly speed 713 km/s\",\n      \"sources\": [\n        ]\n    },\n    {\n      \"statement\": \"Strong solar wind electric field: vBs up to 5.1 mV/m\",\n      \"sources\": [\n        ]\n    },\n    {\n      \"statement\": \"Solar activity low (mean F10.7 91 sfu)\",\n      \"sources\": [\n        ]\n    }\n  ],\n  \"potential_impacts\": [],\n  \"caveats\": [\n    \"All values are hourly means in UTC; minute-level extremes are larger.\",\n    \"Solar wind and magnetic field values are shifted to the time they reach Earth (a delay of roughly 25 to 100 minutes depending on solar wind speed).\",\n    \"Bz is in GSM coordinates; negative Bz means southward.\",\n    \"Dst minimum is final.\"\n  ],\n  \"unsupported_or_unknown\": [\n    \"physical cause of the event (for example a coronal mass ejection or a high-speed stream): no supporting source\",\n    \"impacts on satellites, GNSS, radio communication, power grids or aurora: no supporting source\",\n    \"comparison with, or ranking against, other historical storms: no supporting source\",\n    \"any forecast or prediction: no supporting source\"\n  ]\n}",
+ "error": null,
+ "seconds": 81.0,
+ "prompt_tokens": 1376,
+ "output_tokens": 643,
+ "passages": []
+}
