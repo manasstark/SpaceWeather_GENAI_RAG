@@ -11,6 +11,8 @@ from spacewx_rag.utils.config import Paths, load_params
 def overlaps_event_documents(card: dict) -> bool:
     """True when the event window overlaps the period the event-specific documents cover (May 2024)."""
     a0, b0 = load_params()["knowledge_base"]["event_documents"]["window"]
+    if not card["window"].get("start"):  # what-if scenarios have no dates
+        return False
     a, b = pd.Timestamp(card["window"]["start"][:-1]), pd.Timestamp(card["window"]["end"][:-1])
     return a <= pd.Timestamp(b0) and b >= pd.Timestamp(a0)
 
@@ -31,6 +33,14 @@ def event_queries(card: dict, impacts_by_area: bool = True) -> dict[str, str]:
                 f"Effects of a {g or 'minor'} geomagnetic storm on power systems, spacecraft, satellite navigation and HF radio"
             )
         qs["indices"] = f"What do Kp and Dst values mean for a {cls} storm"
+    elif card["type"] == "active":  # live windows only: disturbed, below storm level
+        qs = {
+            "physics": "Solar wind conditions and southward Bz that produce minor geomagnetic activity below storm level",
+            "indices": "What Kp values between 4 and 5 and a small negative Dst mean",
+        }
+        if g:  # Kp reached G1 or more without a Dst storm
+            for area, tmpl in load_params()["retrieval"]["impact_areas"].items():
+                qs[f"impacts: {area}"] = tmpl.format(g=g)
     else:
         qs = {
             "physics": "Solar wind and magnetic field conditions during quiet geomagnetic activity",

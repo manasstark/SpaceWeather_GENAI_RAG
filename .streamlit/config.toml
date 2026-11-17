@@ -1,0 +1,15 @@
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = false
+# no auto-reload: avoids noisy scans of the transformers package and half-reloaded code during a demo;
+# restart the app after changing code
+fileWatcherType = "none"
+
+[theme]
+base = "dark"
+primaryColor = "#ff7b00"
+backgroundColor = "#0b1020"
+secondaryBackgroundColor = "#141a33"
+textColor = "#e6e9f5"

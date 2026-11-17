@@ -52,6 +52,10 @@ def make_hints(r: dict) -> list[str]:
     out = []
     if r["type"] == "quiet":
         out.append(f"Quiet interval: Dst stayed above -30 nT (minimum {r['min_dst']:.0f} nT).")
+    elif r["type"] == "active":  # live windows only: disturbed but not a storm
+        out.append(
+            f"Active interval below storm level: Dst minimum {r['min_dst']:.0f} nT (the storm threshold is -50 nT)."
+        )
     else:
         out.append(f"{r['cls'].capitalize()} geomagnetic storm: Dst minimum {r['min_dst']:.0f} nT.")
         main = (r["min_time"] - r["core_start"]) / pd.Timedelta(hours=1)

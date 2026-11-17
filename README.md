@@ -3,7 +3,7 @@
 **GenAI-Based Multi-Parameter Space Weather Event Analysis and Impact Assessment**
 upGrad Masters in ML/AI, GenAI track, Bring Your Own Capstone. Mid-work snapshot 25 Oct 2026, updated 17 Nov 2026.
 
-> **Where I am right now (17 Nov).** The full pipeline works end to end: data, events, event cards, knowledge base, retrieval, prompt templates, two generators (an offline baseline and a free local LLM), a claim-by-claim checker and the evaluation. The code is in `src/spacewx_rag/` with a command-line entry point, a config file the code reads, and 52 tests. Still to do: the Streamlit app, the technical report and the presentation. Section 7 has the table and section 8 the results.
+> **Where I am right now (17 Nov).** The full pipeline works end to end: data, events, event cards, knowledge base, retrieval, prompt templates, two generators (an offline baseline and a free local LLM), a claim-by-claim checker and the evaluation. The code is in `src/spacewx_rag/` with a command-line entry point, a config file the code reads, and 58 tests. There is a Streamlit demo app (`streamlit run app/main.py`) with a live mode that pulls the last day of real-time NOAA data and analyses it. Still to do: the technical report and the presentation. Section 7 has the table and section 8 the results.
 
 ## 1. What this project is
 Space weather data comes from a few different places: solar wind and the magnetic field measured by the DSCOVR satellite, the Kp and Dst indices that describe how disturbed Earth's magnetic field is, and the F10.7 number for solar activity. To understand what happened during a storm you have to read all of them together, and that takes some expertise.
@@ -52,9 +52,10 @@ The knowledge base has 21 documents. Their licence status is listed one by one i
 | `evaluation/annotations/` | `retrieval_questions.json` (42 labelled questions), `judge_audit_ollama_rag.csv` (manual check of the judge) |
 | `evaluation/results/` | `generations/<run>/E###.json` (every output with its prompt passages), `generation_metrics.csv`, `generation_summary.csv`, `claims.csv`, `consistency.csv`, `retrieval_*.csv`, `judge_cache.jsonl` |
 | `tests/` | `unit/` (hint rules, classes, chunking, retrieval filter, schema, claim checks, judge quote and G-level checks) and `integration/` (src/ rebuilds the notebook outputs exactly) |
-| `docs/` | `architecture.md`, `methodology.md`, `decision_log.md` (56 decisions), `event_definitions.md`, `project_plan.md` |
+| `docs/` | `architecture.md`, `methodology.md`, `decision_log.md` (58 decisions), `event_definitions.md`, `project_plan.md` |
 | `scripts/download_data.py`, `Makefile` | raw data download; shortcuts for every stage |
-| `app/` | Streamlit app (not built yet) |
+| `app/main.py` | Streamlit demo: 🛰️ live NOAA conditions, 🎛️ what-if simulator (sliders → AI explanation), 📚 historical events (data, streamed AI description, claim-by-claim check, sources), 📊 results |
+| `src/spacewx_rag/live/` | fetches NOAA SWPC real-time feeds, saves snapshots, builds a live event card (`data/live/`) |
 
 ## 5. Installation
 You need Python 3.10 or newer (I used 3.11).
@@ -90,6 +91,7 @@ Everything runs from the project folder with `python -m spacewx_rag <stage>` (or
 | ablation, consistency | see `make generate` | ~40 min |
 | evaluation | `python -m spacewx_rag evaluate` | ~10 min the first time (judge), then seconds (cached) |
 | tests | `pytest` | ~20 s |
+| **demo app** | `streamlit run app/main.py` (or `make app`), then open http://localhost:8501 | instant |
 
 The included files mean you can start at any stage. The generated outputs and judge verdicts are included too, so `python -m spacewx_rag evaluate` and notebooks 06 and 07 run in minutes without regenerating. To re-run the notebooks: `make notebooks`.
 
@@ -105,8 +107,10 @@ The included files mean you can start at any stage. The generated outputs and ju
 | Generation with an LLM | **Done.** Offline extractive baseline + `qwen2.5:7b-instruct` through Ollama (free, local); no-retrieval ablation; consistency runs |
 | Safeguards against unsupported claims | **Done.** Constrained decoding, then a claim-by-claim checker (numbers and dates vs the card, cause and impact language, evidence paths, citations, an LLM judge that must quote its support, a code-based NOAA G-level check) |
 | Evaluation | **Done.** Groundedness, unsupported-claim rate, completeness against hand-written reference points, must-not checks, consistency, retrieval relevance on 42 questions, and a manual audit of the judge |
-| Modular code and tests | **Done.** `src/spacewx_rag/`, config-driven, CLI, 52 tests; `src/` reproduces every notebook output exactly |
-| Streamlit app | Not yet (next phase) |
+| Modular code and tests | **Done.** `src/spacewx_rag/`, config-driven, CLI, 58 tests; `src/` reproduces every notebook output exactly |
+| Streamlit app | **Done.** `app/main.py`: historical events read the saved outputs (no model needed); "Generate" streams the local LLM, shows rule checks at once and the judge after (~1 min) |
+| What-if simulator (extra) | **Done.** Sliders for Kp, Dst, speed and Bz build a hypothetical card; instant rule-based reading, then the AI explains it with the same checks (decision 58) |
+| Live data (extra) | **Done.** One click fetches the last day of NOAA SWPC real-time data, builds an event card and analyses it; falls back to the last snapshot when offline (decision 57) |
 | Technical report, presentation | Not yet (final phase) |
 
 ## 8. Results so far (15 evaluation events)
@@ -133,12 +137,12 @@ Details: notebooks 06 and 07, `evaluation/results/`, and decisions 44 to 56 in `
 - The DSCOVR instruments have long outages and the Faraday cup misreads fast wind, so about 35% of plasma hours come from OMNI; every hour records its source. Dst from 2021 on is provisional (10 of 15 evaluation events).
 - Retrieved background is general (by storm class) except for May 2024. G-level-specific effects depend on retrieving the right row of the NOAA scales, which often fails (the source of the E231 errors).
 - Kyoto's terms don't say whether its web pages can be redistributed (included for academic, non-commercial use with credit); the NASA tutorial's licence is unverified.
-- Local generation is slow: 1 to 1.5 minutes per event on an M2 laptop with Low Power Mode off (3 to 5 minutes with it on).
+- Local generation is slow: 1 to 1.5 minutes per event on an M2 laptop with Low Power Mode off (3 to 5 minutes with it on). The app streams the text so the wait is visible.
+- Live mode uses unvalidated real-time data from whichever L1 monitor NOAA has active (SOLAR1 on 17 Nov, not DSCOVR) and covers only the last 24 hours; it is a demonstration, not part of the evaluation.
 
 ## 10. Next steps
-1. Streamlit app: pick an event, see the card, the retrieved passages (with licences), the generated description and each claim's check.
-2. Review the reference points and the judge audit; consider retrieving the NOAA scales row for the event's own G level so impacts match the storm level.
-3. Technical report (10 to 15 pages), presentation (8 to 12 slides), final README.
+1. Review the reference points and the judge audit; consider retrieving the NOAA scales row for the event's own G level so impacts match the storm level.
+2. Technical report (10 to 15 pages), presentation (8 to 12 slides), final README.
 
 ## More documentation
-[`docs/architecture.md`](docs/architecture.md) · [`docs/methodology.md`](docs/methodology.md) · [`docs/decision_log.md`](docs/decision_log.md) (56 decisions with the evidence behind them) · [`docs/event_definitions.md`](docs/event_definitions.md) · [`data/DATA_SOURCES.md`](data/DATA_SOURCES.md) · [`knowledge_base/README.md`](knowledge_base/README.md)
+[`docs/architecture.md`](docs/architecture.md) · [`docs/methodology.md`](docs/methodology.md) · [`docs/decision_log.md`](docs/decision_log.md) (58 decisions with the evidence behind them) · [`docs/event_definitions.md`](docs/event_definitions.md) · [`data/DATA_SOURCES.md`](data/DATA_SOURCES.md) · [`knowledge_base/README.md`](knowledge_base/README.md)

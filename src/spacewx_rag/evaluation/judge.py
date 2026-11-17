@@ -12,6 +12,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+from pathlib import Path
 from string import Template
 
 from spacewx_rag.generation.prompts import format_passages
@@ -52,7 +53,7 @@ def quote_found(quote: str, passages: list[dict], min_chars: int = 25) -> bool:
 
 
 class SupportJudge:
-    def __init__(self, generator=None, version: str | None = None):
+    def __init__(self, generator=None, version: str | None = None, cache_path=None):
         from spacewx_rag.generation.generators import OllamaGenerator
 
         cfg = load_params()["evaluation"]
@@ -62,7 +63,7 @@ class SupportJudge:
         self.template = Template(
             (Paths().prompts / PROMPTS[self.version]).read_text(encoding="utf-8")
         )
-        self.cache_path = Paths().results / "judge_cache.jsonl"
+        self.cache_path = Path(cache_path) if cache_path else Paths().results / "judge_cache.jsonl"
         self.cache = {}
         if self.cache_path.exists():
             with open(self.cache_path, encoding="utf-8") as f:

@@ -119,6 +119,12 @@ def word_dates(text: str, years: list[int]) -> list[tuple[str, list[list[pd.Time
 def unmatched_dates(text: str, card: dict) -> list[str]:
     """Dates that fall outside the event window (written dates) or match no card time (ISO)."""
     ok = card_dates(card)
+    if not card["window"].get("start"):  # what-if scenario: any date is invented
+        return [
+            m.group()
+            for rx in (WORD_DATE_RE, WORD_DATE_RE_DMY, DATETIME_RE)
+            for m in rx.finditer(text)
+        ]
     a = pd.Timestamp(card["window"]["start"][:10])
     b = pd.Timestamp(card["window"]["end"][:10])
     years = sorted({a.year, b.year})
@@ -267,3 +273,33 @@ def self_contradiction(output: dict) -> bool:
     """True when impacts are given with sources but also listed as having no supporting source."""
     unsup = " ".join(output.get("unsupported_or_unknown", [])).lower()
     return bool(output.get("potential_impacts")) and "impact" in unsup and "no " in unsup
+
+
+def claim_reason(r: dict) -> str:
+    """Plain-language reasons a claim failed its checks ('' when grounded)."""
+
+    def false(k):
+        return r.get(k) is False or r.get(k) == "False"
+
+    out = []
+    if false("numbers_ok"):
+        out.append(f"number not in the card or cited passages {r.get('bad_numbers')}")
+    if false("no_cause"):
+        out.append("names a cause the card does not give")
+    if false("no_impact"):
+        out.append("impact claim in a card-only section")
+    if false("evidence_ok"):
+        out.append("cites a card field that does not exist")
+    if false("sources_ok"):
+        out.append("no valid source cited")
+    if r.get("quiet_violation") is True or r.get("quiet_violation") == "True":
+        out.append("impact claimed for a quiet window")
+    if false("level_ok"):
+        out.append(
+            f"effect is from NOAA G{int(float(r.get('source_g_level')))} in the source, higher than this storm"
+        )
+    if r.get("kind") in ("interpretation", "impact") and false("judge_supported"):
+        out.append("judge: the cited passages do not support it")
+    if false("no_forecast"):
+        out.append("makes a forecast")
+    return "; ".join(out)

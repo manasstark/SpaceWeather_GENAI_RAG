@@ -15,3 +15,5 @@ knowledge_base/vector_store/*
 models_and_artifacts/*
 logs/*
 !**/.gitkeep
+data/live/snapshots/
+data/live/judge_cache.jsonl

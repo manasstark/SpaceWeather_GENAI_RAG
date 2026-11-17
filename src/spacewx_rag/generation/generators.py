@@ -220,34 +220,71 @@ class OllamaGenerator:
         temperature: float,
         num_predict: int | None = None,
         seed_offset: int = 0,
+        on_token=None,
     ) -> tuple[str, dict]:
+        """One JSON-constrained chat call. With `on_token`, the reply is streamed and each piece of
+        text is passed to `on_token` as it arrives (same result, just visible sooner)."""
         msgs = ([{"role": "system", "content": system}] if system else []) + [
             {"role": "user", "content": user}
         ]
-        r = self.client.chat(
-            model=self.model,
-            messages=msgs,
-            format=schema,
-            options={
+        kwargs = {
+            "model": self.model,
+            "messages": msgs,
+            "format": schema,
+            "options": {
                 "temperature": temperature,
                 "num_ctx": self.cfg["num_ctx"],
                 "num_predict": num_predict or self.cfg["num_predict"],
                 "seed": self.cfg["seed"] + seed_offset,
             },
-        )
-        return r["message"]["content"], {
-            "prompt_tokens": r.get("prompt_eval_count"),
-            "output_tokens": r.get("eval_count"),
+            "keep_alive": self.cfg.get("keep_alive"),
+        }
+        if on_token is None:
+            r = self.client.chat(**kwargs)
+            text, last = r["message"]["content"], r
+        else:
+            parts, last = [], {}
+            for chunk in self.client.chat(stream=True, **kwargs):
+                piece = chunk["message"]["content"]
+                if piece:
+                    parts.append(piece)
+                    on_token(piece)
+                last = chunk
+            text = "".join(parts)
+        return text, {
+            "prompt_tokens": last.get("prompt_eval_count"),
+            "output_tokens": last.get("eval_count"),
         }
 
+    def warm_up(self) -> None:
+        """Load the model into memory now, so the first real request doesn't pay the load time."""
+        self.client.generate(
+            model=self.model,
+            prompt="",
+            keep_alive=self.cfg.get("keep_alive"),
+            options={
+                "num_ctx": self.cfg["num_ctx"]
+            },  # same context as real requests, or Ollama reloads
+        )
+
     def generate(
-        self, card: dict, passages: list[dict], temperature: float | None = None, run: int = 0
+        self,
+        card: dict,
+        passages: list[dict],
+        temperature: float | None = None,
+        run: int = 0,
+        on_token=None,
     ) -> GenerationResult:
         temp = self.cfg["temperature"] if temperature is None else temperature
         t0 = time.time()
         schema = constrained_schema(card, passages)
         raw, meta = self.chat_json(
-            system_prompt(), user_prompt(card, passages), schema, temp, seed_offset=run
+            system_prompt(),
+            user_prompt(card, passages),
+            schema,
+            temp,
+            seed_offset=run,
+            on_token=on_token,
         )
         out, err = None, None
         try:

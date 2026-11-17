@@ -73,9 +73,23 @@ generation:
   num_predict: 1500
   seed: 42
   max_list_items: 6                   # cap on evidence/sources lists (added after E039 looped; decision 55)
+  keep_alive: 30m                     # keep the model loaded between requests (faster live demo)
 
 evaluation:
   judge_model: qwen2.5:7b-instruct    # same local model; a stated limitation
   judge_temperature: 0.0
   judge_version: v2                   # v1 was lenient (decision 56)
   number_tolerance: 0.051             # |stated - card| allowed for numbers (rounding to 0.1)
+
+live:                                 # demo extension: the last day of real-time NOAA SWPC data (decision 57)
+  base_url: https://services.swpc.noaa.gov
+  feeds:
+    wind: json/rtsw/rtsw_wind_1m.json         # 1-minute plasma, every L1 monitor; use the "active" one
+    mag: json/rtsw/rtsw_mag_1m.json           # 1-minute field (GSM)
+    kp: products/noaa-planetary-k-index.json  # 3-hourly planetary Kp (preliminary)
+    dst: products/kyoto-dst.json              # Kyoto real-time (quick-look) Dst
+    f107: json/f107_cm_flux.json              # observed 10.7 cm flux, three readings a day
+  window_hours: 24                    # the real-time solar wind feed covers about 24 hours
+  context_days: 7                     # Kp and Dst shown around the window
+  min_valid_minutes: 30
+  timeout_s: 20
